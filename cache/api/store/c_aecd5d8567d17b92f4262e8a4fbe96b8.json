@@ -1,0 +1,136 @@
+{
+    "name": "Grav\\Common\\Config\\Setup",
+    "line": 16,
+    "short_desc": "The Config class contains configuration information.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\Config",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Config\/Setup.php",
+    "relative_file": null,
+    "hash": "6e2116bc27f0ddc9911587f7843dbf82caf661a4",
+    "parent": "Grav\\Common\\Data\\Data",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "CompiledYamlFile": "Grav\\Common\\File\\CompiledYamlFile",
+        "Data": "Grav\\Common\\Data\\Data",
+        "Utils": "Grav\\Common\\Utils",
+        "YamlFile": "RocketTheme\\Toolbox\\File\\YamlFile",
+        "UniformResourceLocator": "RocketTheme\\Toolbox\\ResourceLocator\\UniformResourceLocator"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 116,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "environment": {
+                    "name": "environment",
+                    "line": 116,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'localhost'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "init": {
+            "name": "init",
+            "line": 140,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Config\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "initializeLocator": {
+            "name": "initializeLocator",
+            "line": 180,
+            "short_desc": "Initialize resource locator by using the configuration.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "locator": {
+                    "name": "locator",
+                    "line": 180,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "RocketTheme\\Toolbox\\ResourceLocator\\UniformResourceLocator",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "UniformResourceLocator",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getStreams": {
+            "name": "getStreams",
+            "line": 203,
+            "short_desc": "Get available streams and their types from the configuration.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

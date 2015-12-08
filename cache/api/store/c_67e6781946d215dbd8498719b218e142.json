@@ -1,0 +1,825 @@
+{
+    "name": "Grav\\Common\\Uri",
+    "line": 12,
+    "short_desc": "The URI object provides information about the current URL",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Uri.php",
+    "relative_file": null,
+    "hash": "316bfab6ab3549d128597e2aabf62a446bded7e0",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Page": "Grav\\Common\\Page\\Page"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "url": {
+            "name": "url",
+            "line": 16,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 33,
+            "short_desc": "Constructor.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "init": {
+            "name": "init",
+            "line": 85,
+            "short_desc": "Initializes the URI object based on the url set on the object",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "paths": {
+            "name": "paths",
+            "line": 191,
+            "short_desc": "Return URI path.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 191,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "route": {
+            "name": "route",
+            "line": 207,
+            "short_desc": "Return route to the current URI. By default route doesn't include base path.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "absolute": {
+                    "name": "absolute",
+                    "line": 207,
+                    "short_desc": "True to include full path.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                },
+                "domain": {
+                    "name": "domain",
+                    "line": 207,
+                    "short_desc": "True to include domain. Works only if first parameter is also true.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "query": {
+            "name": "query",
+            "line": 218,
+            "short_desc": "Return full query string or a single query attribute.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "\"2\" @param tags are expected but only \"1\" found"
+            ],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 218,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "raw": {
+                    "name": "raw",
+                    "line": 218,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "params": {
+            "name": "params",
+            "line": 238,
+            "short_desc": "Return all or a single query parameter as a URI compatible string.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "null",
+                    false
+                ],
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 238,
+                    "short_desc": "Optional parameter name.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "array": {
+                    "name": "array",
+                    "line": 238,
+                    "short_desc": "return the array format or not",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "param": {
+            "name": "param",
+            "line": 268,
+            "short_desc": "Get URI parameter.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ],
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 268,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "url": {
+            "name": "url",
+            "line": 283,
+            "short_desc": "Return URL.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "include_host": {
+                    "name": "include_host",
+                    "line": 283,
+                    "short_desc": "Include hostname.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "path": {
+            "name": "path",
+            "line": 298,
+            "short_desc": "Return the Path",
+            "long_desc": "",
+            "hint": [
+                [
+                    "String",
+                    false
+                ]
+            ],
+            "hint_desc": "The path of the URI",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "extension": {
+            "name": "extension",
+            "line": 314,
+            "short_desc": "Return the Extension of the URI",
+            "long_desc": "",
+            "hint": [
+                [
+                    "String",
+                    false
+                ]
+            ],
+            "hint_desc": "The extension of the URI",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "default": {
+                    "name": "default",
+                    "line": 314,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "host": {
+            "name": "host",
+            "line": 327,
+            "short_desc": "Return the host of the URI",
+            "long_desc": "",
+            "hint": [
+                [
+                    "String",
+                    false
+                ]
+            ],
+            "hint_desc": "The host of the URI",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "environment": {
+            "name": "environment",
+            "line": 337,
+            "short_desc": "Gets the environment name",
+            "long_desc": "",
+            "hint": [
+                [
+                    "String",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "basename": {
+            "name": "basename",
+            "line": 348,
+            "short_desc": "Return the basename of the URI",
+            "long_desc": "",
+            "hint": [
+                [
+                    "String",
+                    false
+                ]
+            ],
+            "hint_desc": "The basename of the URI",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "base": {
+            "name": "base",
+            "line": 358,
+            "short_desc": "Return the base of the URI",
+            "long_desc": "",
+            "hint": [
+                [
+                    "String",
+                    false
+                ]
+            ],
+            "hint_desc": "The base of the URI",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "rootUrl": {
+            "name": "rootUrl",
+            "line": 369,
+            "short_desc": "Return root URL to the site.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "include_host": {
+                    "name": "include_host",
+                    "line": 369,
+                    "short_desc": "Include hostname.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "currentPage": {
+            "name": "currentPage",
+            "line": 384,
+            "short_desc": "Return current page number.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "referrer": {
+            "name": "referrer",
+            "line": 400,
+            "short_desc": "Return relative path to the referrer defaulting to current or given page.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "default": {
+                    "name": "default",
+                    "line": 400,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "attributes": {
+                    "name": "attributes",
+                    "line": 400,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "ip": {
+            "name": "ip",
+            "line": 430,
+            "short_desc": "Return the IP address of the current user",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "ip address",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isExternal": {
+            "name": "isExternal",
+            "line": 456,
+            "short_desc": "Is this an external URL? if it starts with `http` then yes, else false",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "is eternal state",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "url": {
+                    "name": "url",
+                    "line": 456,
+                    "short_desc": "the URL in question",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "buildUrl": {
+            "name": "buildUrl",
+            "line": 471,
+            "short_desc": "The opposite of built-in PHP method parse_url()",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "parsed_url": {
+                    "name": "parsed_url",
+                    "line": 471,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "convertUrl": {
+            "name": "convertUrl",
+            "line": 495,
+            "short_desc": "Converts links from absolute '\/' or relative (.",
+            "long_desc": ".\/..) to a grav friendly format",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "the more friendly formatted url",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "page": {
+                    "name": "page",
+                    "line": 495,
+                    "short_desc": "the current page to use as reference",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Page\\Page",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Page",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "markdown_url": {
+                    "name": "markdown_url",
+                    "line": 495,
+                    "short_desc": "the URL as it was written in the markdown",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "type": {
+                    "name": "type",
+                    "line": 495,
+                    "short_desc": "the type of URL, image | link",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'link'",
+                    "is_by_ref": false
+                },
+                "relative": {
+                    "name": "relative",
+                    "line": 495,
+                    "short_desc": "if null, will use system default, if true will use relative links internally",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addNonce": {
+            "name": "addNonce",
+            "line": 593,
+            "short_desc": "Adds the nonce to a URL for a specific action",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "the url with the nonce",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "url": {
+                    "name": "url",
+                    "line": 593,
+                    "short_desc": "the url",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "action": {
+                    "name": "action",
+                    "line": 593,
+                    "short_desc": "the action",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "nonceParamName": {
+                    "name": "nonceParamName",
+                    "line": 593,
+                    "short_desc": "the param name to use",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'nonce'",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "HOSTNAME_REGEX": {
+            "name": "HOSTNAME_REGEX",
+            "line": 14,
+            "short_desc": "",
+            "long_desc": ""
+        }
+    }
+}

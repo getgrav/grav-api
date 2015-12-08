@@ -1,0 +1,33 @@
+{
+    "name": "Grav\\Console\\Cli\\ClearCacheCommand",
+    "line": 12,
+    "short_desc": "Class ClearCacheCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Cli"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Cli",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Cli\/ClearCacheCommand.php",
+    "relative_file": null,
+    "hash": "e35b0046bf241164fcf258ac502b5b11199cfe46",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Cache": "Grav\\Common\\Cache",
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

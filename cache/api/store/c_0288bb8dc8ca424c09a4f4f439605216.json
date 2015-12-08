@@ -1,0 +1,36 @@
+{
+    "name": "Grav\\Console\\Gpm\\UninstallCommand",
+    "line": 15,
+    "short_desc": "Class UninstallCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Gpm"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Gpm",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Gpm\/UninstallCommand.php",
+    "relative_file": null,
+    "hash": "5669ff99036b02449fc396683d7c52ed1713c73f",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GPM": "Grav\\Common\\GPM\\GPM",
+        "Installer": "Grav\\Common\\GPM\\Installer",
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption",
+        "ConfirmationQuestion": "Symfony\\Component\\Console\\Question\\ConfirmationQuestion"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

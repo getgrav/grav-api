@@ -1,0 +1,135 @@
+{
+    "name": "Grav\\Common\\Helpers\\Truncator",
+    "line": 15,
+    "short_desc": "This file is part of urodoz\/truncateHTML.",
+    "long_desc": "(c) Albert Lacarta <urodoz@gmail.com>\n\nFor the full copyright and license information, please view the LICENSE\nfile that was distributed with this source code.",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Helpers",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Helpers\/Truncator.php",
+    "relative_file": null,
+    "hash": "1aa9ca3d138d41225b03b4bdf057655df2f41131",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "DOMDocument": "DOMDocument"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "default_options": {
+            "name": "default_options",
+            "line": 17,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 9,
+            "default": {},
+            "errors": []
+        },
+        "ellipsable_tags": {
+            "name": "ellipsable_tags",
+            "line": 25,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 9,
+            "default": {},
+            "errors": []
+        },
+        "self_closing_tags": {
+            "name": "self_closing_tags",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 9,
+            "default": {},
+            "errors": []
+        }
+    },
+    "methods": {
+        "truncate": {
+            "name": "truncate",
+            "line": 46,
+            "short_desc": "Truncate given HTML string to specified length.",
+            "long_desc": "If length_in_chars is false it's trimmed by number\nof words, otherwise by number of characters.",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "html": {
+                    "name": "html",
+                    "line": 46,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "length": {
+                    "name": "length",
+                    "line": 46,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "opts": {
+                    "name": "opts",
+                    "line": 46,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ],
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

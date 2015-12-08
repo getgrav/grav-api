@@ -1,0 +1,34 @@
+{
+    "name": "Grav\\Console\\Cli\\InstallCommand",
+    "line": 13,
+    "short_desc": "Class InstallCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Cli"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Cli",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Cli\/InstallCommand.php",
+    "relative_file": null,
+    "hash": "2e29c4ba15cde288b42418f461fa2ca598d2cb62",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption",
+        "Yaml": "Symfony\\Component\\Yaml\\Yaml"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

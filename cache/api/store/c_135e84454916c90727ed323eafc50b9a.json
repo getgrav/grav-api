@@ -1,0 +1,74 @@
+{
+    "name": "Grav\\Common\\Session",
+    "line": 7,
+    "short_desc": "Wrapper for Session",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Session.php",
+    "relative_file": null,
+    "hash": "700318fa0bfc9ac88d84e4ad9c2429d2b6e99a0a",
+    "parent": "RocketTheme\\Toolbox\\Session\\Session",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 12,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\RuntimeException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "grav": {
+                    "name": "grav",
+                    "line": 12,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Grav",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Grav",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "init": {
+            "name": "init",
+            "line": 17,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

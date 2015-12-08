@@ -1,0 +1,507 @@
+{
+    "name": "Grav\\Common\\GPM\\Installer",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\GPM",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/Installer.php",
+    "relative_file": null,
+    "hash": "f860a47abcfcb25c10f742d309da777d04fd0e5b",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Folder": "Grav\\Common\\Filesystem\\Folder",
+        "Yaml": "Symfony\\Component\\Yaml\\Yaml"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "install": {
+            "name": "install",
+            "line": 60,
+            "short_desc": "Installs a given package to a given destination.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if everything went fine, False otherwise.",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "package": {
+                    "name": "package",
+                    "line": 60,
+                    "short_desc": "The local path to the ZIP package",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "destination": {
+                    "name": "destination",
+                    "line": 60,
+                    "short_desc": "The local path to the Grav Instance",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 60,
+                    "short_desc": "Options to use for installing. ie, ['install_path' => 'user\/themes\/antimatter']",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "moveInstall": {
+            "name": "moveInstall",
+            "line": 143,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "zip": {
+                    "name": "zip",
+                    "line": 143,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\GPM\\ZipArchive",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "ZipArchive",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "install_path": {
+                    "name": "install_path",
+                    "line": 143,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "tmp": {
+                    "name": "tmp",
+                    "line": 143,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "copyInstall": {
+            "name": "copyInstall",
+            "line": 155,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "zip": {
+                    "name": "zip",
+                    "line": 155,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\GPM\\ZipArchive",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "ZipArchive",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "install_path": {
+                    "name": "install_path",
+                    "line": 155,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "tmp": {
+                    "name": "tmp",
+                    "line": 155,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "sophisticatedInstall": {
+            "name": "sophisticatedInstall",
+            "line": 168,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "zip": {
+                    "name": "zip",
+                    "line": 168,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\GPM\\ZipArchive",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "ZipArchive",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "install_path": {
+                    "name": "install_path",
+                    "line": 168,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "tmp": {
+                    "name": "tmp",
+                    "line": 168,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "uninstall": {
+            "name": "uninstall",
+            "line": 211,
+            "short_desc": "Uninstalls one or more given package",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if everything went fine, False otherwise.",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 211,
+                    "short_desc": "The slug of the package(s)",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 211,
+                    "short_desc": "Options to use for uninstalling",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isValidDestination": {
+            "name": "isValidDestination",
+            "line": 230,
+            "short_desc": "Runs a set of checks on the destination and sets the Error if any",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if validation passed. False otherwise",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "destination": {
+                    "name": "destination",
+                    "line": 230,
+                    "short_desc": "The directory to run validations at",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "exclude": {
+                    "name": "exclude",
+                    "line": 230,
+                    "short_desc": "An array of constants to exclude from the validation",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isGravInstance": {
+            "name": "isGravInstance",
+            "line": 259,
+            "short_desc": "Validates if the given path is a Grav Instance",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if is a Grav Instance. False otherwise",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "target": {
+                    "name": "target",
+                    "line": 259,
+                    "short_desc": "The local path to the Grav Instance",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "lastErrorMsg": {
+            "name": "lastErrorMsg",
+            "line": 280,
+            "short_desc": "Returns the last error occurred in a string message format",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "The message of the last error",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "lastErrorCode": {
+            "name": "lastErrorCode",
+            "line": 329,
+            "short_desc": "Returns the last error code of the occurred error",
+            "long_desc": "",
+            "hint": [
+                [
+                    "integer",
+                    false
+                ]
+            ],
+            "hint_desc": "The code of the last error",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setError": {
+            "name": "setError",
+            "line": 339,
+            "short_desc": "Allows to manually set an error",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "error": {
+                    "name": "error",
+                    "line": 339,
+                    "short_desc": "the Error code",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": {
+        "OK": {
+            "name": "OK",
+            "line": 10,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "EXISTS": {
+            "name": "EXISTS",
+            "line": 12,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "IS_LINK": {
+            "name": "IS_LINK",
+            "line": 14,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "NOT_FOUND": {
+            "name": "NOT_FOUND",
+            "line": 16,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "NOT_DIRECTORY": {
+            "name": "NOT_DIRECTORY",
+            "line": 18,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "NOT_GRAV_ROOT": {
+            "name": "NOT_GRAV_ROOT",
+            "line": 20,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "ZIP_OPEN_ERROR": {
+            "name": "ZIP_OPEN_ERROR",
+            "line": 22,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "ZIP_EXTRACT_ERROR": {
+            "name": "ZIP_EXTRACT_ERROR",
+            "line": 24,
+            "short_desc": "",
+            "long_desc": ""
+        }
+    }
+}

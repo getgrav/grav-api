@@ -1,0 +1,44 @@
+{
+    "name": "Grav\\Common\\GPM\\Local\\Themes",
+    "line": 8,
+    "short_desc": "Class Themes",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Common\\GPM\\Local"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\GPM\\Local",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/Local\/Themes.php",
+    "relative_file": null,
+    "hash": "cfb54fda6777877b5f54866e108f7c66cd817db5",
+    "parent": "Grav\\Common\\GPM\\Local\\AbstractPackageCollection",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 18,
+            "short_desc": "Local Themes Constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

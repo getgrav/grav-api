@@ -1,0 +1,73 @@
+{
+    "name": "Grav\\Common\\Filesystem\\RecursiveFolderFilterIterator",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Filesystem",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Filesystem\/RecursiveFolderFilterIterator.php",
+    "relative_file": null,
+    "hash": "2921c5a3c84f0a26130d184b1bc1321a580c39d6",
+    "parent": "RecursiveFilterIterator",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 12,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "iterator": {
+                    "name": "iterator",
+                    "line": 12,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Filesystem\\RecursiveIterator",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "RecursiveIterator",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "accept": {
+            "name": "accept",
+            "line": 20,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

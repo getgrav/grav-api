@@ -1,0 +1,218 @@
+{
+    "name": "Grav\\Common\\User\\Group",
+    "line": 19,
+    "short_desc": "Group object",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                "mixed",
+                "authenticated"
+            ],
+            [
+                "mixed",
+                "password"
+            ],
+            [
+                "bool|string",
+                "hashed_password"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\User",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/User\/Group.php",
+    "relative_file": null,
+    "hash": "75d60adb8e8423f39f7ab3c04f3df70126e2fb88",
+    "parent": "Grav\\Common\\Data\\Data",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Blueprints": "Grav\\Common\\Data\\Blueprints",
+        "Data": "Grav\\Common\\Data\\Data",
+        "CompiledYamlFile": "Grav\\Common\\File\\CompiledYamlFile",
+        "GravTrait": "Grav\\Common\\GravTrait",
+        "Utils": "Grav\\Common\\Utils"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": {
+        "uthenticated": {
+            "name": "uthenticated",
+            "line": 19,
+            "short_desc": "mixedauthenticated",
+            "long_desc": null,
+            "hint": [
+                [
+                    "mixed",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "assword": {
+            "name": "assword",
+            "line": 19,
+            "short_desc": "mixedpassword",
+            "long_desc": null,
+            "hint": [
+                [
+                    "mixed",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "ashed_password": {
+            "name": "ashed_password",
+            "line": 19,
+            "short_desc": "bool|stringhashed_password",
+            "long_desc": null,
+            "hint": [
+                [
+                    "bool|string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "group_exists": {
+            "name": "group_exists",
+            "line": 39,
+            "short_desc": "Checks if a group exists",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "groupname": {
+                    "name": "groupname",
+                    "line": 39,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "load": {
+            "name": "load",
+            "line": 49,
+            "short_desc": "Get a group by name",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "groupname": {
+                    "name": "groupname",
+                    "line": 49,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "save": {
+            "name": "save",
+            "line": 70,
+            "short_desc": "Save a group",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "remove": {
+            "name": "remove",
+            "line": 110,
+            "short_desc": "Remove a group",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "True if the action was performed",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "The \"username\" @param tag variable name is wrong (should be \"groupname\")"
+            ],
+            "parameters": {
+                "groupname": {
+                    "name": "groupname",
+                    "line": 110,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

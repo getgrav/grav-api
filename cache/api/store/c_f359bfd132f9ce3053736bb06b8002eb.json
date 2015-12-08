@@ -1,0 +1,83 @@
+{
+    "name": "Grav\\Common\\Backup\\ZipBackup",
+    "line": 14,
+    "short_desc": "The ZipBackup class lets you create simple zip-backups of a grav site",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\Backup",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Backup\/ZipBackup.php",
+    "relative_file": null,
+    "hash": "39dc112ddfc10162677b418633260a0502aaa3ce",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GravTrait": "Grav\\Common\\GravTrait",
+        "Folder": "Grav\\Common\\Filesystem\\Folder",
+        "Inflector": "Grav\\Common\\Inflector"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "backup": {
+            "name": "backup",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "destination": {
+                    "name": "destination",
+                    "line": 32,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "messager": {
+                    "name": "messager",
+                    "line": 32,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "callable",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

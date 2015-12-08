@@ -1,0 +1,223 @@
+{
+    "name": "Grav\\Common\\Themes",
+    "line": 18,
+    "short_desc": "The Themes object holds an array of all the theme objects that Grav knows about.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Themes.php",
+    "relative_file": null,
+    "hash": "52b7ff5ae4cf49dfc961481114cb80e2ff9d38b6",
+    "parent": "Grav\\Common\\Iterator",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Config": "Grav\\Common\\Config\\Config",
+        "CompiledYamlFile": "Grav\\Common\\File\\CompiledYamlFile",
+        "Blueprints": "Grav\\Common\\Data\\Blueprints",
+        "Data": "Grav\\Common\\Data\\Data",
+        "EventDispatcher": "RocketTheme\\Toolbox\\Event\\EventDispatcher",
+        "EventSubscriberInterface": "RocketTheme\\Toolbox\\Event\\EventSubscriberInterface",
+        "UniformResourceLocator": "RocketTheme\\Toolbox\\ResourceLocator\\UniformResourceLocator"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 26,
+            "short_desc": "Constructor to initialize array.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "grav": {
+                    "name": "grav",
+                    "line": 26,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Grav",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Grav",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "init": {
+            "name": "init",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "initTheme": {
+            "name": "initTheme",
+            "line": 46,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "all": {
+            "name": "all",
+            "line": 74,
+            "short_desc": "Return list of all theme data with their blueprints.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "get": {
+            "name": "get",
+            "line": 105,
+            "short_desc": "Get theme configuration or throw exception if it cannot be found.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Data\\Data",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\RuntimeException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 105,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "current": {
+            "name": "current",
+            "line": 140,
+            "short_desc": "Return name of the current theme.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Can return any type.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "load": {
+            "name": "load",
+            "line": 150,
+            "short_desc": "Load current theme.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Theme",
+                    false
+                ],
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "configure": {
+            "name": "configure",
+            "line": 200,
+            "short_desc": "Configure and prepare streams for current template.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\InvalidArgumentException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

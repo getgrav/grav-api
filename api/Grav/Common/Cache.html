@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Cache | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Cache" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Grav.html">Grav</a></li>
+                                        <li><a href="../../Grav/Common.html">Common</a></li>
+    
+                <li>Cache</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Cache</h1>
+    </div>
+
+    <p>    class
+    <strong>Cache</strong>        extends <a href="../../Grav/Common/Getters.html"><abbr title="Grav\Common\Getters">Getters</abbr></a>
+</p>
+
+            <div class="description">
+            <p>The GravCache object is used throughout Grav to store and retrieve cached data.</p>            <p>It uses DoctrineCache library and supports a variety of caching mechanisms. Those include:</p>
+
+<p>APC
+XCache
+RedisCache
+MemCache
+MemCacheD
+FileSystem</p>        </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Grav/Common/GravTrait.html"><abbr title="Grav\Common\GravTrait">Grav\Common\GravTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>(
+    mixed $offset, 
+    mixed $value)
+                                            <p>Magic setter method</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method___set"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(
+    mixed $offset)
+                                            <p>Magic getter method</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method___get"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___isset">__isset</a>(
+    mixed $offset)
+                                            <p>Magic method to determine if the attribute is set</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method___isset"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___unset">__unset</a>(
+    mixed $offset)
+                                            <p>Magic method to unset the attribute</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method___unset"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetExists">offsetExists</a>(
+    mixed $offset)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method_offsetExists"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetGet">offsetGet</a>(
+    mixed $offset)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method_offsetGet"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetSet">offsetSet</a>(
+    mixed $offset, 
+    mixed $value)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method_offsetSet"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_offsetUnset">offsetUnset</a>(
+    mixed $offset)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method_offsetUnset"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_count">count</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method_count"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+                                            <p>Returns an associative array of object properties.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/Getters.html#method_toArray"><abbr title="Grav\Common\Getters">Getters</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGrav">getGrav</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGrav">setGrav</a>(
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>(
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)
+                                            <p>Initialization that sets a base key and the driver based on configuration settings</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\DoctrineCacheDriver">DoctrineCacheDriver</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCacheDriver">getCacheDriver</a>()
+                                            <p>Automatically picks the cache mechanism to use.  If you pick one manually it will use that
+If there is no config option for $driver in the config, or it's set to 'auto', it will
+pick the best option based on which cache extensions are installed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetch">fetch</a>(
+    string $id)
+                                            <p>Gets a cached entry if it exists based on an id. If it does not exist, it returns false</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(
+    string $id, 
+    array|object $data, 
+    int $lifetime = null)
+                                            <p>Stores a new cached entry.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKey">getKey</a>()
+                                            <p>Getter method to get the cache key</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearCache">clearCache</a>(
+    string $remove = &#039;standard&#039;)
+                                            <p>Helper method to clear all Grav caches</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLifetime">setLifetime</a>(
+    int $future)
+                                            <p>Set the cache lifetime programmatically</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLifetime">getLifetime</a>()
+                                            <p>Retrieve the cache lifetime (in seconds)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method___set"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 26</div>
+        <code>                    
+    
+    <strong>__set</strong>(
+    mixed $offset, 
+    mixed $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Magic setter method</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$offset</td>
+                <td>Medium name value</td>
+            </tr>
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Medium value</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method___get"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 37</div>
+        <code>                    
+    mixed
+    <strong>__get</strong>(
+    mixed $offset)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Magic getter method</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$offset</td>
+                <td>Medium name value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td>Medium value</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___isset">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method___isset"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 48</div>
+        <code>                    
+    boolean
+    <strong>__isset</strong>(
+    mixed $offset)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Magic method to determine if the attribute is set</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$offset</td>
+                <td>Medium name value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>True if the value is set</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___unset">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method___unset"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 58</div>
+        <code>                    
+    
+    <strong>__unset</strong>(
+    mixed $offset)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Magic method to unset the attribute</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$offset</td>
+                <td>The name value to unset</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetExists">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method_offsetExists"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 67</div>
+        <code>                    
+    bool
+    <strong>offsetExists</strong>(
+    mixed $offset)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetGet">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method_offsetGet"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 81</div>
+        <code>                    
+    mixed
+    <strong>offsetGet</strong>(
+    mixed $offset)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetSet">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method_offsetSet"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 95</div>
+        <code>                    
+    
+    <strong>offsetSet</strong>(
+    mixed $offset, 
+    mixed $value)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_offsetUnset">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method_offsetUnset"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 108</div>
+        <code>                    
+    
+    <strong>offsetUnset</strong>(
+    mixed $offset)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_count">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method_count"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 121</div>
+        <code>                    
+    int
+    <strong>count</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">in 
+    <a href="../../Grav/Common/Getters.html#method_toArray"><abbr title="Grav\Common\Getters">Getters</abbr></a> at line 136</div>
+        <code>                    
+    array
+    <strong>toArray</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns an associative array of object properties.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGrav">
+        <div class="location">in 
+    <a href="../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 14</div>
+        <code>        static            
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+    <strong>getGrav</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGrav">
+        <div class="location">in 
+    <a href="../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 25</div>
+        <code>        static            
+    
+    <strong>setGrav</strong>(
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+                <td>$grav</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 82</div>
+        <code>                    
+    
+    <strong>__construct</strong>(
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Constructor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+                <td>$grav</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at line 93</div>
+        <code>                    
+    void
+    <strong>init</strong>(
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Initialization that sets a base key and the driver based on configuration settings</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+                <td>$grav</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCacheDriver">
+        <div class="location">at line 128</div>
+        <code>                    
+    <abbr title="Grav\Common\DoctrineCacheDriver">DoctrineCacheDriver</abbr>
+    <strong>getCacheDriver</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Automatically picks the cache mechanism to use.  If you pick one manually it will use that
+If there is no config option for $driver in the config, or it's set to 'auto', it will
+pick the best option based on which cache extensions are installed.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\DoctrineCacheDriver">DoctrineCacheDriver</abbr></td>
+            <td>The cache driver to use</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetch">
+        <div class="location">at line 191</div>
+        <code>                    
+    object
+    <strong>fetch</strong>(
+    string $id)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets a cached entry if it exists based on an id. If it does not exist, it returns false</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$id</td>
+                <td>the id of the cached entry</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    object</td>
+            <td>returns the cached entry, can be any type, or false if doesn't exist</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at line 207</div>
+        <code>                    
+    
+    <strong>save</strong>(
+    string $id, 
+    array|object $data, 
+    int $lifetime = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Stores a new cached entry.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$id</td>
+                <td>the id of the cached entry</td>
+            </tr>
+                    <tr>
+                <td>
+    array|object</td>
+                <td>$data</td>
+                <td>the data for the cached entry to store</td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$lifetime</td>
+                <td>the lifetime to store the entry in seconds</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKey">
+        <div class="location">at line 220</div>
+        <code>                    
+    
+    <strong>getKey</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Getter method to get the cache key</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearCache">
+        <div class="location">at line 232</div>
+        <code>        static            
+    array
+    <strong>clearCache</strong>(
+    string $remove = &#039;standard&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Helper method to clear all Grav caches</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$remove</td>
+                <td>standard|all|assets-only|images-only|cache-only</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLifetime">
+        <div class="location">at line 304</div>
+        <code>                    
+    
+    <strong>setLifetime</strong>(
+    int $future)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the cache lifetime programmatically</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    int</td>
+                <td>$future</td>
+                <td>timestamp</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLifetime">
+        <div class="location">at line 322</div>
+        <code>                    
+    mixed
+    <strong>getLifetime</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Retrieve the cache lifetime (in seconds)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

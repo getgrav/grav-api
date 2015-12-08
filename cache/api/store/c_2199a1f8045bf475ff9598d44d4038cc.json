@@ -1,0 +1,493 @@
+{
+    "name": "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccess",
+    "line": 13,
+    "short_desc": "Implements nested ArrayAccess interface with dot notation.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\ArrayTraits"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ],
+        "property": [
+            [
+                "array",
+                "$items"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\ArrayTraits",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/ArrayTraits\/src\/NestedArrayAccess.php",
+    "relative_file": null,
+    "hash": "51b572fbfa6420748b21874eaf3aba07b3723d0e",
+    "parent": null,
+    "modifiers": "Stmt_Trait",
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "items": {
+            "name": "items",
+            "line": 13,
+            "short_desc": "array$items",
+            "long_desc": null,
+            "hint": [
+                [
+                    "array",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "get": {
+            "name": "get",
+            "line": 25,
+            "short_desc": "Get value by using dot notation for nested arrays\/objects.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Value.",
+            "tags": {
+                "example": [
+                    [
+                        "$value",
+                        "=",
+                        "$this->get('this.is.my.nested.variable');"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 25,
+                    "short_desc": "Dot separated path to the requested value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "default": {
+                    "name": "default",
+                    "line": 25,
+                    "short_desc": "Default value (or null).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "separator": {
+                    "name": "separator",
+                    "line": 25,
+                    "short_desc": "Separator, defaults to '.'",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "set": {
+            "name": "set",
+            "line": 52,
+            "short_desc": "Set value by using dot notation for nested arrays\/objects.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "RocketTheme\\Toolbox\\ArrayTraits\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "example": [
+                    [
+                        "$data->set('this.is.my.nested.variable',",
+                        "$value);"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 52,
+                    "short_desc": "Dot separated path to the requested value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "value": {
+                    "name": "value",
+                    "line": 52,
+                    "short_desc": "New value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "separator": {
+                    "name": "separator",
+                    "line": 52,
+                    "short_desc": "Separator, defaults to '.'",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "undef": {
+            "name": "undef",
+            "line": 88,
+            "short_desc": "Unset value by using dot notation for nested arrays\/objects.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "RocketTheme\\Toolbox\\ArrayTraits\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "example": [
+                    [
+                        "$data->undef('this.is.my.nested.variable');"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 88,
+                    "short_desc": "Dot separated path to the requested value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "separator": {
+                    "name": "separator",
+                    "line": 88,
+                    "short_desc": "Separator, defaults to '.'",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "def": {
+            "name": "def",
+            "line": 131,
+            "short_desc": "Set default value by using dot notation for nested arrays\/objects.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "RocketTheme\\Toolbox\\ArrayTraits\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "example": [
+                    [
+                        "$data->def('this.is.my.nested.variable',",
+                        "'default');"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 131,
+                    "short_desc": "Dot separated path to the requested value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "default": {
+                    "name": "default",
+                    "line": 131,
+                    "short_desc": "Default value (or null).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "separator": {
+                    "name": "separator",
+                    "line": 131,
+                    "short_desc": "Separator, defaults to '.'",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "offsetExists": {
+            "name": "offsetExists",
+            "line": 144,
+            "short_desc": "Whether or not an offset exists.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "Returns TRUE on success or FALSE on failure.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 144,
+                    "short_desc": "An offset to check for.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "offsetGet": {
+            "name": "offsetGet",
+            "line": 155,
+            "short_desc": "Returns the value at specified offset.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Can return all value types.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 155,
+                    "short_desc": "The offset to retrieve.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "offsetSet": {
+            "name": "offsetSet",
+            "line": 166,
+            "short_desc": "Assigns a value to the specified offset.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 166,
+                    "short_desc": "The offset to assign the value to.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "value": {
+                    "name": "value",
+                    "line": 166,
+                    "short_desc": "The value to set.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "offsetUnset": {
+            "name": "offsetUnset",
+            "line": 180,
+            "short_desc": "Unsets variable at specified offset.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 180,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

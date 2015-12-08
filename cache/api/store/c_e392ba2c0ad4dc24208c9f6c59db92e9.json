@@ -1,0 +1,43 @@
+{
+    "name": "RocketTheme\\Toolbox\\DI\\ServiceProviderInterface",
+    "line": 13,
+    "short_desc": "Defines ServiceProviderInterface.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\DI"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\DI",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/DI\/src\/ServiceProviderInterface.php",
+    "relative_file": null,
+    "hash": "7bf16fb44126cd7d529a5f21bced300f09bb87f5",
+    "parent": null,
+    "modifiers": "Stmt_Interface",
+    "is_trait": false,
+    "is_interface": true,
+    "aliases": {
+        "BaseServiceProviderInterface": "Pimple\\ServiceProviderInterface"
+    },
+    "errors": [],
+    "interfaces": {
+        "Pimple\\ServiceProviderInterface": "Pimple\\ServiceProviderInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

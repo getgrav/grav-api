@@ -1,0 +1,162 @@
+{
+    "name": "RocketTheme\\Toolbox\\ArrayTraits\\Export",
+    "line": 16,
+    "short_desc": "Implements ExportInterface.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\ArrayTraits"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ],
+        "property": [
+            [
+                "array",
+                "$items"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\ArrayTraits",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/ArrayTraits\/src\/Export.php",
+    "relative_file": null,
+    "hash": "ae5612fdbdf5c9286cc6c8b26d8942fd32b85efe",
+    "parent": null,
+    "modifiers": "Stmt_Trait",
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": {
+        "DumpException": "Symfony\\Component\\Yaml\\Exception\\DumpException",
+        "Yaml": "Symfony\\Component\\Yaml\\Yaml"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "items": {
+            "name": "items",
+            "line": 16,
+            "short_desc": "array$items",
+            "long_desc": null,
+            "hint": [
+                [
+                    "array",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "toArray": {
+            "name": "toArray",
+            "line": 23,
+            "short_desc": "Convert object into an array.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "toYaml": {
+            "name": "toYaml",
+            "line": 37,
+            "short_desc": "Convert object into YAML string.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "A YAML string representing the object.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Symfony\\Component\\Yaml\\Exception\\DumpException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "inline": {
+                    "name": "inline",
+                    "line": 37,
+                    "short_desc": "The level where you switch to inline YAML.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "3",
+                    "is_by_ref": false
+                },
+                "indent": {
+                    "name": "indent",
+                    "line": 37,
+                    "short_desc": "The amount of spaces to use for indentation of nested nodes.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "2",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "toJson": {
+            "name": "toJson",
+            "line": 47,
+            "short_desc": "Convert object into JSON string.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

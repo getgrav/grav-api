@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\GPM\Installer | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_GPM_Installer" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Grav.html">Grav</a></li>
+                                        <li><a href="../../../Grav/Common.html">Common</a></li>
+                                        <li><a href="../../../Grav/Common/GPM.html">GPM</a></li>
+    
+                <li>Installer</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Installer</h1>
+    </div>
+
+    <p>    class
+    <strong>Installer</strong>
+</p>
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>OK</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>EXISTS</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>IS_LINK</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NOT_FOUND</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NOT_DIRECTORY</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NOT_GRAV_ROOT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ZIP_OPEN_ERROR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ZIP_EXTRACT_ERROR</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_install">install</a>(
+    string $package, 
+    string $destination, 
+    array $options = array())
+                                            <p>Installs a given package to a given destination.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_moveInstall">moveInstall</a>(
+    <abbr title="Grav\Common\GPM\ZipArchive">ZipArchive</abbr> $zip, $install_path, $tmp)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_copyInstall">copyInstall</a>(
+    <abbr title="Grav\Common\GPM\ZipArchive">ZipArchive</abbr> $zip, $install_path, $tmp)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sophisticatedInstall">sophisticatedInstall</a>(
+    <abbr title="Grav\Common\GPM\ZipArchive">ZipArchive</abbr> $zip, $install_path, $tmp)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_uninstall">uninstall</a>(
+    string $path, 
+    array $options = array())
+                                            <p>Uninstalls one or more given package</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isValidDestination">isValidDestination</a>(
+    string $destination, 
+    array $exclude = array())
+                                            <p>Runs a set of checks on the destination and sets the Error if any</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isGravInstance">isGravInstance</a>(
+    string $target)
+                                            <p>Validates if the given path is a Grav Instance</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lastErrorMsg">lastErrorMsg</a>()
+                                            <p>Returns the last error occurred in a string message format</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    integer
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lastErrorCode">lastErrorCode</a>()
+                                            <p>Returns the last error code of the occurred error</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setError">setError</a>($error)
+                                            <p>Allows to manually set an error</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_install">
+        <div class="location">at line 60</div>
+        <code>        static            
+    boolean
+    <strong>install</strong>(
+    string $package, 
+    string $destination, 
+    array $options = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Installs a given package to a given destination.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$package</td>
+                <td>The local path to the ZIP package</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$destination</td>
+                <td>The local path to the Grav Instance</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$options</td>
+                <td>Options to use for installing. ie, ['install_path' => 'user/themes/antimatter']</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>True if everything went fine, False otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moveInstall">
+        <div class="location">at line 143</div>
+        <code>        static            
+    
+    <strong>moveInstall</strong>(
+    <abbr title="Grav\Common\GPM\ZipArchive">ZipArchive</abbr> $zip, $install_path, $tmp)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Grav\Common\GPM\ZipArchive">ZipArchive</abbr></td>
+                <td>$zip</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$install_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tmp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_copyInstall">
+        <div class="location">at line 155</div>
+        <code>        static            
+    
+    <strong>copyInstall</strong>(
+    <abbr title="Grav\Common\GPM\ZipArchive">ZipArchive</abbr> $zip, $install_path, $tmp)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Grav\Common\GPM\ZipArchive">ZipArchive</abbr></td>
+                <td>$zip</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$install_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tmp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sophisticatedInstall">
+        <div class="location">at line 168</div>
+        <code>        static            
+    
+    <strong>sophisticatedInstall</strong>(
+    <abbr title="Grav\Common\GPM\ZipArchive">ZipArchive</abbr> $zip, $install_path, $tmp)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Grav\Common\GPM\ZipArchive">ZipArchive</abbr></td>
+                <td>$zip</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$install_path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tmp</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uninstall">
+        <div class="location">at line 211</div>
+        <code>        static            
+    boolean
+    <strong>uninstall</strong>(
+    string $path, 
+    array $options = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Uninstalls one or more given package</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$path</td>
+                <td>The slug of the package(s)</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$options</td>
+                <td>Options to use for uninstalling</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>True if everything went fine, False otherwise.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValidDestination">
+        <div class="location">at line 230</div>
+        <code>        static            
+    boolean
+    <strong>isValidDestination</strong>(
+    string $destination, 
+    array $exclude = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Runs a set of checks on the destination and sets the Error if any</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$destination</td>
+                <td>The directory to run validations at</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$exclude</td>
+                <td>An array of constants to exclude from the validation</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>True if validation passed. False otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isGravInstance">
+        <div class="location">at line 259</div>
+        <code>        static            
+    boolean
+    <strong>isGravInstance</strong>(
+    string $target)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Validates if the given path is a Grav Instance</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$target</td>
+                <td>The local path to the Grav Instance</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>True if is a Grav Instance. False otherwise</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lastErrorMsg">
+        <div class="location">at line 280</div>
+        <code>        static            
+    string
+    <strong>lastErrorMsg</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the last error occurred in a string message format</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>The message of the last error</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lastErrorCode">
+        <div class="location">at line 329</div>
+        <code>        static            
+    integer
+    <strong>lastErrorCode</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the last error code of the occurred error</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    integer</td>
+            <td>The code of the last error</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setError">
+        <div class="location">at line 339</div>
+        <code>        static            
+    
+    <strong>setError</strong>($error)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Allows to manually set an error</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$error</td>
+                <td>the Error code</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

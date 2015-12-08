@@ -1,0 +1,633 @@
+{
+    "name": "Grav\\Common\\Data\\Data",
+    "line": 18,
+    "short_desc": "Recursive data object",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\Data",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Data\/Data.php",
+    "relative_file": null,
+    "hash": "203b4ebaf9e579273fa3b55725d88b56f267d364",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Countable": "RocketTheme\\Toolbox\\ArrayTraits\\Countable",
+        "Export": "RocketTheme\\Toolbox\\ArrayTraits\\Export",
+        "ExportInterface": "RocketTheme\\Toolbox\\ArrayTraits\\ExportInterface",
+        "NestedArrayAccessWithGetters": "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccessWithGetters",
+        "Blueprints": "RocketTheme\\Toolbox\\Blueprints\\Blueprints",
+        "File": "RocketTheme\\Toolbox\\File\\File",
+        "FileInterface": "RocketTheme\\Toolbox\\File\\FileInterface"
+    },
+    "errors": [],
+    "interfaces": {
+        "Grav\\Common\\Data\\DataInterface": "Grav\\Common\\Data\\DataInterface",
+        "ArrayAccess": "ArrayAccess",
+        "Countable": "Countable",
+        "RocketTheme\\Toolbox\\ArrayTraits\\ExportInterface": "RocketTheme\\Toolbox\\ArrayTraits\\ExportInterface"
+    },
+    "traits": {
+        "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccessWithGetters": "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccessWithGetters",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Countable": "RocketTheme\\Toolbox\\ArrayTraits\\Countable",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Export": "RocketTheme\\Toolbox\\ArrayTraits\\Export"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 39,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "items": {
+                    "name": "items",
+                    "line": 39,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "array()",
+                    "is_by_ref": false
+                },
+                "blueprints": {
+                    "name": "blueprints",
+                    "line": 39,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Grav\\Common\\Data\\Blueprint",
+                            false
+                        ],
+                        [
+                            "callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "value": {
+            "name": "value",
+            "line": 55,
+            "short_desc": "Get value by using dot notation for nested arrays\/objects.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Value.",
+            "tags": {
+                "example": [
+                    [
+                        "$value",
+                        "=",
+                        "$data->value('this.is.my.nested.variable');"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 55,
+                    "short_desc": "Dot separated path to the requested value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "default": {
+                    "name": "default",
+                    "line": 55,
+                    "short_desc": "Default value (or null).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "separator": {
+                    "name": "separator",
+                    "line": 55,
+                    "short_desc": "Separator, defaults to '.'",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "join": {
+            "name": "join",
+            "line": 69,
+            "short_desc": "Join nested values together by using blueprints.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Data\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\RuntimeException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 69,
+                    "short_desc": "Dot separated path to the requested value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "value": {
+                    "name": "value",
+                    "line": 69,
+                    "short_desc": "Value to be joined.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "separator": {
+                    "name": "separator",
+                    "line": 69,
+                    "short_desc": "Separator, defaults to '.'",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getDefaults": {
+            "name": "getDefaults",
+            "line": 96,
+            "short_desc": "Get nested structure containing default values defined in the blueprints.",
+            "long_desc": "Fields without default value are ignored in the list.",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "joinDefaults": {
+            "name": "joinDefaults",
+            "line": 109,
+            "short_desc": "Set default values by using blueprints.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Data\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 109,
+                    "short_desc": "Dot separated path to the requested value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "value": {
+                    "name": "value",
+                    "line": 109,
+                    "short_desc": "Value to be joined.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "separator": {
+                    "name": "separator",
+                    "line": 109,
+                    "short_desc": "Separator, defaults to '.'",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getJoined": {
+            "name": "getJoined",
+            "line": 133,
+            "short_desc": "Get value from the configuration and join it with given data.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\RuntimeException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 133,
+                    "short_desc": "Dot separated path to the requested value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "value": {
+                    "name": "value",
+                    "line": 133,
+                    "short_desc": "Value to be joined.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "separator": {
+                    "name": "separator",
+                    "line": 133,
+                    "short_desc": "Separator, defaults to '.'",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "merge": {
+            "name": "merge",
+            "line": 163,
+            "short_desc": "Merge two configurations together.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 163,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "setDefaults": {
+            "name": "setDefaults",
+            "line": 176,
+            "short_desc": "Set default values to the configuration if variables were not set.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Data\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 176,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "validate": {
+            "name": "validate",
+            "line": 189,
+            "short_desc": "Validate by blueprints.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Exception",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        },
+        "filter": {
+            "name": "filter",
+            "line": 200,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "extra": {
+            "name": "extra",
+            "line": 212,
+            "short_desc": "Get extra items which haven't been defined in blueprints.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "blueprints": {
+            "name": "blueprints",
+            "line": 222,
+            "short_desc": "Return blueprints.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "save": {
+            "name": "save",
+            "line": 237,
+            "short_desc": "Save data if storage has been defined.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "exists": {
+            "name": "exists",
+            "line": 252,
+            "short_desc": "Returns whether the data already exists in the storage.",
+            "long_desc": "NOTE: This method does not check if the data is current.",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "raw": {
+            "name": "raw",
+            "line": 264,
+            "short_desc": "Return unmodified data as raw string.",
+            "long_desc": "NOTE: This function only returns data which has been saved to the storage.",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "file": {
+            "name": "file",
+            "line": 275,
+            "short_desc": "Set or get the data storage.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\RocketTheme\\Toolbox\\File\\FileInterface",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "storage": {
+                    "name": "storage",
+                    "line": 275,
+                    "short_desc": "Optionally enter a new storage.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "RocketTheme\\Toolbox\\File\\FileInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "FileInterface",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

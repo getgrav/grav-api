@@ -1,0 +1,88 @@
+{
+    "name": "RocketTheme\\Toolbox\\Event\\EventDispatcher",
+    "line": 15,
+    "short_desc": "Implements Symfony EventDispatcher interface.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\Event"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\Event",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/Event\/src\/EventDispatcher.php",
+    "relative_file": null,
+    "hash": "4d8b7fc3a0e08db0f8abeaa471b477abfe4356b9",
+    "parent": "Symfony\\Component\\EventDispatcher\\EventDispatcher",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "BaseEvent": "Symfony\\Component\\EventDispatcher\\Event",
+        "BaseEventDispatcher": "Symfony\\Component\\EventDispatcher\\EventDispatcher",
+        "EventDispatcherInterface": "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface"
+    },
+    "errors": [],
+    "interfaces": {
+        "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface": "Symfony\\Component\\EventDispatcher\\EventDispatcherInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "dispatch": {
+            "name": "dispatch",
+            "line": 17,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "eventName": {
+                    "name": "eventName",
+                    "line": 17,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "event": {
+                    "name": "event",
+                    "line": 17,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Symfony\\Component\\EventDispatcher\\Event",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "BaseEvent",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

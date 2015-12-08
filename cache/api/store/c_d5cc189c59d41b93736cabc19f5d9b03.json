@@ -1,0 +1,192 @@
+{
+    "name": "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccessWithGetters",
+    "line": 11,
+    "short_desc": "Implements getters and setters.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\ArrayTraits"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\ArrayTraits",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/ArrayTraits\/src\/NestedArrayAccessWithGetters.php",
+    "relative_file": null,
+    "hash": "0d5e7681925b3c614ad56170637a58e4337e7e91",
+    "parent": null,
+    "modifiers": "Stmt_Trait",
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccess": "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccess"
+    },
+    "properties": [],
+    "methods": {
+        "__set": {
+            "name": "__set",
+            "line": 21,
+            "short_desc": "Magic setter method",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 21,
+                    "short_desc": "Asset name value",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "value": {
+                    "name": "value",
+                    "line": 21,
+                    "short_desc": "Asset value",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "__get": {
+            "name": "__get",
+            "line": 32,
+            "short_desc": "Magic getter method",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Asset value",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 32,
+                    "short_desc": "Asset name value",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "__isset": {
+            "name": "__isset",
+            "line": 43,
+            "short_desc": "Magic method to determine if the attribute is set",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if the value is set",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 43,
+                    "short_desc": "Asset name value",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "__unset": {
+            "name": "__unset",
+            "line": 53,
+            "short_desc": "Magic method to unset the attribute",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 53,
+                    "short_desc": "The name value to unset",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,36 @@
+{
+    "name": "Grav\\Console\\ConsoleCommand",
+    "line": 14,
+    "short_desc": "Class ConsoleCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/ConsoleCommand.php",
+    "relative_file": null,
+    "hash": "a017bf859c2a4b9b3141ae747047938205915cdf",
+    "parent": "Symfony\\Component\\Console\\Command\\Command",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Command": "Symfony\\Component\\Console\\Command\\Command",
+        "InputInterface": "Symfony\\Component\\Console\\Input\\InputInterface",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption",
+        "OutputInterface": "Symfony\\Component\\Console\\Output\\OutputInterface"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Console\\ConsoleTrait": "Grav\\Console\\ConsoleTrait"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

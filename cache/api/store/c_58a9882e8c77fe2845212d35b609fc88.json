@@ -1,0 +1,67 @@
+{
+    "name": "Grav\\Common\\GPM\\Common\\AbstractPackageCollection",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\GPM\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/Common\/AbstractPackageCollection.php",
+    "relative_file": null,
+    "hash": "b17b16df06637e1017dfd0672e4c13fdee1eedf5",
+    "parent": "Grav\\Common\\Iterator",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GravTrait": "Grav\\Common\\GravTrait",
+        "Iterator": "Grav\\Common\\Iterator"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "toJson": {
+            "name": "toJson",
+            "line": 13,
+            "short_desc": "Convert object into JSON string.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "toArray": {
+            "name": "toArray",
+            "line": 24,
+            "short_desc": "Convert object into an array.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

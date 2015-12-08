@@ -1,0 +1,4309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Page\Page | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Page_Page" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Grav.html">Grav</a></li>
+                                        <li><a href="../../../Grav/Common.html">Common</a></li>
+                                        <li><a href="../../../Grav/Common/Page.html">Page</a></li>
+    
+                <li>Page</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Page</h1>
+    </div>
+
+    <p>    class
+    <strong>Page</strong>
+</p>
+
+            <div class="description">
+            <p>The Page object, or "Page" object is the main powerhouse of Grav.  It contains all the information
+related to the nested pages structure that represents the content. Each page has several attributes that
+can be retrieved via public functions. Also each page can potentially contain an array of sub-pages.</p>            <p>Recursively traversing the page structure allows Grav to create navigation systems.</p>        </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Grav/Common/GravTrait.html"><abbr title="Grav\Common\GravTrait">Grav\Common\GravTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGrav">getGrav</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGrav">setGrav</a>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+                                            <p>Page Object Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>(
+    <abbr title="Grav\Common\Page\SplFileInfo">SplFileInfo</abbr> $file, 
+    string $extension = null)
+                                            <p>Initializes the page instance variables based on a file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_translatedLanguages">translatedLanguages</a>()
+                                            <p>Return an array with the routes of other translated languages</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_untranslatedLanguages">untranslatedLanguages</a>()
+                                            <p>Return an array listing untranslated languages available</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    Object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_raw">raw</a>(
+    string $var = null)
+                                            <p>Gets and Sets the raw data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_frontmatter">frontmatter</a>($var = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    object
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_header">header</a>(
+    object|array $var = null)
+                                            <p>Gets and Sets the header based on the YAML configuration at the top of the .md file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_language">language</a>($var = null)
+                                            <p>Get page language</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modifyHeader">modifyHeader</a>($key, $value)
+                                            <p>Modify a header value directly</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_summary">summary</a>(
+    int $size = null)
+                                            <p>Get the summary.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSummary">setSummary</a>($summary)
+                                            <p>Sets the summary of the page</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_content">content</a>(
+    string $var = null)
+                                            <p>Gets and Sets the content based on content portion of the .md file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRawContent">getRawContent</a>()
+                                            <p>Needed by the onPageContentProcessed event to get the raw page content</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setRawContent">setRawContent</a>($content)
+                                            <p>Needed by the onPageContentProcessed event to set the raw page content</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_value">value</a>(
+    string $name, 
+    mixed $default = null)
+                                            <p>Get value from a page variable (used mostly for creating edit forms).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rawMarkdown">rawMarkdown</a>($var = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../RocketTheme/Toolbox/File/MarkdownFile.html"><abbr title="RocketTheme\Toolbox\File\MarkdownFile">MarkdownFile</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_file">file</a>()
+                                            <p>Get file object to the page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>(
+    bool $reorder = true)
+                                            <p>Save page if there's a file assigned to it.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_move">move</a>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $parent)
+                                            <p>Prepare move page to new location. Moves also everything that's under the current page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_copy">copy</a>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $parent)
+                                            <p>Prepare a copy from the page. Copies also everything that's under the current page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Data/Blueprint.html"><abbr title="Grav\Common\Data\Blueprint">Blueprint</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blueprints">blueprints</a>()
+                                            <p>Get blueprints for the page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blueprintName">blueprintName</a>()
+                                            <p>Get the blueprint name for this page.  Use the blueprint form field if set</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validate">validate</a>()
+                                            <p>Validate page header.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filter">filter</a>()
+                                            <p>Filter page header from illegal contents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extra">extra</a>()
+                                            <p>Get unknown header variables.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toArray">toArray</a>()
+                                            <p>Convert page to an array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toYaml">toYaml</a>()
+                                            <p>Convert page to YAML encoded string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_toJson">toJson</a>()
+                                            <p>Convert page to JSON encoded string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Media.html"><abbr title="Grav\Common\Page\Media">Media</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_media">media</a>(
+    <a href="../../../Grav/Common/Page/Media.html"><abbr title="Grav\Common\Page\Media">Media</abbr></a> $var = null)
+                                            <p>Gets and sets the associated media as found in the page folder.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_name">name</a>(
+    string $var = null)
+                                            <p>Gets and sets the name field.  If no name field is set, it will return 'default.md'.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_childType">childType</a>()
+                                            <p>Returns child page type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_template">template</a>(
+    string $var = null)
+                                            <p>Gets and sets the template field. This is used to find the correct Twig template file to render.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extension">extension</a>(
+    null $var = null)
+                                            <p>Gets and sets the extension field.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_urlExtension">urlExtension</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_expires">expires</a>(
+    string $var = null)
+                                            <p>Gets and sets the expires field. If not set will return the default</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_title">title</a>(
+    string $var = null)
+                                            <p>Gets and sets the title for this Page.  If no title is set, it will use the slug() to get a name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_menu">menu</a>(
+    string $var = null)
+                                            <p>Gets and sets the menu name for this Page.  This is the text that can be used specifically for navigation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_visible">visible</a>(
+    bool $var = null)
+                                            <p>Gets and Sets whether or not this Page is visible for navigation</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_published">published</a>(
+    bool $var = null)
+                                            <p>Gets and Sets whether or not this Page is considered published</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_publishDate">publishDate</a>(
+    string $var = null)
+                                            <p>Gets and Sets the Page publish date</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unpublishDate">unpublishDate</a>(
+    string $var = null)
+                                            <p>Gets and Sets the Page unpublish date</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_routable">routable</a>(
+    bool $var = null)
+                                            <p>Gets and Sets whether or not this Page is routable, ie you can reach it
+via a URL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_process">process</a>(
+    array $var = null)
+                                            <p>Gets and Sets the process setup for this Page. This is multi-dimensional array that consists of
+a simple array of arrays with the form array("markdown"=>true) for example</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_metadata">metadata</a>(
+    array $var = null)
+                                            <p>Function to merge page metadata tags and build an array of Metadata objects
+that can then be rendered in the page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_slug">slug</a>(
+    string $var = null)
+                                            <p>Gets and Sets the slug for the Page. The slug is used in the URL routing. If not set it uses
+the parent folder from the path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int|bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_order">order</a>(
+    int $var = null)
+                                            <p>Get/set order number of this page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_permalink">permalink</a>()
+                                            <p>Gets the URL with host information, aka Permalink.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_link">link</a>(
+    bool $include_host = false)
+                                            <p>Gets the URL for a page - alias of url().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_url">url</a>($include_host = false, $canonical = false, $include_lang = true)
+                                            <p>Gets the url for the Page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_route">route</a>(
+    string $var = null)
+                                            <p>Gets the route for the page based on the route headers if available, else from
+the parents route and the current Page's slug.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unsetRouteSlug">unsetRouteSlug</a>()
+                                            <p>Helper method to clear the route out so it regenerates next time you use it</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rawRoute">rawRoute</a>($var = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_routeAliases">routeAliases</a>(
+    array $var = null)
+                                            <p>Gets the route aliases for the page based on page headers.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_routeCanonical">routeCanonical</a>(
+    null $var = null)
+                                            <p>Gets the canonical route for this page if its set. If provided it will use
+that value, else if it's <code>true</code> it will use the default route.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_id">id</a>(
+    string $var = null)
+                                            <p>Gets and sets the identifier for this Page object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modified">modified</a>(
+    int $var = null)
+                                            <p>Gets and sets the modified timestamp.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirect">redirect</a>(
+    string $var = null)
+                                            <p>Gets the redirect set in the header.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_eTag">eTag</a>(
+    boolean $var = null)
+                                            <p>Gets and sets the option to show the etag header for the page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lastModified">lastModified</a>(
+    boolean $var = null)
+                                            <p>Gets and sets the option to show the last_modified header for the page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filePath">filePath</a>(
+    string $var = null)
+                                            <p>Gets and sets the path to the .md file for this Page object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filePathClean">filePathClean</a>()
+                                            <p>Gets the relative path to the .md file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_relativePagePath">relativePagePath</a>()
+                                            <p>Returns the clean path to the page file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_path">path</a>(
+    string $var = null)
+                                            <p>Gets and sets the path to the folder where the .md for this Page object resides.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_folder">folder</a>(
+    string $var = null)
+                                            <p>Get/set the folder.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_date">date</a>(
+    string $var = null)
+                                            <p>Gets and sets the date for this Page object. This is typically passed in via the page headers</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orderDir">orderDir</a>(
+    string $var = null)
+                                            <p>Gets and sets the order by which any sub-pages should be sorted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orderBy">orderBy</a>(
+    string $var = null)
+                                            <p>Gets and sets the order by which the sub-pages should be sorted.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_orderManual">orderManual</a>(
+    string $var = null)
+                                            <p>Gets the manual order set in the header.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_maxCount">maxCount</a>(
+    int $var = null)
+                                            <p>Gets and sets the maxCount field which describes how many sub-pages should be displayed if the
+sub_pages header property is set for this page object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_taxonomy">taxonomy</a>(
+    array $var = null)
+                                            <p>Gets and sets the taxonomy array which defines which taxonomies this page identifies itself with.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modular">modular</a>(
+    bool $var = null)
+                                            <p>Gets and sets the modular var that helps identify this parent page contains modular pages.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modularTwig">modularTwig</a>(
+    bool $var = null)
+                                            <p>Gets and sets the modular_twig var that helps identify this page as a modular page that will need
+twig processing handled differently from a regular page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldProcess">shouldProcess</a>(
+    string $process)
+                                            <p>Gets the configured state of the processing method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parent">parent</a>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $var = null)
+                                            <p>Gets and Sets the parent object for this page</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_children">children</a>()
+                                            <p>Returns children of this page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isFirst">isFirst</a>()
+                                            <p>Check to see if this item is the first in an array of sub-pages.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isLast">isLast</a>()
+                                            <p>Check to see if this item is the last in an array of sub-pages.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prevSibling">prevSibling</a>()
+                                            <p>Gets the previous sibling based on current position.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nextSibling">nextSibling</a>()
+                                            <p>Gets the next sibling based on current position.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_adjacentSibling">adjacentSibling</a>(
+    integer $direction = 1)
+                                            <p>Returns the adjacent sibling based on a direction.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_active">active</a>()
+                                            <p>Returns whether or not this page is the currently active page requested via the URL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_activeChild">activeChild</a>()
+                                            <p>Returns whether or not this URI's URL contains the URL of the active page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_home">home</a>()
+                                            <p>Returns whether or not this page is the currently configured home page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_root">root</a>()
+                                            <p>Returns whether or not this page is the root node of the pages tree.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(
+    string $url, 
+    bool $all = false)
+                                            <p>Helper method to return a page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_collection">collection</a>(
+    string|array $params = &#039;content&#039;, 
+    boolean $pagination = true)
+                                            <p>Get a collection of pages in the current context.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evaluate">evaluate</a>(
+    string $value)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isPage">isPage</a>()
+                                            <p>Returns whether or not this Page object has a .md file associated with it or if its just a directory.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isDir">isDir</a>()
+                                            <p>Returns whether or not this Page object is a directory or a page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>()
+                                            <p>Returns whether the page exists in the filesystem.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getGrav">
+        <div class="location">in 
+    <a href="../../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 14</div>
+        <code>        static            
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+    <strong>getGrav</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGrav">
+        <div class="location">in 
+    <a href="../../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 25</div>
+        <code>        static            
+    
+    <strong>setGrav</strong>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+                <td>$grav</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 101</div>
+        <code>                    
+    
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Page Object Constructor</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at line 118</div>
+        <code>                    
+    
+    <strong>init</strong>(
+    <abbr title="Grav\Common\Page\SplFileInfo">SplFileInfo</abbr> $file, 
+    string $extension = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Initializes the page instance variables based on a file</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Grav\Common\Page\SplFileInfo">SplFileInfo</abbr></td>
+                <td>$file</td>
+                <td>The file information for the .md file that the page represents</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$extension</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_translatedLanguages">
+        <div class="location">at line 151</div>
+        <code>                    
+    array
+    <strong>translatedLanguages</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return an array with the routes of other translated languages</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>the page translated languages</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_untranslatedLanguages">
+        <div class="location">at line 178</div>
+        <code>                    
+    array
+    <strong>untranslatedLanguages</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return an array listing untranslated languages available</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>the page untranslated languages</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_raw">
+        <div class="location">at line 201</div>
+        <code>                    
+    Object
+    <strong>raw</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets the raw data</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>Raw content string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    Object</td>
+            <td>Raw content string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_frontmatter">
+        <div class="location">at line 221</div>
+        <code>                    
+    
+    <strong>frontmatter</strong>($var = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$var</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_header">
+        <div class="location">at line 248</div>
+        <code>                    
+    object
+    <strong>header</strong>(
+    object|array $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets the header based on the YAML configuration at the top of the .md file</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    object|array</td>
+                <td>$var</td>
+                <td>a YAML object representing the configuration for the file</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    object</td>
+            <td>the current YAML configuration</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_language">
+        <div class="location">at line 367</div>
+        <code>                    
+    mixed
+    <strong>language</strong>($var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get page language</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$var</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modifyHeader">
+        <div class="location">at line 382</div>
+        <code>                    
+    
+    <strong>modifyHeader</strong>($key, $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Modify a header value directly</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_summary">
+        <div class="location">at line 393</div>
+        <code>                    
+    string
+    <strong>summary</strong>(
+    int $size = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the summary.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    int</td>
+                <td>$size</td>
+                <td>Max summary size.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSummary">
+        <div class="location">at line 445</div>
+        <code>                    
+    
+    <strong>setSummary</strong>($summary)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the summary of the page</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$summary</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_content">
+        <div class="location">at line 456</div>
+        <code>                    
+    string
+    <strong>content</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets the content based on content portion of the .md file</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>Content</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>Content</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRawContent">
+        <div class="location">at line 595</div>
+        <code>                    
+    string
+    <strong>getRawContent</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Needed by the onPageContentProcessed event to get the raw page content</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the current page content</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRawContent">
+        <div class="location">at line 605</div>
+        <code>                    
+    
+    <strong>setRawContent</strong>($content)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Needed by the onPageContentProcessed event to set the raw page content</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$content</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_value">
+        <div class="location">at line 617</div>
+        <code>                    
+    mixed
+    <strong>value</strong>(
+    string $name, 
+    mixed $default = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get value from a page variable (used mostly for creating edit forms).</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$name</td>
+                <td>Variable name.</td>
+            </tr>
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rawMarkdown">
+        <div class="location">at line 685</div>
+        <code>                    
+    
+    <strong>rawMarkdown</strong>($var = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$var</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_file">
+        <div class="location">at line 699</div>
+        <code>                    
+    <a href="../../../RocketTheme/Toolbox/File/MarkdownFile.html"><abbr title="RocketTheme\Toolbox\File\MarkdownFile">MarkdownFile</abbr></a>|null
+    <strong>file</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get file object to the page.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../RocketTheme/Toolbox/File/MarkdownFile.html"><abbr title="RocketTheme\Toolbox\File\MarkdownFile">MarkdownFile</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">at line 711</div>
+        <code>                    
+    
+    <strong>save</strong>(
+    bool $reorder = true)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Save page if there's a file assigned to it.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$reorder</td>
+                <td>Internal use.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_move">
+        <div class="location">at line 733</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+    <strong>move</strong>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $parent)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Prepare move page to new location. Moves also everything that's under the current page.</p>                    <p>You need to call $this->save() in order to perform the move.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+                <td>$parent</td>
+                <td>New parent page.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_copy">
+        <div class="location">at line 763</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+    <strong>copy</strong>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $parent)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Prepare a copy from the page. Copies also everything that's under the current page.</p>                    <p>Returns a new Page object for the copy.
+You need to call $this->save() in order to perform the move.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+                <td>$parent</td>
+                <td>New parent page.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blueprints">
+        <div class="location">at line 776</div>
+        <code>                    
+    <a href="../../../Grav/Common/Data/Blueprint.html"><abbr title="Grav\Common\Data\Blueprint">Blueprint</abbr></a>
+    <strong>blueprints</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get blueprints for the page.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Data/Blueprint.html"><abbr title="Grav\Common\Data\Blueprint">Blueprint</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blueprintName">
+        <div class="location">at line 803</div>
+        <code>                    
+    string
+    <strong>blueprintName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get the blueprint name for this page.  Use the blueprint form field if set</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validate">
+        <div class="location">at line 815</div>
+        <code>                    
+    
+    <strong>validate</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Validate page header.</p>                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">at line 824</div>
+        <code>                    
+    
+    <strong>filter</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Filter page header from illegal contents.</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extra">
+        <div class="location">at line 838</div>
+        <code>                    
+    array
+    <strong>extra</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get unknown header variables.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at line 849</div>
+        <code>                    
+    array
+    <strong>toArray</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Convert page to an array.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toYaml">
+        <div class="location">at line 862</div>
+        <code>                    
+    string
+    <strong>toYaml</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Convert page to YAML encoded string.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toJson">
+        <div class="location">at line 872</div>
+        <code>                    
+    string
+    <strong>toJson</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Convert page to JSON encoded string.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_media">
+        <div class="location">at line 883</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Media.html"><abbr title="Grav\Common\Page\Media">Media</abbr></a>
+    <strong>media</strong>(
+    <a href="../../../Grav/Common/Page/Media.html"><abbr title="Grav\Common\Page\Media">Media</abbr></a> $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the associated media as found in the page folder.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Media.html"><abbr title="Grav\Common\Page\Media">Media</abbr></a></td>
+                <td>$var</td>
+                <td>Representation of associated media.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Media.html"><abbr title="Grav\Common\Page\Media">Media</abbr></a></td>
+            <td>Representation of associated media.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_name">
+        <div class="location">at line 909</div>
+        <code>                    
+    string
+    <strong>name</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the name field.  If no name field is set, it will return 'default.md'.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>The name of this page.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>The name of this page.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_childType">
+        <div class="location">at line 922</div>
+        <code>                    
+    string
+    <strong>childType</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns child page type.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_template">
+        <div class="location">at line 934</div>
+        <code>                    
+    string
+    <strong>template</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the template field. This is used to find the correct Twig template file to render.</p>                    <p>If no field is set, it will return the name without the .md extension</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>the template name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the template name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extension">
+        <div class="location">at line 951</div>
+        <code>                    
+    null|string
+    <strong>extension</strong>(
+    null $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the extension field.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    null</td>
+                <td>$var</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_urlExtension">
+        <div class="location">at line 962</div>
+        <code>                    
+    
+    <strong>urlExtension</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_expires">
+        <div class="location">at line 979</div>
+        <code>                    
+    string
+    <strong>expires</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the expires field. If not set will return the default</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>The name of this page.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>The name of this page.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_title">
+        <div class="location">at line 993</div>
+        <code>                    
+    string
+    <strong>title</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the title for this Page.  If no title is set, it will use the slug() to get a name</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>the title of the Page</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the title of the Page</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_menu">
+        <div class="location">at line 1011</div>
+        <code>                    
+    string
+    <strong>menu</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the menu name for this Page.  This is the text that can be used specifically for navigation.</p>                    <p>If no menu field is set, it will use the title()</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>the menu field for the page</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the menu field for the page</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_visible">
+        <div class="location">at line 1028</div>
+        <code>                    
+    bool
+    <strong>visible</strong>(
+    bool $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets whether or not this Page is visible for navigation</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$var</td>
+                <td>true if the page is visible</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>true if the page is visible</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_published">
+        <div class="location">at line 1053</div>
+        <code>                    
+    bool
+    <strong>published</strong>(
+    bool $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets whether or not this Page is considered published</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$var</td>
+                <td>true if the page is published</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>true if the page is published</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_publishDate">
+        <div class="location">at line 1073</div>
+        <code>                    
+    int
+    <strong>publishDate</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets the Page publish date</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>string representation of a date</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int</td>
+            <td>unix timestamp representation of the date</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unpublishDate">
+        <div class="location">at line 1092</div>
+        <code>                    
+    int|null
+    <strong>unpublishDate</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets the Page unpublish date</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>string representation of a date</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int|null</td>
+            <td>unix timestamp representation of the date</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_routable">
+        <div class="location">at line 1109</div>
+        <code>                    
+    bool
+    <strong>routable</strong>(
+    bool $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets whether or not this Page is routable, ie you can reach it
+via a URL.</p>                    <p>The page must be <em>routable</em> and <em>published</em></p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$var</td>
+                <td>true if the page is routable</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>true if the page is routable</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process">
+        <div class="location">at line 1125</div>
+        <code>                    
+    array
+    <strong>process</strong>(
+    array $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets the process setup for this Page. This is multi-dimensional array that consists of
+a simple array of arrays with the form array("markdown"=>true) for example</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$var</td>
+                <td>an Array of name value pairs where the name is the process and value is true or false</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>an Array of name value pairs where the name is the process and value is true or false</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_metadata">
+        <div class="location">at line 1140</div>
+        <code>                    
+    array
+    <strong>metadata</strong>(
+    array $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Function to merge page metadata tags and build an array of Metadata objects
+that can then be rendered in the page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$var</td>
+                <td>an Array of metadata values to set</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>an Array of metadata values for the page</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_slug">
+        <div class="location">at line 1192</div>
+        <code>                    
+    string
+    <strong>slug</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets the slug for the Page. The slug is used in the URL routing. If not set it uses
+the parent folder from the path</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>the slug, e.g. 'my-blog'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the slug</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_order">
+        <div class="location">at line 1211</div>
+        <code>                    
+    int|bool
+    <strong>order</strong>(
+    int $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get/set order number of this page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    int</td>
+                <td>$var</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int|bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_permalink">
+        <div class="location">at line 1226</div>
+        <code>                    
+    string
+    <strong>permalink</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the URL with host information, aka Permalink.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>The permalink.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_link">
+        <div class="location">at line 1237</div>
+        <code>                    
+    string
+    <strong>link</strong>(
+    bool $include_host = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the URL for a page - alias of url().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$include_host</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the permalink</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_url">
+        <div class="location">at line 1250</div>
+        <code>                    
+    string
+    <strong>url</strong>($include_host = false, $canonical = false, $include_lang = true)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the url for the Page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$include_host</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$canonical</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$include_lang</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>The url.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_route">
+        <div class="location">at line 1296</div>
+        <code>                    
+    string
+    <strong>route</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the route for the page based on the route headers if available, else from
+the parents route and the current Page's slug.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>Set new default route.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>The route for the Page.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unsetRouteSlug">
+        <div class="location">at line 1320</div>
+        <code>                    
+    
+    <strong>unsetRouteSlug</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Helper method to clear the route out so it regenerates next time you use it</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rawRoute">
+        <div class="location">at line 1326</div>
+        <code>                    
+    
+    <strong>rawRoute</strong>($var = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$var</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_routeAliases">
+        <div class="location">at line 1351</div>
+        <code>                    
+    array
+    <strong>routeAliases</strong>(
+    array $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the route aliases for the page based on page headers.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$var</td>
+                <td>list of route aliases</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>The route aliases for the Page.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_routeCanonical">
+        <div class="location">at line 1372</div>
+        <code>                    
+    bool|string
+    <strong>routeCanonical</strong>(
+    null $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the canonical route for this page if its set. If provided it will use
+that value, else if it's <code>true</code> it will use the default route.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    null</td>
+                <td>$var</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_id">
+        <div class="location">at line 1391</div>
+        <code>                    
+    string
+    <strong>id</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the identifier for this Page object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>the identifier</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the identifier</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modified">
+        <div class="location">at line 1405</div>
+        <code>                    
+    int
+    <strong>modified</strong>(
+    int $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the modified timestamp.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    int</td>
+                <td>$var</td>
+                <td>modified unix timestamp</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int</td>
+            <td>modified unix timestamp</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location">at line 1419</div>
+        <code>                    
+    array
+    <strong>redirect</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the redirect set in the header.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>redirect url</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_eTag">
+        <div class="location">at line 1433</div>
+        <code>                    
+    boolean
+    <strong>eTag</strong>(
+    boolean $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the option to show the etag header for the page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    boolean</td>
+                <td>$var</td>
+                <td>show etag header</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>show etag header</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lastModified">
+        <div class="location">at line 1450</div>
+        <code>                    
+    boolean
+    <strong>lastModified</strong>(
+    boolean $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the option to show the last_modified header for the page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    boolean</td>
+                <td>$var</td>
+                <td>show last_modified header</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>show last_modified header</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filePath">
+        <div class="location">at line 1467</div>
+        <code>                    
+    string|null
+    <strong>filePath</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the path to the .md file for this Page object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>the file path</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string|null</td>
+            <td>the file path</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filePathClean">
+        <div class="location">at line 1485</div>
+        <code>                    
+    string
+    <strong>filePathClean</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the relative path to the .md file</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>The relative file path</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_relativePagePath">
+        <div class="location">at line 1494</div>
+        <code>                    
+    
+    <strong>relativePagePath</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the clean path to the page file</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_path">
+        <div class="location">at line 1507</div>
+        <code>                    
+    string|null
+    <strong>path</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the path to the folder where the .md for this Page object resides.</p>                    <p>This is equivalent to the filePath but without the filename.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>the path</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string|null</td>
+            <td>the path</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_folder">
+        <div class="location">at line 1524</div>
+        <code>                    
+    string|null
+    <strong>folder</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get/set the folder.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>Optional path</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_date">
+        <div class="location">at line 1538</div>
+        <code>                    
+    int
+    <strong>date</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the date for this Page object. This is typically passed in via the page headers</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>string representation of a date</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int</td>
+            <td>unix timestamp representation of the date</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orderDir">
+        <div class="location">at line 1556</div>
+        <code>                    
+    string
+    <strong>orderDir</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the order by which any sub-pages should be sorted.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>the order, either "asc" or "desc"</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the order, either "asc" or "desc"</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orderBy">
+        <div class="location">at line 1578</div>
+        <code>                    
+    string
+    <strong>orderBy</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the order by which the sub-pages should be sorted.</p>                    <p>default - is the order based on the file system, ie 01.Home before 02.Advark
+title - is the order based on the title set in the pages
+date - is the order based on the date set in the pages
+folder - is the order based on the name of the folder with any numerics omitted</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>supported options include "default", "title", "date", and "folder"</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>supported options include "default", "title", "date", and "folder"</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orderManual">
+        <div class="location">at line 1592</div>
+        <code>                    
+    array
+    <strong>orderManual</strong>(
+    string $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the manual order set in the header.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$var</td>
+                <td>supported options include "default", "title", "date", and "folder"</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_maxCount">
+        <div class="location">at line 1607</div>
+        <code>                    
+    int
+    <strong>maxCount</strong>(
+    int $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the maxCount field which describes how many sub-pages should be displayed if the
+sub_pages header property is set for this page object.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    int</td>
+                <td>$var</td>
+                <td>the maximum number of sub-pages</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int</td>
+            <td>the maximum number of sub-pages</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_taxonomy">
+        <div class="location">at line 1626</div>
+        <code>                    
+    array
+    <strong>taxonomy</strong>(
+    array $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the taxonomy array which defines which taxonomies this page identifies itself with.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$var</td>
+                <td>an array of taxonomies</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>an array of taxonomies</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modular">
+        <div class="location">at line 1640</div>
+        <code>                    
+    bool
+    <strong>modular</strong>(
+    bool $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the modular var that helps identify this parent page contains modular pages.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$var</td>
+                <td>true if modular_twig</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>true if modular_twig</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modularTwig">
+        <div class="location">at line 1652</div>
+        <code>                    
+    bool
+    <strong>modularTwig</strong>(
+    bool $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and sets the modular_twig var that helps identify this page as a modular page that will need
+twig processing handled differently from a regular page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$var</td>
+                <td>true if modular_twig</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>true if modular_twig</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldProcess">
+        <div class="location">at line 1674</div>
+        <code>                    
+    bool
+    <strong>shouldProcess</strong>(
+    string $process)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the configured state of the processing method.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$process</td>
+                <td>the process, eg "twig" or "markdown"</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>whether or not the processing method is enabled for this Page</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parent">
+        <div class="location">at line 1685</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>|null
+    <strong>parent</strong>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $var = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets and Sets the parent object for this page</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+                <td>$var</td>
+                <td>the parent page object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>|null</td>
+            <td>the parent page object if it exists.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_children">
+        <div class="location">at line 1703</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a>
+    <strong>children</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns children of this page.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFirst">
+        <div class="location">at line 1716</div>
+        <code>                    
+    boolean
+    <strong>isFirst</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Check to see if this item is the first in an array of sub-pages.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>True if item is first.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isLast">
+        <div class="location">at line 1730</div>
+        <code>                    
+    boolean
+    <strong>isLast</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Check to see if this item is the last in an array of sub-pages.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>True if item is last</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prevSibling">
+        <div class="location">at line 1744</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+    <strong>prevSibling</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the previous sibling based on current position.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+            <td>the previous Page item</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nextSibling">
+        <div class="location">at line 1754</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+    <strong>nextSibling</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the next sibling based on current position.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+            <td>the next Page item</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_adjacentSibling">
+        <div class="location">at line 1765</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+    <strong>adjacentSibling</strong>(
+    integer $direction = 1)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the adjacent sibling based on a direction.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    integer</td>
+                <td>$direction</td>
+                <td>either -1 or +1</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+            <td>the sibling page</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_active">
+        <div class="location">at line 1779</div>
+        <code>                    
+    bool
+    <strong>active</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns whether or not this page is the currently active page requested via the URL.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if it is active</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_activeChild">
+        <div class="location">at line 1799</div>
+        <code>                    
+    bool
+    <strong>activeChild</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns whether or not this URI's URL contains the URL of the active page.</p>                    <p>Or in other words, is this page's URL in the current URL</p>            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if active child exists</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_home">
+        <div class="location">at line 1824</div>
+        <code>                    
+    bool
+    <strong>home</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns whether or not this page is the currently configured home page.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if it is the homepage</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_root">
+        <div class="location">at line 1834</div>
+        <code>                    
+    bool
+    <strong>root</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns whether or not this page is the root node of the pages tree.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if it is the root</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">at line 1851</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+    <strong>find</strong>(
+    string $url, 
+    bool $all = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Helper method to return a page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$url</td>
+                <td>the url of the page</td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$all</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+            <td>page you were looking for if it exists</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_collection">
+        <div class="location">at line 1866</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a>
+    <strong>collection</strong>(
+    string|array $params = &#039;content&#039;, 
+    boolean $pagination = true)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get a collection of pages in the current context.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string|array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    boolean</td>
+                <td>$pagination</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException"><abbr title="InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evaluate">
+        <div class="location">at line 1954</div>
+        <code>                    
+    mixed
+    <strong>evaluate</strong>(
+    string $value)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPage">
+        <div class="location">at line 2093</div>
+        <code>                    
+    bool
+    <strong>isPage</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns whether or not this Page object has a .md file associated with it or if its just a directory.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if its a page with a .md file associated</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isDir">
+        <div class="location">at line 2106</div>
+        <code>                    
+    bool
+    <strong>isDir</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns whether or not this Page object is a directory or a page.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if its a directory</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at line 2116</div>
+        <code>                    
+    bool
+    <strong>exists</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns whether the page exists in the filesystem.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

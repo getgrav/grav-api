@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Assets | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Assets" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Grav.html">Grav</a></li>
+                                        <li><a href="../../Grav/Common.html">Common</a></li>
+    
+                <li>Assets</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Assets</h1>
+    </div>
+
+    <p>    class
+    <strong>Assets</strong>
+</p>
+
+            <div class="description">
+            <p>Handles Asset management (CSS &amp; JS) and also pipelining (combining into a single file for each asset)</p>            <p>Based on stolz/assets (https://github.com/Stolz/Assets) package modified for use with Grav</p>        </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../Grav/Common/GravTrait.html"><abbr title="Grav\Common\GravTrait">Grav\Common\GravTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>DEFAULT_REGEX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CSS_REGEX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>JS_REGEX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CSS_URL_REGEX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CSS_SOURCEMAP_REGEX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>CSS_IMPORT_REGEX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HTML_TAG_REGEX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGrav">getGrav</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGrav">setGrav</a>(
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(
+    array $options = array())
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_config">config</a>(
+    array $config)
+                                            <p>Set up configuration options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>()
+                                            <p>Initialization called in the Grav lifecycle to initialize the Assets with appropriate configuration</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_add">add</a>(
+    mixed $asset, 
+    int $priority = null, 
+    bool $pipeline = true)
+                                            <p>Add an asset or a collection of assets.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addCss">addCss</a>(
+    mixed $asset, 
+    int $priority = null, 
+    bool $pipeline = true, 
+    null $group = null)
+                                            <p>Add a CSS asset.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addJs">addJs</a>(
+    mixed $asset, 
+    int $priority = null, 
+    bool $pipeline = true, 
+    string $loading = null, 
+    string $group = null)
+                                            <p>Add a JavaScript asset.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../Grav/Common/Assets.html"><abbr title="Grav\Common\Assets">Assets</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addAsyncJs">addAsyncJs</a>($asset, 
+    int $priority = null, 
+    bool $pipeline = true, 
+    string $group = null)
+                                            <p>Convenience wrapper for async loading of JavaScript</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../Grav/Common/Assets.html"><abbr title="Grav\Common\Assets">Assets</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDeferJs">addDeferJs</a>($asset, 
+    int $priority = null, 
+    bool $pipeline = true, 
+    string $group = null)
+                                            <p>Convenience wrapper for deferred loading of JavaScript</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addInlineCss">addInlineCss</a>(
+    mixed $asset, 
+    int $priority = null, 
+    null $group = null)
+                                            <p>Add an inline CSS asset.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addInlineJs">addInlineJs</a>(
+    mixed $asset, 
+    int $priority = null, 
+    string $group = null)
+                                            <p>Add an inline JS asset.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_css">css</a>(
+    string $group = &#039;head&#039;, 
+    array $attributes = array())
+                                            <p>Build the CSS link tags.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_js">js</a>(
+    string $group = &#039;head&#039;, 
+    array $attributes = array())
+                                            <p>Build the JavaScript script tags.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCss">getCss</a>()
+                                            <p>Return the array of all the registered CSS assets</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getJs">getJs</a>()
+                                            <p>Return the array of all the registered JS assets</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCollections">getCollections</a>()
+                                            <p>Return the array of all the registered collections</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_exists">exists</a>($asset)
+                                            <p>Determines if an asset exists as a collection, CSS or JS reference</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_registerCollection">registerCollection</a>(
+    string $collectionName, 
+    array $assets, 
+    bool $overwrite = false)
+                                            <p>Add/replace collection.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+                                            <p>Reset all assets.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetJs">resetJs</a>()
+                                            <p>Reset JavaScript assets.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetCss">resetCss</a>()
+                                            <p>Reset CSS assets.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDirCss">addDirCss</a>(
+    string $directory)
+                                            <p>Add all CSS assets within $directory (relative to public dir).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDir">addDir</a>(
+    string $directory, 
+    string $pattern = self::DEFAULT_REGEX)
+                                            <p>Add all assets matching $pattern within $directory.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDirJs">addDirJs</a>(
+    string $directory)
+                                            <p>Add all JavaScript assets within $directory.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCssPipeline">setCssPipeline</a>(
+    boolean $value)
+                                            <p>Sets the state of CSS Pipeline</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setJsPipeline">setJsPipeline</a>(
+    boolean $value)
+                                            <p>Sets the state of JS Pipeline</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTimestamp">setTimestamp</a>($value)
+                                            <p>Explicitly set's a timestamp for assets</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___toString">__toString</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getGrav">
+        <div class="location">in 
+    <a href="../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 14</div>
+        <code>        static            
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+    <strong>getGrav</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGrav">
+        <div class="location">in 
+    <a href="../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 25</div>
+        <code>        static            
+    
+    <strong>setGrav</strong>(
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+                <td>$grav</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 90</div>
+        <code>                    
+    
+    <strong>__construct</strong>(
+    array $options = array())</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_config">
+        <div class="location">at line 110</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>config</strong>(
+    array $config)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set up configuration options.</p>                    <p>All the class properties except 'js' and 'css' are accepted here.
+Also, an extra option 'autoload' may be passed containing an array of
+assets and/or collections that will be automatically added on startup.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$config</td>
+                <td>Configurable options.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at line 173</div>
+        <code>                    
+    
+    <strong>init</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Initialization called in the Grav lifecycle to initialize the Assets with appropriate configuration</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add">
+        <div class="location">at line 206</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>add</strong>(
+    mixed $asset, 
+    int $priority = null, 
+    bool $pipeline = true)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an asset or a collection of assets.</p>                    <p>It automatically detects the asset type (JavaScript, CSS or collection).
+You may add more than one asset passing an array as argument.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$asset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$priority</td>
+                <td>the priority, bigger comes first</td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$pipeline</td>
+                <td>false if this should not be pipelined</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addCss">
+        <div class="location">at line 246</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>addCss</strong>(
+    mixed $asset, 
+    int $priority = null, 
+    bool $pipeline = true, 
+    null $group = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a CSS asset.</p>                    <p>It checks for duplicates.
+You may add more than one asset passing an array as argument.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$asset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$priority</td>
+                <td>the priority, bigger comes first</td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$pipeline</td>
+                <td>false if this should not be pipelined</td>
+            </tr>
+                    <tr>
+                <td>
+    null</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addJs">
+        <div class="location">at line 304</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>addJs</strong>(
+    mixed $asset, 
+    int $priority = null, 
+    bool $pipeline = true, 
+    string $loading = null, 
+    string $group = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add a JavaScript asset.</p>                    <p>It checks for duplicates.
+You may add more than one asset passing an array as argument.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$asset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$priority</td>
+                <td>the priority, bigger comes first</td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$pipeline</td>
+                <td>false if this should not be pipelined</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$loading</td>
+                <td>how the asset is loaded (async/defer)</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$group</td>
+                <td>name of the group</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addAsyncJs">
+        <div class="location">at line 362</div>
+        <code>                    
+    <a href="../../Grav/Common/Assets.html"><abbr title="Grav\Common\Assets">Assets</abbr></a>
+    <strong>addAsyncJs</strong>($asset, 
+    int $priority = null, 
+    bool $pipeline = true, 
+    string $group = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Convenience wrapper for async loading of JavaScript</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$asset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$pipeline</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$group</td>
+                <td>name of the group</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../Grav/Common/Assets.html"><abbr title="Grav\Common\Assets">Assets</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDeferJs">
+        <div class="location">at line 379</div>
+        <code>                    
+    <a href="../../Grav/Common/Assets.html"><abbr title="Grav\Common\Assets">Assets</abbr></a>
+    <strong>addDeferJs</strong>($asset, 
+    int $priority = null, 
+    bool $pipeline = true, 
+    string $group = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Convenience wrapper for deferred loading of JavaScript</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$asset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$priority</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$pipeline</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$group</td>
+                <td>name of the group</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../Grav/Common/Assets.html"><abbr title="Grav\Common\Assets">Assets</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addInlineCss">
+        <div class="location">at line 396</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>addInlineCss</strong>(
+    mixed $asset, 
+    int $priority = null, 
+    null $group = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an inline CSS asset.</p>                    <p>It checks for duplicates.
+For adding chunks of string-based inline CSS</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$asset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$priority</td>
+                <td>the priority, bigger comes first</td>
+            </tr>
+                    <tr>
+                <td>
+    null</td>
+                <td>$group</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addInlineJs">
+        <div class="location">at line 443</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>addInlineJs</strong>(
+    mixed $asset, 
+    int $priority = null, 
+    string $group = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add an inline JS asset.</p>                    <p>It checks for duplicates.
+For adding chunks of string-based inline JS</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$asset</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$priority</td>
+                <td>the priority, bigger comes first</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$group</td>
+                <td>name of the group</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_css">
+        <div class="location">at line 486</div>
+        <code>                    
+    string
+    <strong>css</strong>(
+    string $group = &#039;head&#039;, 
+    array $attributes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Build the CSS link tags.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$group</td>
+                <td>name of the group</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_js">
+        <div class="location">at line 559</div>
+        <code>                    
+    string
+    <strong>js</strong>(
+    string $group = &#039;head&#039;, 
+    array $attributes = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Build the JavaScript script tags.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$group</td>
+                <td>name of the group</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCss">
+        <div class="location">at line 751</div>
+        <code>                    
+    array
+    <strong>getCss</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return the array of all the registered CSS assets</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJs">
+        <div class="location">at line 761</div>
+        <code>                    
+    array
+    <strong>getJs</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return the array of all the registered JS assets</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCollections">
+        <div class="location">at line 771</div>
+        <code>                    
+    array
+    <strong>getCollections</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return the array of all the registered collections</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exists">
+        <div class="location">at line 783</div>
+        <code>                    
+    bool
+    <strong>exists</strong>($asset)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Determines if an asset exists as a collection, CSS or JS reference</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$asset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerCollection">
+        <div class="location">at line 803</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>registerCollection</strong>(
+    string $collectionName, 
+    array $assets, 
+    bool $overwrite = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add/replace collection.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$collectionName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$assets</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$overwrite</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at line 817</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>reset</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Reset all assets.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetJs">
+        <div class="location">at line 827</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>resetJs</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Reset JavaScript assets.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetCss">
+        <div class="location">at line 839</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>resetCss</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Reset CSS assets.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDirCss">
+        <div class="location">at line 853</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>addDirCss</strong>(
+    string $directory)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add all CSS assets within $directory (relative to public dir).</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$directory</td>
+                <td>Relative to $this->public_dir</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDir">
+        <div class="location">at line 867</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>addDir</strong>(
+    string $directory, 
+    string $pattern = self::DEFAULT_REGEX)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add all assets matching $pattern within $directory.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$directory</td>
+                <td>Relative to $this->public_dir</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$pattern</td>
+                <td>(regex)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDirJs">
+        <div class="location">at line 1130</div>
+        <code>                    
+    <abbr title="Grav\Common\$this">$this</abbr>
+    <strong>addDirJs</strong>(
+    string $directory)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Add all JavaScript assets within $directory.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$directory</td>
+                <td>Relative to $this->public_dir</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCssPipeline">
+        <div class="location">at line 1140</div>
+        <code>                    
+    
+    <strong>setCssPipeline</strong>(
+    boolean $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the state of CSS Pipeline</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    boolean</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setJsPipeline">
+        <div class="location">at line 1150</div>
+        <code>                    
+    
+    <strong>setJsPipeline</strong>(
+    boolean $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sets the state of JS Pipeline</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    boolean</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimestamp">
+        <div class="location">at line 1160</div>
+        <code>                    
+    
+    <strong>setTimestamp</strong>($value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Explicitly set's a timestamp for assets</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line 1165</div>
+        <code>                    
+    
+    <strong>__toString</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

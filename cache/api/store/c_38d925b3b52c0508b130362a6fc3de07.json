@@ -1,0 +1,337 @@
+{
+    "name": "Grav\\Common\\Cache",
+    "line": 22,
+    "short_desc": "The GravCache object is used throughout Grav to store and retrieve cached data.",
+    "long_desc": "It uses DoctrineCache library and supports a variety of caching mechanisms. Those include:\n\nAPC\nXCache\nRedisCache\nMemCache\nMemCacheD\nFileSystem",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Cache.php",
+    "relative_file": null,
+    "hash": "d80a21036b02e1562ff130d3941215972f9cf84e",
+    "parent": "Grav\\Common\\Getters",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "DoctrineCache": "Doctrine\\Common\\Cache\\Cache",
+        "Config": "Grav\\Common\\Config\\Config",
+        "Folder": "Grav\\Common\\Filesystem\\Folder"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 82,
+            "short_desc": "Constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "params": [
+                    [
+                        "Grav",
+                        "$grav"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "grav": {
+                    "name": "grav",
+                    "line": 82,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Grav",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Grav",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "init": {
+            "name": "init",
+            "line": 93,
+            "short_desc": "Initialization that sets a base key and the driver based on configuration settings",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "grav": {
+                    "name": "grav",
+                    "line": 93,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Grav",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Grav",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getCacheDriver": {
+            "name": "getCacheDriver",
+            "line": 128,
+            "short_desc": "Automatically picks the cache mechanism to use.  If you pick one manually it will use that\nIf there is no config option for $driver in the config, or it's set to 'auto', it will\npick the best option based on which cache extensions are installed.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\DoctrineCacheDriver",
+                    false
+                ]
+            ],
+            "hint_desc": "The cache driver to use",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "fetch": {
+            "name": "fetch",
+            "line": 191,
+            "short_desc": "Gets a cached entry if it exists based on an id. If it does not exist, it returns false",
+            "long_desc": "",
+            "hint": [
+                [
+                    "object",
+                    false
+                ]
+            ],
+            "hint_desc": "returns the cached entry, can be any type, or false if doesn't exist",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 191,
+                    "short_desc": "the id of the cached entry",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "save": {
+            "name": "save",
+            "line": 207,
+            "short_desc": "Stores a new cached entry.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 207,
+                    "short_desc": "the id of the cached entry",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "data": {
+                    "name": "data",
+                    "line": 207,
+                    "short_desc": "the data for the cached entry to store",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ],
+                        [
+                            "object",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "lifetime": {
+                    "name": "lifetime",
+                    "line": 207,
+                    "short_desc": "the lifetime to store the entry in seconds",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getKey": {
+            "name": "getKey",
+            "line": 220,
+            "short_desc": "Getter method to get the cache key",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "clearCache": {
+            "name": "clearCache",
+            "line": 232,
+            "short_desc": "Helper method to clear all Grav caches",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "remove": {
+                    "name": "remove",
+                    "line": 232,
+                    "short_desc": "standard|all|assets-only|images-only|cache-only",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'standard'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "setLifetime": {
+            "name": "setLifetime",
+            "line": 304,
+            "short_desc": "Set the cache lifetime programmatically",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "future": {
+                    "name": "future",
+                    "line": 304,
+                    "short_desc": "timestamp",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getLifetime": {
+            "name": "getLifetime",
+            "line": 322,
+            "short_desc": "Retrieve the cache lifetime (in seconds)",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

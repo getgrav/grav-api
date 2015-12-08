@@ -1,0 +1,37 @@
+{
+    "name": "Grav\\Console\\Gpm\\UpdateCommand",
+    "line": 16,
+    "short_desc": "Class UpdateCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Gpm"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Gpm",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Gpm\/UpdateCommand.php",
+    "relative_file": null,
+    "hash": "66b15b22a48c190fea866e46f6af47bda6207dc9",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GPM": "Grav\\Common\\GPM\\GPM",
+        "Installer": "Grav\\Common\\GPM\\Installer",
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "ArrayInput": "Symfony\\Component\\Console\\Input\\ArrayInput",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption",
+        "ConfirmationQuestion": "Symfony\\Component\\Console\\Question\\ConfirmationQuestion"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

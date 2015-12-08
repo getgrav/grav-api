@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Twig\TwigExtension | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Twig_TwigExtension" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Grav.html">Grav</a></li>
+                                        <li><a href="../../../Grav/Common.html">Common</a></li>
+                                        <li><a href="../../../Grav/Common/Twig.html">Twig</a></li>
+    
+                <li>TwigExtension</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>TwigExtension</h1>
+    </div>
+
+    <p>    class
+    <strong>TwigExtension</strong>        extends <abbr title="Twig_Extension">Twig_Extension</abbr>
+</p>
+
+            <div class="description">
+            <p>The Twig extension adds some filters and functions that are useful for Grav</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getName">getName</a>()
+                                            <p>Returns extension name.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGlobals">getGlobals</a>()
+                                            <p>Register some standard globals</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFilters">getFilters</a>()
+                                            <p>Return a list of all filters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFunctions">getFunctions</a>()
+                                            <p>Return a list of all functions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fieldNameFilter">fieldNameFilter</a>(
+    string $str)
+                                            <p>Filters field name by changing dot notation into array notation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_safeEmailFilter">safeEmailFilter</a>(
+    string $str)
+                                            <p>Protects email address.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randomizeFilter">randomizeFilter</a>(
+    array $original, 
+    int $offset)
+                                            <p>Returns array in a random order.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modulusFilter">modulusFilter</a>(
+    int $number, 
+    int $divider, 
+    array $items = null)
+                                            <p>Returns the modulus of an integer</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inflectorFilter">inflectorFilter</a>(
+    string $action, 
+    string $data, 
+    int $count = null)
+                                            <p>Inflector supports following notations:</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_md5Filter">md5Filter</a>(
+    string $str)
+                                            <p>Return MD5 hash from the input.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sortByKeyFilter">sortByKeyFilter</a>(
+    array $input, 
+    string $filter, 
+    array|int $direction = SORT_ASC)
+                                            <p>Sorts a collection by key</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ksortFilter">ksortFilter</a>(
+    array $array)
+                                            <p>Return ksorted collection.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_containsFilter">containsFilter</a>(
+    String $haystack, 
+    String $needle)
+                                            <p>determine if a string contains another</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nicetimeFilter">nicetimeFilter</a>($date, $long_strings = true)
+                                            <p>displays a facebook style 'time ago' formatted date/time</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_absoluteUrlFilter">absoluteUrlFilter</a>($string)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_markdownFilter">markdownFilter</a>($string)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startsWithFilter">startsWithFilter</a>($haystack, $needle)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_endsWithFilter">endsWithFilter</a>($haystack, $needle)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_definedDefaultFilter">definedDefaultFilter</a>($value, $default = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rtrimFilter">rtrimFilter</a>($value, $chars = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ltrimFilter">ltrimFilter</a>($value, $chars = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_translate">translate</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_translateArray">translateArray</a>($key, $index, $lang = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_repeatFunc">repeatFunc</a>(
+    string $input, 
+    int $multiplier)
+                                            <p>Repeat given string x times.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_urlFunc">urlFunc</a>(
+    string $input, 
+    bool $domain = false)
+                                            <p>Return URL to the resource.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_evaluateFunc">evaluateFunc</a>(
+    string $input)
+                                            <p>Evaluate a string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dump">dump</a>(
+    <abbr title="Grav\Common\Twig\Twig_Environment">Twig_Environment</abbr> $env, $context)
+                                            <p>Based on Twig<em>Extension</em>Debug / twig<em>var</em>dump
+(c) 2011 Fabien Potencier</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_gistFunc">gistFunc</a>(
+    string $id)
+                                            <p>Output a Gist</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_randomStringFunc">randomStringFunc</a>(
+    int $count = 5)
+                                            <p>Generate a random string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_padFilter">padFilter</a>($input, $pad_length, 
+    string $pad_string = &#039; &#039;, 
+    int $pad_type = STR_PAD_RIGHT)
+                                            <p>Pad a string to a certain length with another string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_arrayFunc">arrayFunc</a>($value)
+                                            <p>Cast a value to array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stringFunc">stringFunc</a>($value)
+                                            <p>Returns a string from a value. If the value is array, return it json encoded</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_translateFunc">translateFunc</a>()
+                                            <p>Translate a string</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_authorize">authorize</a>(
+    string $action)
+                                            <p>Authorize an action. Returns true if the user is logged in and has the right to execute $action.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nonceFieldFunc">nonceFieldFunc</a>(
+    string $action, 
+    string $nonceParamName = &#039;nonce&#039;)
+                                            <p>Used to add a nonce to a form. Call {{ nonce_field('action') }} specifying a string representing the action.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 22</div>
+        <code>                    
+    
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line 34</div>
+        <code>                    
+    string
+    <strong>getName</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns extension name.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGlobals">
+        <div class="location">at line 44</div>
+        <code>                    
+    array
+    <strong>getGlobals</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Register some standard globals</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFilters">
+        <div class="location">at line 56</div>
+        <code>                    
+    array
+    <strong>getFilters</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return a list of all filters.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFunctions">
+        <div class="location">at line 91</div>
+        <code>                    
+    array
+    <strong>getFunctions</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return a list of all functions.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fieldNameFilter">
+        <div class="location">at line 118</div>
+        <code>                    
+    string
+    <strong>fieldNameFilter</strong>(
+    string $str)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Filters field name by changing dot notation into array notation.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$str</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_safeEmailFilter">
+        <div class="location">at line 131</div>
+        <code>                    
+    string
+    <strong>safeEmailFilter</strong>(
+    string $str)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Protects email address.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$str</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randomizeFilter">
+        <div class="location">at line 148</div>
+        <code>                    
+    array
+    <strong>randomizeFilter</strong>(
+    array $original, 
+    int $offset)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns array in a random order.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$original</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$offset</td>
+                <td>Can be used to return only slice of the array.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modulusFilter">
+        <div class="location">at line 181</div>
+        <code>                    
+    int
+    <strong>modulusFilter</strong>(
+    int $number, 
+    int $divider, 
+    array $items = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns the modulus of an integer</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    int</td>
+                <td>$number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$divider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$items</td>
+                <td>array of items to select from to return</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inflectorFilter">
+        <div class="location">at line 217</div>
+        <code>                    
+    mixed
+    <strong>inflectorFilter</strong>(
+    string $action, 
+    string $data, 
+    int $count = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Inflector supports following notations:</p>                    <p>{{ 'person'|pluralize }} => people
+{{ 'shoes'|singularize }} => shoe
+{{ 'welcome page'|titleize }} => "Welcome Page"
+{{ 'send<em>email'|camelize }} => SendEmail
+{{ 'CamelCased'|underscorize }} => camel</em>cased
+{{ 'Something Text'|hyphenize }} => something-text
+{{ 'something<em>text</em>to_read'|humanize }} => "Something text to read"
+{{ '181'|monthize }} => 6
+{{ '10'|ordinalize }} => 10th</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_md5Filter">
+        <div class="location">at line 245</div>
+        <code>                    
+    string
+    <strong>md5Filter</strong>(
+    string $str)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return MD5 hash from the input.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$str</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sortByKeyFilter">
+        <div class="location">at line 259</div>
+        <code>                    
+    string
+    <strong>sortByKeyFilter</strong>(
+    array $input, 
+    string $filter, 
+    array|int $direction = SORT_ASC)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sorts a collection by key</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    array|int</td>
+                <td>$direction</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ksortFilter">
+        <div class="location">at line 282</div>
+        <code>                    
+    array
+    <strong>ksortFilter</strong>(
+    array $array)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return ksorted collection.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_containsFilter">
+        <div class="location">at line 296</div>
+        <code>                    
+    boolean
+    <strong>containsFilter</strong>(
+    String $haystack, 
+    String $needle)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>determine if a string contains another</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    String</td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    String</td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nicetimeFilter">
+        <div class="location">at line 310</div>
+        <code>                    
+    boolean
+    <strong>nicetimeFilter</strong>($date, $long_strings = true)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>displays a facebook style 'time ago' formatted date/time</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$date</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$long_strings</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_absoluteUrlFilter">
+        <div class="location">at line 369</div>
+        <code>                    
+    
+    <strong>absoluteUrlFilter</strong>($string)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_markdownFilter">
+        <div class="location">at line 377</div>
+        <code>                    
+    
+    <strong>markdownFilter</strong>($string)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startsWithFilter">
+        <div class="location">at line 394</div>
+        <code>                    
+    
+    <strong>startsWithFilter</strong>($haystack, $needle)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_endsWithFilter">
+        <div class="location">at line 399</div>
+        <code>                    
+    
+    <strong>endsWithFilter</strong>($haystack, $needle)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_definedDefaultFilter">
+        <div class="location">at line 404</div>
+        <code>                    
+    
+    <strong>definedDefaultFilter</strong>($value, $default = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rtrimFilter">
+        <div class="location">at line 413</div>
+        <code>                    
+    
+    <strong>rtrimFilter</strong>($value, $chars = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$chars</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ltrimFilter">
+        <div class="location">at line 418</div>
+        <code>                    
+    
+    <strong>ltrimFilter</strong>($value, $chars = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$chars</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_translate">
+        <div class="location">at line 423</div>
+        <code>                    
+    
+    <strong>translate</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_translateArray">
+        <div class="location">at line 428</div>
+        <code>                    
+    
+    <strong>translateArray</strong>($key, $index, $lang = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$lang</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_repeatFunc">
+        <div class="location">at line 440</div>
+        <code>                    
+    string
+    <strong>repeatFunc</strong>(
+    string $input, 
+    int $multiplier)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Repeat given string x times.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$multiplier</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_urlFunc">
+        <div class="location">at line 454</div>
+        <code>                    
+    string|null
+    <strong>urlFunc</strong>(
+    string $input, 
+    bool $domain = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return URL to the resource.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$input</td>
+                <td>Resource to be located.</td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$domain</td>
+                <td>True to include domain name.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string|null</td>
+            <td>Returns url to the resource or null if resource was not found.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_evaluateFunc">
+        <div class="location">at line 484</div>
+        <code>                    
+    string
+    <strong>evaluateFunc</strong>(
+    string $input)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Evaluate a string</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$input</td>
+                <td>String to be evaluated</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>Returns the evaluated string</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dump">
+        <div class="location">at line 496</div>
+        <code>                    
+    
+    <strong>dump</strong>(
+    <abbr title="Grav\Common\Twig\Twig_Environment">Twig_Environment</abbr> $env, $context)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Based on Twig<em>Extension</em>Debug / twig<em>var</em>dump
+(c) 2011 Fabien Potencier</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <abbr title="Grav\Common\Twig\Twig_Environment">Twig_Environment</abbr></td>
+                <td>$env</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$context</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_gistFunc">
+        <div class="location">at line 530</div>
+        <code>                    
+    string
+    <strong>gistFunc</strong>(
+    string $id)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Output a Gist</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randomStringFunc">
+        <div class="location">at line 542</div>
+        <code>                    
+    string
+    <strong>randomStringFunc</strong>(
+    int $count = 5)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Generate a random string</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_padFilter">
+        <div class="location">at line 557</div>
+        <code>        static            
+    string
+    <strong>padFilter</strong>($input, $pad_length, 
+    string $pad_string = &#039; &#039;, 
+    int $pad_type = STR_PAD_RIGHT)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Pad a string to a certain length with another string</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$pad_length</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$pad_string</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$pad_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_arrayFunc">
+        <div class="location">at line 570</div>
+        <code>                    
+    array
+    <strong>arrayFunc</strong>($value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Cast a value to array</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stringFunc">
+        <div class="location">at line 582</div>
+        <code>                    
+    string
+    <strong>stringFunc</strong>($value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns a string from a value. If the value is array, return it json encoded</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_translateFunc">
+        <div class="location">at line 596</div>
+        <code>                    
+    string
+    <strong>translateFunc</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Translate a string</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_authorize">
+        <div class="location">at line 608</div>
+        <code>                    
+    bool
+    <strong>authorize</strong>(
+    string $action)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Authorize an action. Returns true if the user is logged in and has the right to execute $action.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nonceFieldFunc">
+        <div class="location">at line 637</div>
+        <code>                    
+    string
+    <strong>nonceFieldFunc</strong>(
+    string $action, 
+    string $nonceParamName = &#039;nonce&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Used to add a nonce to a form. Call {{ nonce_field('action') }} specifying a string representing the action.</p>                    <p>For maximum protection, ensure that the string representing the action is as specific as possible.</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$action</td>
+                <td>action         the action</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$nonceParamName</td>
+                <td>nonceParamName a custom nonce param name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the nonce input field</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

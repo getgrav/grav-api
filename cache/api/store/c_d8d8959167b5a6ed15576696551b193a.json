@@ -1,0 +1,96 @@
+{
+    "name": "Grav\\Common\\Markdown\\ParsedownGravTrait",
+    "line": 10,
+    "short_desc": "A trait to add some custom processing to the identifyLink() method in Parsedown and ParsedownExtra",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Markdown",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Markdown\/ParsedownGravTrait.php",
+    "relative_file": null,
+    "hash": "0374cd369de2f8f3ece919818b48305ae7078759",
+    "parent": null,
+    "modifiers": "Stmt_Trait",
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": {
+        "GravTrait": "Grav\\Common\\GravTrait",
+        "Uri": "Grav\\Common\\Uri"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "elementToHtml": {
+            "name": "elementToHtml",
+            "line": 52,
+            "short_desc": "Make the element function publicly accessible, Medium uses this to render from Twig",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "markup",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "Element": {
+                    "name": "Element",
+                    "line": 52,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "setSpecialChars": {
+            "name": "setSpecialChars",
+            "line": 64,
+            "short_desc": "Setter for special chars",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Markdown\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "special_chars": {
+                    "name": "special_chars",
+                    "line": 64,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

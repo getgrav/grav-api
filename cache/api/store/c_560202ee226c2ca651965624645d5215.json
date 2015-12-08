@@ -1,0 +1,31 @@
+{
+    "name": "Grav\\Console\\Cli\\NewUserCommand",
+    "line": 11,
+    "short_desc": "Class CleanCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Cli"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Cli",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Cli\/NewUserCommand.php",
+    "relative_file": null,
+    "hash": "f049c06468ab14e98b873b0c9607b694628fd832",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

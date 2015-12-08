@@ -1,0 +1,88 @@
+{
+    "name": "Grav\\Common\\GPM\\Local\\Package",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\GPM\\Local",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/Local\/Package.php",
+    "relative_file": null,
+    "hash": "fb57d3df03b1181eb95bb1238b91f60ac2870a1f",
+    "parent": "Grav\\Common\\GPM\\Common\\Package",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Data": "Grav\\Common\\Data\\Data",
+        "BasePackage": "Grav\\Common\\GPM\\Common\\Package"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 11,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "package": {
+                    "name": "package",
+                    "line": 11,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Data\\Data",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Data",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "package_type": {
+                    "name": "package_type",
+                    "line": 11,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isEnabled": {
+            "name": "isEnabled",
+            "line": 28,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

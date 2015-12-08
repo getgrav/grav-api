@@ -1,0 +1,58 @@
+{
+    "name": "Grav\\Common\\Config\\CompiledLanguages",
+    "line": 9,
+    "short_desc": "The Compiled Languages class.",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Config",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Config\/CompiledLanguages.php",
+    "relative_file": null,
+    "hash": "479ea2350bf980a6f1102d1f7a6818a55f6f17f8",
+    "parent": "Grav\\Common\\Config\\CompiledBase",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "CompiledYamlFile": "Grav\\Common\\File\\CompiledYamlFile"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "version": {
+            "name": "version",
+            "line": 14,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "Version number for the compiled file.",
+            "tags": [],
+            "modifiers": 1,
+            "default": {},
+            "errors": []
+        }
+    },
+    "methods": {
+        "modified": {
+            "name": "modified",
+            "line": 43,
+            "short_desc": "Function gets called when cached configuration is saved.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

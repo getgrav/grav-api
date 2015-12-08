@@ -1,0 +1,40 @@
+{
+    "name": "Grav\\Common\\GPM\\Local\\Packages",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\GPM\\Local",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/Local\/Packages.php",
+    "relative_file": null,
+    "hash": "81e71a8ac99dc2ab287910f132bc733dbc638a5d",
+    "parent": "Grav\\Common\\GPM\\Common\\CachedCollection",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "CachedCollection": "Grav\\Common\\GPM\\Common\\CachedCollection"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 8,
+            "short_desc": "Constructor to initialize array.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

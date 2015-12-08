@@ -1,0 +1,212 @@
+{
+    "name": "Grav\\Common\\Page\\Medium\\MediumFactory",
+    "line": 15,
+    "short_desc": "MediumFactory can be used to more easily create various Medium objects from files or arrays, it should\ncontain most logic for instantiating a Medium object.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "Grav"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\Page\\Medium",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Page\/Medium\/MediumFactory.php",
+    "relative_file": null,
+    "hash": "07870143f7cdf83d1d171cf6b96451e642c92992",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GravTrait": "Grav\\Common\\GravTrait",
+        "Blueprint": "Grav\\Common\\Data\\Blueprint"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "fromFile": {
+            "name": "fromFile",
+            "line": 26,
+            "short_desc": "Create Medium from a file",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Medium\\Medium",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "file": {
+                    "name": "file",
+                    "line": 26,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "params": {
+                    "name": "params",
+                    "line": 26,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "fromArray": {
+            "name": "fromArray",
+            "line": 82,
+            "short_desc": "Create Medium from array of parameters",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Medium\\Medium",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "items": {
+                    "name": "items",
+                    "line": 82,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "array()",
+                    "is_by_ref": false
+                },
+                "blueprint": {
+                    "name": "blueprint",
+                    "line": 82,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Data\\Blueprint",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Blueprint",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "scaledFromMedium": {
+            "name": "scaledFromMedium",
+            "line": 117,
+            "short_desc": "Create a new ImageMedium by scaling another ImageMedium object.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Medium\\Medium",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "medium": {
+                    "name": "medium",
+                    "line": 117,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Grav\\Common\\Page\\Medium\\ImageMedium",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "from": {
+                    "name": "from",
+                    "line": 117,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "to": {
+                    "name": "to",
+                    "line": 117,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

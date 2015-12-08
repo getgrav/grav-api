@@ -1,0 +1,62 @@
+{
+    "name": "Grav\\Console\\Cli\\BackupCommand",
+    "line": 14,
+    "short_desc": "Class BackupCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Cli"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Cli",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Cli\/BackupCommand.php",
+    "relative_file": null,
+    "hash": "4c6c6a7ce5122901344a212e1d1e19629157a5a7",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ZipBackup": "Grav\\Common\\Backup\\ZipBackup",
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "JsonFile": "RocketTheme\\Toolbox\\File\\JsonFile",
+        "ProgressBar": "Symfony\\Component\\Console\\Helper\\ProgressBar",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "output": {
+            "name": "output",
+            "line": 66,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "args": {
+                    "name": "args",
+                    "line": 66,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

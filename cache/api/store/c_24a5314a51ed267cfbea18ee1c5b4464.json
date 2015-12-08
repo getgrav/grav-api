@@ -1,0 +1,45 @@
+{
+    "name": "Grav\\Common\\Page\\Medium\\VideoMedium",
+    "line": 4,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Page\\Medium",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Page\/Medium\/VideoMedium.php",
+    "relative_file": null,
+    "hash": "a53f4eadfb95427f05becfc9e677daf578fb9ff5",
+    "parent": "Grav\\Common\\Page\\Medium\\Medium",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\Page\\Medium\\StaticResizeTrait": "Grav\\Common\\Page\\Medium\\StaticResizeTrait"
+    },
+    "properties": [],
+    "methods": {
+        "reset": {
+            "name": "reset",
+            "line": 31,
+            "short_desc": "Reset medium.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Page\\Medium\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

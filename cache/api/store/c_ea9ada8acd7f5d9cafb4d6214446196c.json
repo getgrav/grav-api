@@ -1,0 +1,27 @@
+{
+    "name": "Grav\\Common\\File\\CompiledMarkdownFile",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\File",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/File\/CompiledMarkdownFile.php",
+    "relative_file": null,
+    "hash": "c6e9988d1ec0a1adec3e36315c52c429365d9556",
+    "parent": "RocketTheme\\Toolbox\\File\\MarkdownFile",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "MarkdownFile": "RocketTheme\\Toolbox\\File\\MarkdownFile"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\File\\CompiledFile": "Grav\\Common\\File\\CompiledFile"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

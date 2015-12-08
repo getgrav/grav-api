@@ -1,0 +1,67 @@
+{
+    "name": "Grav\\Common\\GPM\\Remote\\Plugins",
+    "line": 8,
+    "short_desc": "Class Plugins",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Common\\GPM\\Remote"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\GPM\\Remote",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/Remote\/Plugins.php",
+    "relative_file": null,
+    "hash": "0a9f8ef758c28bb132b3b904c1808ff8181ae295",
+    "parent": "Grav\\Common\\GPM\\Remote\\AbstractPackageCollection",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 22,
+            "short_desc": "Local Plugins Constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "refresh": {
+                    "name": "refresh",
+                    "line": 22,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                },
+                "callback": {
+                    "name": "callback",
+                    "line": 22,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

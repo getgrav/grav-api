@@ -1,0 +1,1294 @@
+{
+    "name": "Grav\\Common\\Assets",
+    "line": 23,
+    "short_desc": "Handles Asset management (CSS & JS) and also pipelining (combining into a single file for each asset)",
+    "long_desc": "Based on stolz\/assets (https:\/\/github.com\/Stolz\/Assets) package modified for use with Grav",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Assets.php",
+    "relative_file": null,
+    "hash": "a3f423680a13660cd2d4fd9edbfefff580a3b18a",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Closure": "Closure",
+        "Exception": "Exception",
+        "FilesystemIterator": "FilesystemIterator",
+        "Config": "Grav\\Common\\Config\\Config",
+        "RecursiveDirectoryIterator": "RecursiveDirectoryIterator",
+        "RecursiveIteratorIterator": "RecursiveIteratorIterator",
+        "RegexIterator": "RegexIterator"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 90,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "options": {
+                    "name": "options",
+                    "line": 90,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "config": {
+            "name": "config",
+            "line": 110,
+            "short_desc": "Set up configuration options.",
+            "long_desc": "All the class properties except 'js' and 'css' are accepted here.\nAlso, an extra option 'autoload' may be passed containing an array of\nassets and\/or collections that will be automatically added on startup.",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Exception",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "config": {
+                    "name": "config",
+                    "line": 110,
+                    "short_desc": "Configurable options.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "init": {
+            "name": "init",
+            "line": 173,
+            "short_desc": "Initialization called in the Grav lifecycle to initialize the Assets with appropriate configuration",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "add": {
+            "name": "add",
+            "line": 206,
+            "short_desc": "Add an asset or a collection of assets.",
+            "long_desc": "It automatically detects the asset type (JavaScript, CSS or collection).\nYou may add more than one asset passing an array as argument.",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "asset": {
+                    "name": "asset",
+                    "line": 206,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "priority": {
+                    "name": "priority",
+                    "line": 206,
+                    "short_desc": "the priority, bigger comes first",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "pipeline": {
+                    "name": "pipeline",
+                    "line": 206,
+                    "short_desc": "false if this should not be pipelined",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "true",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addCss": {
+            "name": "addCss",
+            "line": 246,
+            "short_desc": "Add a CSS asset.",
+            "long_desc": "It checks for duplicates.\nYou may add more than one asset passing an array as argument.",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "asset": {
+                    "name": "asset",
+                    "line": 246,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "priority": {
+                    "name": "priority",
+                    "line": 246,
+                    "short_desc": "the priority, bigger comes first",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "pipeline": {
+                    "name": "pipeline",
+                    "line": 246,
+                    "short_desc": "false if this should not be pipelined",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "true",
+                    "is_by_ref": false
+                },
+                "group": {
+                    "name": "group",
+                    "line": 246,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addJs": {
+            "name": "addJs",
+            "line": 304,
+            "short_desc": "Add a JavaScript asset.",
+            "long_desc": "It checks for duplicates.\nYou may add more than one asset passing an array as argument.",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "asset": {
+                    "name": "asset",
+                    "line": 304,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "priority": {
+                    "name": "priority",
+                    "line": 304,
+                    "short_desc": "the priority, bigger comes first",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "pipeline": {
+                    "name": "pipeline",
+                    "line": 304,
+                    "short_desc": "false if this should not be pipelined",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "true",
+                    "is_by_ref": false
+                },
+                "loading": {
+                    "name": "loading",
+                    "line": 304,
+                    "short_desc": "how the asset is loaded (async\/defer)",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "group": {
+                    "name": "group",
+                    "line": 304,
+                    "short_desc": "name of the group",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addAsyncJs": {
+            "name": "addAsyncJs",
+            "line": 362,
+            "short_desc": "Convenience wrapper for async loading of JavaScript",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Assets",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "deprecated": [
+                    [
+                        "Please",
+                        "use",
+                        "dynamic",
+                        "method",
+                        "with",
+                        "['loading'",
+                        "=>",
+                        "'async']"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "asset": {
+                    "name": "asset",
+                    "line": 362,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "priority": {
+                    "name": "priority",
+                    "line": 362,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "pipeline": {
+                    "name": "pipeline",
+                    "line": 362,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "true",
+                    "is_by_ref": false
+                },
+                "group": {
+                    "name": "group",
+                    "line": 362,
+                    "short_desc": "name of the group",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addDeferJs": {
+            "name": "addDeferJs",
+            "line": 379,
+            "short_desc": "Convenience wrapper for deferred loading of JavaScript",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Assets",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "deprecated": [
+                    [
+                        "Please",
+                        "use",
+                        "dynamic",
+                        "method",
+                        "with",
+                        "['loading'",
+                        "=>",
+                        "'defer']"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "asset": {
+                    "name": "asset",
+                    "line": 379,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "priority": {
+                    "name": "priority",
+                    "line": 379,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "pipeline": {
+                    "name": "pipeline",
+                    "line": 379,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "true",
+                    "is_by_ref": false
+                },
+                "group": {
+                    "name": "group",
+                    "line": 379,
+                    "short_desc": "name of the group",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addInlineCss": {
+            "name": "addInlineCss",
+            "line": 396,
+            "short_desc": "Add an inline CSS asset.",
+            "long_desc": "It checks for duplicates.\nFor adding chunks of string-based inline CSS",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "asset": {
+                    "name": "asset",
+                    "line": 396,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "priority": {
+                    "name": "priority",
+                    "line": 396,
+                    "short_desc": "the priority, bigger comes first",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "group": {
+                    "name": "group",
+                    "line": 396,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addInlineJs": {
+            "name": "addInlineJs",
+            "line": 443,
+            "short_desc": "Add an inline JS asset.",
+            "long_desc": "It checks for duplicates.\nFor adding chunks of string-based inline JS",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "asset": {
+                    "name": "asset",
+                    "line": 443,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "priority": {
+                    "name": "priority",
+                    "line": 443,
+                    "short_desc": "the priority, bigger comes first",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "group": {
+                    "name": "group",
+                    "line": 443,
+                    "short_desc": "name of the group",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "css": {
+            "name": "css",
+            "line": 486,
+            "short_desc": "Build the CSS link tags.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "group": {
+                    "name": "group",
+                    "line": 486,
+                    "short_desc": "name of the group",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'head'",
+                    "is_by_ref": false
+                },
+                "attributes": {
+                    "name": "attributes",
+                    "line": 486,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "js": {
+            "name": "js",
+            "line": 559,
+            "short_desc": "Build the JavaScript script tags.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "group": {
+                    "name": "group",
+                    "line": 559,
+                    "short_desc": "name of the group",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'head'",
+                    "is_by_ref": false
+                },
+                "attributes": {
+                    "name": "attributes",
+                    "line": 559,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getCss": {
+            "name": "getCss",
+            "line": 751,
+            "short_desc": "Return the array of all the registered CSS assets",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getJs": {
+            "name": "getJs",
+            "line": 761,
+            "short_desc": "Return the array of all the registered JS assets",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getCollections": {
+            "name": "getCollections",
+            "line": 771,
+            "short_desc": "Return the array of all the registered collections",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "exists": {
+            "name": "exists",
+            "line": 783,
+            "short_desc": "Determines if an asset exists as a collection, CSS or JS reference",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "asset": {
+                    "name": "asset",
+                    "line": 783,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "registerCollection": {
+            "name": "registerCollection",
+            "line": 803,
+            "short_desc": "Add\/replace collection.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "collectionName": {
+                    "name": "collectionName",
+                    "line": 803,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "assets": {
+                    "name": "assets",
+                    "line": 803,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "overwrite": {
+                    "name": "overwrite",
+                    "line": 803,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "reset": {
+            "name": "reset",
+            "line": 817,
+            "short_desc": "Reset all assets.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "resetJs": {
+            "name": "resetJs",
+            "line": 827,
+            "short_desc": "Reset JavaScript assets.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "resetCss": {
+            "name": "resetCss",
+            "line": 839,
+            "short_desc": "Reset CSS assets.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "addDirCss": {
+            "name": "addDirCss",
+            "line": 853,
+            "short_desc": "Add all CSS assets within $directory (relative to public dir).",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "directory": {
+                    "name": "directory",
+                    "line": 853,
+                    "short_desc": "Relative to $this->public_dir",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addDir": {
+            "name": "addDir",
+            "line": 867,
+            "short_desc": "Add all assets matching $pattern within $directory.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Exception",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "directory": {
+                    "name": "directory",
+                    "line": 867,
+                    "short_desc": "Relative to $this->public_dir",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "pattern": {
+                    "name": "pattern",
+                    "line": 867,
+                    "short_desc": "(regex)",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "self::DEFAULT_REGEX",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addDirJs": {
+            "name": "addDirJs",
+            "line": 1130,
+            "short_desc": "Add all JavaScript assets within $directory.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "directory": {
+                    "name": "directory",
+                    "line": 1130,
+                    "short_desc": "Relative to $this->public_dir",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "setCssPipeline": {
+            "name": "setCssPipeline",
+            "line": 1140,
+            "short_desc": "Sets the state of CSS Pipeline",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "value": {
+                    "name": "value",
+                    "line": 1140,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "setJsPipeline": {
+            "name": "setJsPipeline",
+            "line": 1150,
+            "short_desc": "Sets the state of JS Pipeline",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "value": {
+                    "name": "value",
+                    "line": 1150,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "setTimestamp": {
+            "name": "setTimestamp",
+            "line": 1160,
+            "short_desc": "Explicitly set's a timestamp for assets",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "value": {
+                    "name": "value",
+                    "line": 1160,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "__toString": {
+            "name": "__toString",
+            "line": 1165,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": {
+        "DEFAULT_REGEX": {
+            "name": "DEFAULT_REGEX",
+            "line": 28,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CSS_REGEX": {
+            "name": "CSS_REGEX",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "JS_REGEX": {
+            "name": "JS_REGEX",
+            "line": 34,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CSS_URL_REGEX": {
+            "name": "CSS_URL_REGEX",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CSS_SOURCEMAP_REGEX": {
+            "name": "CSS_SOURCEMAP_REGEX",
+            "line": 40,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "CSS_IMPORT_REGEX": {
+            "name": "CSS_IMPORT_REGEX",
+            "line": 43,
+            "short_desc": "",
+            "long_desc": ""
+        },
+        "HTML_TAG_REGEX": {
+            "name": "HTML_TAG_REGEX",
+            "line": 45,
+            "short_desc": "",
+            "long_desc": ""
+        }
+    }
+}

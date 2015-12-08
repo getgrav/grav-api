@@ -1,0 +1,143 @@
+{
+    "name": "Grav\\Common\\Plugins",
+    "line": 18,
+    "short_desc": "The Plugins object holds an array of all the plugin objects that\nGrav knows about",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Plugins.php",
+    "relative_file": null,
+    "hash": "5d9ff820986085131c57f3fe574505893f162279",
+    "parent": "Grav\\Common\\Iterator",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Config": "Grav\\Common\\Config\\Config",
+        "Blueprints": "Grav\\Common\\Data\\Blueprints",
+        "Data": "Grav\\Common\\Data\\Data",
+        "CompiledYamlFile": "Grav\\Common\\File\\CompiledYamlFile",
+        "EventDispatcher": "RocketTheme\\Toolbox\\Event\\EventDispatcher",
+        "EventSubscriberInterface": "RocketTheme\\Toolbox\\Event\\EventSubscriberInterface"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "init": {
+            "name": "init",
+            "line": 28,
+            "short_desc": "Recurses through the plugins directory creating Plugin objects for each plugin it finds.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ],
+                [
+                    "\\Grav\\Common\\Plugin",
+                    true
+                ]
+            ],
+            "hint_desc": "array of Plugin objects",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\RuntimeException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        },
+        "add": {
+            "name": "add",
+            "line": 80,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "plugin": {
+                    "name": "plugin",
+                    "line": 80,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "all": {
+            "name": "all",
+            "line": 92,
+            "short_desc": "Return list of all plugin data with their blueprints.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "get": {
+            "name": "get",
+            "line": 116,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 116,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,83 @@
+{
+    "name": "RocketTheme\\Toolbox\\ArrayTraits\\Countable",
+    "line": 13,
+    "short_desc": "Implements \\Countable interface.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\ArrayTraits"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ],
+        "property": [
+            [
+                "array",
+                "$items"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\ArrayTraits",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/ArrayTraits\/src\/Countable.php",
+    "relative_file": null,
+    "hash": "d99749fd5a7b908f2ea9e0ab4776f27e39050859",
+    "parent": null,
+    "modifiers": "Stmt_Trait",
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "items": {
+            "name": "items",
+            "line": 13,
+            "short_desc": "array$items",
+            "long_desc": null,
+            "hint": [
+                [
+                    "array",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "count": {
+            "name": "count",
+            "line": 20,
+            "short_desc": "Implements Countable interface.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,44 @@
+{
+    "name": "Grav\\Common\\GPM\\Local\\Plugins",
+    "line": 8,
+    "short_desc": "Class Plugins",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Common\\GPM\\Local"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\GPM\\Local",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/Local\/Plugins.php",
+    "relative_file": null,
+    "hash": "1a8050de33f63259a4719e2c4444e9bd1554afe2",
+    "parent": "Grav\\Common\\GPM\\Local\\AbstractPackageCollection",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 18,
+            "short_desc": "Local Plugins Constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

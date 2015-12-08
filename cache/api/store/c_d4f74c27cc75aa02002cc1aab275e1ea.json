@@ -1,0 +1,335 @@
+{
+    "name": "Grav\\Common\\Grav",
+    "line": 25,
+    "short_desc": "Grav",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "Andy",
+                "Miller"
+            ]
+        ],
+        "link": [
+            [
+                "http:\/\/www.rockettheme.com"
+            ]
+        ],
+        "license": [
+            [
+                "http:\/\/opensource.org\/licenses\/MIT\n\nInfluenced",
+                "by",
+                "Pico,",
+                "Stacey,",
+                "Kirby,",
+                "PieCrust",
+                "and",
+                "other",
+                "great",
+                "platforms..."
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Grav.php",
+    "relative_file": null,
+    "hash": "3da055ac334d8426a405cabd4a9d991a38ddc5b0",
+    "parent": "RocketTheme\\Toolbox\\DI\\Container",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Language": "Grav\\Common\\Language\\Language",
+        "ImageMedium": "Grav\\Common\\Page\\Medium\\ImageMedium",
+        "Pages": "Grav\\Common\\Page\\Pages",
+        "ConfigServiceProvider": "Grav\\Common\\Service\\ConfigServiceProvider",
+        "ErrorServiceProvider": "Grav\\Common\\Service\\ErrorServiceProvider",
+        "LoggerServiceProvider": "Grav\\Common\\Service\\LoggerServiceProvider",
+        "StreamsServiceProvider": "Grav\\Common\\Service\\StreamsServiceProvider",
+        "Twig": "Grav\\Common\\Twig\\Twig",
+        "Container": "RocketTheme\\Toolbox\\DI\\Container",
+        "Event": "RocketTheme\\Toolbox\\Event\\Event",
+        "EventDispatcher": "RocketTheme\\Toolbox\\Event\\EventDispatcher"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "output": {
+            "name": "output",
+            "line": 30,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "instance": {
+            "name": "instance",
+            "line": 37,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "values": {
+                    "name": "values",
+                    "line": 37,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "process": {
+            "name": "process",
+            "line": 183,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "redirect": {
+            "name": "redirect",
+            "line": 277,
+            "short_desc": "Redirect browser to another location.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "route": {
+                    "name": "route",
+                    "line": 277,
+                    "short_desc": "Internal route.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "code": {
+                    "name": "code",
+                    "line": 277,
+                    "short_desc": "Redirection code (30x)",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "redirectLangSafe": {
+            "name": "redirectLangSafe",
+            "line": 317,
+            "short_desc": "Redirect browser to another location taking language into account (preferred)",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "route": {
+                    "name": "route",
+                    "line": 317,
+                    "short_desc": "Internal route.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "code": {
+                    "name": "code",
+                    "line": 317,
+                    "short_desc": "Redirection code (30x)",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "mime": {
+            "name": "mime",
+            "line": 335,
+            "short_desc": "Returns mime type for the file format.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "format": {
+                    "name": "format",
+                    "line": 335,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "header": {
+            "name": "header",
+            "line": 355,
+            "short_desc": "Set response header.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "fireEvent": {
+            "name": "fireEvent",
+            "line": 407,
+            "short_desc": "Fires an event with optional parameters.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\RocketTheme\\Toolbox\\Event\\Event",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "eventName": {
+                    "name": "eventName",
+                    "line": 407,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "event": {
+                    "name": "event",
+                    "line": 407,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "RocketTheme\\Toolbox\\Event\\Event",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Event",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "shutdown": {
+            "name": "shutdown",
+            "line": 418,
+            "short_desc": "Set the final content length for the page and flush the buffer",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

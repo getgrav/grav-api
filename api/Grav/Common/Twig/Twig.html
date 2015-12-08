@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Twig\Twig | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Twig_Twig" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Grav.html">Grav</a></li>
+                                        <li><a href="../../../Grav/Common.html">Common</a></li>
+                                        <li><a href="../../../Grav/Common/Twig.html">Twig</a></li>
+    
+                <li>Twig</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Twig</h1>
+    </div>
+
+    <p>    class
+    <strong>Twig</strong>
+</p>
+
+            <div class="description">
+            <p>The Twig object handles all the Twig template rendering for Grav. It's a singleton object
+that is optimized so that it only needs to be initialized once and can be reused for individual
+page template rendering as well as the main site template rendering.</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_twig">
+                                                                                
+    <abbr title="Twig_Environment">Twig_Environment</abbr>
+                </td>
+                <td>$twig</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_twig_vars">
+                                                                                
+    array
+                </td>
+                <td>$twig_vars</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_twig_paths">
+                                                                                
+    array
+                </td>
+                <td>$twig_paths</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_template">
+                                                                                
+    string
+                </td>
+                <td>$template</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>()
+                                            <p>Twig initialization that sets the twig loader chain, then the environment, then extensions
+and also the base set of twig vars</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Twig_Environment">Twig_Environment</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_twig">twig</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Twig_Loader_Filesystem">Twig_Loader_Filesystem</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loader">loader</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTemplate">setTemplate</a>(
+    string $name, 
+    string $template)
+                                            <p>Adds or overrides a template.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processPage">processPage</a>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $item, 
+    string $content = null)
+                                            <p>Twig process that renders a page item. It supports two variations:
+1) Handles modular pages by rendering a specific page based on its modular twig template
+2) Renders individual page items for twig processing before the site rendering</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processTemplate">processTemplate</a>(
+    string $template, 
+    array $vars = array())
+                                            <p>Process a Twig template directly by using a template name
+and optional array of variables</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processString">processString</a>(
+    string $string, 
+    array $vars = array())
+                                            <p>Process a Twig template directly by using a Twig string
+and optional array of variables</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processSite">processSite</a>(
+    string $format = null)
+                                            <p>Twig process that renders the site layout. This is the main twig process that renders the overall
+page and handles all the layout for the site display.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_template">template</a>(
+    string $template)
+                                            <p>Simple helper method to get the twig template if it has already been set, else return
+the one being passed in</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 59</div>
+        <code>                    
+    
+    <strong>__construct</strong>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Constructor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+                <td>$grav</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at line 69</div>
+        <code>                    
+    
+    <strong>init</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Twig initialization that sets the twig loader chain, then the environment, then extensions
+and also the base set of twig vars</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_twig">
+        <div class="location">at line 164</div>
+        <code>                    
+    <abbr title="Twig_Environment">Twig_Environment</abbr>
+    <strong>twig</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Twig_Environment">Twig_Environment</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loader">
+        <div class="location">at line 172</div>
+        <code>                    
+    <abbr title="Twig_Loader_Filesystem">Twig_Loader_Filesystem</abbr>
+    <strong>loader</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Twig_Loader_Filesystem">Twig_Loader_Filesystem</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTemplate">
+        <div class="location">at line 183</div>
+        <code>                    
+    
+    <strong>setTemplate</strong>(
+    string $name, 
+    string $template)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds or overrides a template.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$name</td>
+                <td>The template name</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$template</td>
+                <td>The template source</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processPage">
+        <div class="location">at line 198</div>
+        <code>                    
+    string
+    <strong>processPage</strong>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $item, 
+    string $content = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Twig process that renders a page item. It supports two variations:
+1) Handles modular pages by rendering a specific page based on its modular twig template
+2) Renders individual page items for twig processing before the site rendering</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+                <td>$item</td>
+                <td>The page item to render</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$content</td>
+                <td>Optional content override</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>The rendered output</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Twig_Error_Loader">Twig_Error_Loader</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processTemplate">
+        <div class="location">at line 243</div>
+        <code>                    
+    string
+    <strong>processTemplate</strong>(
+    string $template, 
+    array $vars = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Process a Twig template directly by using a template name
+and optional array of variables</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$template</td>
+                <td>template to render with</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$vars</td>
+                <td>Optional variables</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processString">
+        <div class="location">at line 268</div>
+        <code>                    
+    string
+    <strong>processString</strong>(
+    string $string, 
+    array $vars = array())</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Process a Twig template directly by using a Twig string
+and optional array of variables</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$string</td>
+                <td>string to render.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$vars</td>
+                <td>Optional variables</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processSite">
+        <div class="location">at line 294</div>
+        <code>                    
+    string
+    <strong>processSite</strong>(
+    string $format = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Twig process that renders the site layout. This is the main twig process that renders the overall
+page and handles all the layout for the site display.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$format</td>
+                <td>Output format (defaults to HTML).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the rendered output</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_template">
+        <div class="location">at line 347</div>
+        <code>                    
+    string
+    <strong>template</strong>(
+    string $template)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Simple helper method to get the twig template if it has already been set, else return
+the one being passed in</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$template</td>
+                <td>the template name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the template name</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

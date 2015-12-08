@@ -1,0 +1,112 @@
+{
+    "name": "Grav\\Console\\Gpm\\SelfupgradeCommand",
+    "line": 17,
+    "short_desc": "Class SelfupgradeCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Gpm"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Gpm",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Gpm\/SelfupgradeCommand.php",
+    "relative_file": null,
+    "hash": "90930e2d11c28610a448b3d400b73604d820ee1b",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Folder": "Grav\\Common\\Filesystem\\Folder",
+        "Installer": "Grav\\Common\\GPM\\Installer",
+        "Response": "Grav\\Common\\GPM\\Response",
+        "Upgrader": "Grav\\Common\\GPM\\Upgrader",
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "ArrayInput": "Symfony\\Component\\Console\\Input\\ArrayInput",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption",
+        "ConfirmationQuestion": "Symfony\\Component\\Console\\Question\\ConfirmationQuestion"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "progress": {
+            "name": "progress",
+            "line": 205,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "progress": {
+                    "name": "progress",
+                    "line": 205,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "formatBytes": {
+            "name": "formatBytes",
+            "line": 218,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "size": {
+                    "name": "size",
+                    "line": 218,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "precision": {
+                    "name": "precision",
+                    "line": 218,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "2",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

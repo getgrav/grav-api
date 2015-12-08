@@ -1,0 +1,2472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Data\Validation | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Data_Validation" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Grav.html">Grav</a></li>
+                                        <li><a href="../../../Grav/Common.html">Common</a></li>
+                                        <li><a href="../../../Grav/Common/Data.html">Data</a></li>
+    
+                <li>Validation</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Validation</h1>
+    </div>
+
+    <p>    class
+    <strong>Validation</strong>
+</p>
+
+            <div class="description">
+            <p>Data validation.</p>                    </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Grav/Common/GravTrait.html"><abbr title="Grav\Common\GravTrait">Grav\Common\GravTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGrav">getGrav</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGrav">setGrav</a>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validate">validate</a>(
+    mixed $value, 
+    array $field)
+                                            <p>Validate value against a blueprint field definition.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filter">filter</a>(
+    mixed $value, 
+    array $field)
+                                            <p>Filter value against a blueprint field definition.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeText">typeText</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: text</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeTextarea">typeTextarea</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: textarea</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typePassword">typePassword</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: password</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeHidden">typeHidden</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: hidden</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeCheckboxes">typeCheckboxes</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>Custom input: checkbox list</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeCheckbox">typeCheckbox</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: checkbox</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeRadio">typeRadio</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: radio</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeToggle">typeToggle</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>Custom input: toggle</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeFile">typeFile</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>Custom input: file</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeSelect">typeSelect</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: select</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeNumber">typeNumber</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: number</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeRange">typeRange</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: range</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeColor">typeColor</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: color</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeEmail">typeEmail</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: email</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeUrl">typeUrl</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: url</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeDatetime">typeDatetime</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: datetime</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeDatetimeLocal">typeDatetimeLocal</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: datetime-local</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeDate">typeDate</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: date</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeTime">typeTime</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: time</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeMonth">typeMonth</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: month</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeWeek">typeWeek</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>HTML5 input: week</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeArray">typeArray</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>Custom input: array</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeList">typeList</a>($value, 
+    array $params, 
+    array $field)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeIgnore">typeIgnore</a>(
+    mixed $value, 
+    array $params, 
+    array $field)
+                                            <p>Custom input: ignore (will not validate)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterIgnore">filterIgnore</a>($value, 
+    array $params, 
+    array $field)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateRequired">validateRequired</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validatePattern">validatePattern</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateAlpha">validateAlpha</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateAlnum">validateAlnum</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_typeBool">typeBool</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateBool">validateBool</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateDigit">validateDigit</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateFloat">validateFloat</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateHex">validateHex</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateInt">validateInt</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateArray">validateArray</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateJson">validateJson</a>($value, $params)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getGrav">
+        <div class="location">in 
+    <a href="../../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 14</div>
+        <code>        static            
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+    <strong>getGrav</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGrav">
+        <div class="location">in 
+    <a href="../../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 25</div>
+        <code>        static            
+    
+    <strong>setGrav</strong>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+                <td>$grav</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validate">
+        <div class="location">at line 25</div>
+        <code>        static            
+    
+    <strong>validate</strong>(
+    mixed $value, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Validate value against a blueprint field definition.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location">at line 77</div>
+        <code>        static            
+    mixed
+    <strong>filter</strong>(
+    mixed $value, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Filter value against a blueprint field definition.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td>Filtered value.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeText">
+        <div class="location">at line 121</div>
+        <code>        static            
+    bool
+    <strong>typeText</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: text</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeTextarea">
+        <div class="location">at line 170</div>
+        <code>        static            
+    bool
+    <strong>typeTextarea</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: textarea</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typePassword">
+        <div class="location">at line 187</div>
+        <code>        static            
+    bool
+    <strong>typePassword</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: password</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeHidden">
+        <div class="location">at line 200</div>
+        <code>        static            
+    bool
+    <strong>typeHidden</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: hidden</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeCheckboxes">
+        <div class="location">at line 213</div>
+        <code>        static            
+    bool
+    <strong>typeCheckboxes</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Custom input: checkbox list</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeCheckbox">
+        <div class="location">at line 231</div>
+        <code>        static            
+    bool
+    <strong>typeCheckbox</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: checkbox</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeRadio">
+        <div class="location">at line 253</div>
+        <code>        static            
+    bool
+    <strong>typeRadio</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: radio</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeToggle">
+        <div class="location">at line 266</div>
+        <code>        static            
+    bool
+    <strong>typeToggle</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Custom input: toggle</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeFile">
+        <div class="location">at line 279</div>
+        <code>        static            
+    bool
+    <strong>typeFile</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Custom input: file</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeSelect">
+        <div class="location">at line 297</div>
+        <code>        static            
+    bool
+    <strong>typeSelect</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: select</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeNumber">
+        <div class="location">at line 311</div>
+        <code>        static            
+    bool
+    <strong>typeNumber</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: number</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeRange">
+        <div class="location">at line 357</div>
+        <code>        static            
+    bool
+    <strong>typeRange</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: range</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeColor">
+        <div class="location">at line 375</div>
+        <code>        static            
+    bool
+    <strong>typeColor</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: color</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeEmail">
+        <div class="location">at line 388</div>
+        <code>        static            
+    bool
+    <strong>typeEmail</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: email</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeUrl">
+        <div class="location">at line 402</div>
+        <code>        static            
+    bool
+    <strong>typeUrl</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: url</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeDatetime">
+        <div class="location">at line 415</div>
+        <code>        static            
+    bool
+    <strong>typeDatetime</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: datetime</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeDatetimeLocal">
+        <div class="location">at line 438</div>
+        <code>        static            
+    bool
+    <strong>typeDatetimeLocal</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: datetime-local</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeDate">
+        <div class="location">at line 451</div>
+        <code>        static            
+    bool
+    <strong>typeDate</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: date</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeTime">
+        <div class="location">at line 468</div>
+        <code>        static            
+    bool
+    <strong>typeTime</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: time</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeMonth">
+        <div class="location">at line 485</div>
+        <code>        static            
+    bool
+    <strong>typeMonth</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: month</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeWeek">
+        <div class="location">at line 502</div>
+        <code>        static            
+    bool
+    <strong>typeWeek</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>HTML5 input: week</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeArray">
+        <div class="location">at line 518</div>
+        <code>        static            
+    bool
+    <strong>typeArray</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Custom input: array</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeList">
+        <div class="location">at line 574</div>
+        <code>        static            
+    
+    <strong>typeList</strong>($value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeIgnore">
+        <div class="location">at line 606</div>
+        <code>        static            
+    bool
+    <strong>typeIgnore</strong>(
+    mixed $value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Custom input: ignore (will not validate)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    mixed</td>
+                <td>$value</td>
+                <td>Value to be validated.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td>Validation parameters.</td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td>Blueprint for the field.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>True if validation succeeded.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterIgnore">
+        <div class="location">at line 611</div>
+        <code>        static            
+    
+    <strong>filterIgnore</strong>($value, 
+    array $params, 
+    array $field)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    array</td>
+                <td>$field</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateRequired">
+        <div class="location">at line 618</div>
+        <code>        static            
+    
+    <strong>validateRequired</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validatePattern">
+        <div class="location">at line 627</div>
+        <code>        static            
+    
+    <strong>validatePattern</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateAlpha">
+        <div class="location">at line 635</div>
+        <code>        static            
+    
+    <strong>validateAlpha</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateAlnum">
+        <div class="location">at line 640</div>
+        <code>        static            
+    
+    <strong>validateAlnum</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_typeBool">
+        <div class="location">at line 645</div>
+        <code>        static            
+    
+    <strong>typeBool</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateBool">
+        <div class="location">at line 650</div>
+        <code>        static            
+    
+    <strong>validateBool</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateDigit">
+        <div class="location">at line 660</div>
+        <code>        static            
+    
+    <strong>validateDigit</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateFloat">
+        <div class="location">at line 665</div>
+        <code>        static            
+    
+    <strong>validateFloat</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateHex">
+        <div class="location">at line 675</div>
+        <code>        static            
+    
+    <strong>validateHex</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateInt">
+        <div class="location">at line 680</div>
+        <code>        static            
+    
+    <strong>validateInt</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateArray">
+        <div class="location">at line 690</div>
+        <code>        static            
+    
+    <strong>validateArray</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateJson">
+        <div class="location">at line 697</div>
+        <code>        static            
+    
+    <strong>validateJson</strong>($value, $params)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

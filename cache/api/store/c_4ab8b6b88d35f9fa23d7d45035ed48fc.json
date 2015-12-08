@@ -1,0 +1,202 @@
+{
+    "name": "Grav\\Common\\Service\\ConfigServiceProvider",
+    "line": 20,
+    "short_desc": "The Config class contains configuration information.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\Service",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Service\/ConfigServiceProvider.php",
+    "relative_file": null,
+    "hash": "4038b1f6dc15b1029abff2b27ef1323130a1093d",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "CompiledBlueprints": "Grav\\Common\\Config\\CompiledBlueprints",
+        "CompiledConfig": "Grav\\Common\\Config\\CompiledConfig",
+        "CompiledLanguages": "Grav\\Common\\Config\\CompiledLanguages",
+        "Config": "Grav\\Common\\Config\\Config",
+        "ConfigFileFinder": "Grav\\Common\\Config\\ConfigFileFinder",
+        "Setup": "Grav\\Common\\Config\\Setup",
+        "Container": "Pimple\\Container",
+        "ServiceProviderInterface": "Pimple\\ServiceProviderInterface",
+        "UniformResourceLocator": "RocketTheme\\Toolbox\\ResourceLocator\\UniformResourceLocator"
+    },
+    "errors": [],
+    "interfaces": {
+        "Pimple\\ServiceProviderInterface": "Pimple\\ServiceProviderInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "register": {
+            "name": "register",
+            "line": 22,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "container": {
+                    "name": "container",
+                    "line": 22,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Pimple\\Container",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Container",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "setup": {
+            "name": "setup",
+            "line": 41,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "container": {
+                    "name": "container",
+                    "line": 41,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Pimple\\Container",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Container",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "blueprints": {
+            "name": "blueprints",
+            "line": 46,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "container": {
+                    "name": "container",
+                    "line": 46,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Pimple\\Container",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Container",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "load": {
+            "name": "load",
+            "line": 67,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "container": {
+                    "name": "container",
+                    "line": 67,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Pimple\\Container",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Container",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "languages": {
+            "name": "languages",
+            "line": 91,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "container": {
+                    "name": "container",
+                    "line": 91,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Pimple\\Container",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Container",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

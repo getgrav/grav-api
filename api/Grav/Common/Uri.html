@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Uri | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Uri" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Grav.html">Grav</a></li>
+                                        <li><a href="../../Grav/Common.html">Common</a></li>
+    
+                <li>Uri</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Uri</h1>
+    </div>
+
+    <p>    class
+    <strong>Uri</strong>
+</p>
+
+            <div class="description">
+            <p>The URI object provides information about the current URL</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>HOSTNAME_REGEX</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_url">
+                                                                                
+    
+                </td>
+                <td>$url</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>()
+                                            <p>Initializes the URI object based on the url set on the object</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_paths">paths</a>(
+    string $id = null)
+                                            <p>Return URI path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_route">route</a>(
+    bool $absolute = false, 
+    bool $domain = false)
+                                            <p>Return route to the current URI. By default route doesn't include base path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_query">query</a>($id = null, $raw = false)
+                                            <p>Return full query string or a single query attribute.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_params">params</a>(
+    string $id = null, 
+    boolean $array = false)
+                                            <p>Return all or a single query parameter as a URI compatible string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_param">param</a>(
+    string $id)
+                                            <p>Get URI parameter.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_url">url</a>(
+    bool $include_host = false)
+                                            <p>Return URL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    String
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_path">path</a>()
+                                            <p>Return the Path</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    String
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extension">extension</a>(
+    null $default = null)
+                                            <p>Return the Extension of the URI</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    String
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_host">host</a>()
+                                            <p>Return the host of the URI</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    String
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_environment">environment</a>()
+                                            <p>Gets the environment name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    String
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_basename">basename</a>()
+                                            <p>Return the basename of the URI</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    String
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_base">base</a>()
+                                            <p>Return the base of the URI</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rootUrl">rootUrl</a>(
+    bool $include_host = false)
+                                            <p>Return root URL to the site.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_currentPage">currentPage</a>()
+                                            <p>Return current page number.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_referrer">referrer</a>(
+    string $default = null, 
+    string $attributes = null)
+                                            <p>Return relative path to the referrer defaulting to current or given page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ip">ip</a>()
+                                            <p>Return the IP address of the current user</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    boolean
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isExternal">isExternal</a>(
+    string $url)
+                                            <p>Is this an external URL? if it starts with <code>http</code> then yes, else false</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildUrl">buildUrl</a>($parsed_url)
+                                            <p>The opposite of built-in PHP method parse_url()</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_convertUrl">convertUrl</a>(
+    <a href="../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $page, 
+    string $markdown_url, 
+    string $type = &#039;link&#039;, 
+    null $relative = null)
+                                            <p>Converts links from absolute '/' or relative (.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addNonce">addNonce</a>(
+    string $url, 
+    string $action, 
+    string $nonceParamName = &#039;nonce&#039;)
+                                            <p>Adds the nonce to a URL for a specific action</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 33</div>
+        <code>                    
+    
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at line 85</div>
+        <code>                    
+    
+    <strong>init</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Initializes the URI object based on the url set on the object</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_paths">
+        <div class="location">at line 191</div>
+        <code>                    
+    string
+    <strong>paths</strong>(
+    string $id = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return URI path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_route">
+        <div class="location">at line 207</div>
+        <code>                    
+    string
+    <strong>route</strong>(
+    bool $absolute = false, 
+    bool $domain = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return route to the current URI. By default route doesn't include base path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$absolute</td>
+                <td>True to include full path.</td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$domain</td>
+                <td>True to include domain. Works only if first parameter is also true.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_query">
+        <div class="location">at line 218</div>
+        <code>                    
+    string
+    <strong>query</strong>($id = null, $raw = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return full query string or a single query attribute.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$raw</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_params">
+        <div class="location">at line 238</div>
+        <code>                    
+    null|string
+    <strong>params</strong>(
+    string $id = null, 
+    boolean $array = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return all or a single query parameter as a URI compatible string.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$id</td>
+                <td>Optional parameter name.</td>
+            </tr>
+                    <tr>
+                <td>
+    boolean</td>
+                <td>$array</td>
+                <td>return the array format or not</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_param">
+        <div class="location">at line 268</div>
+        <code>                    
+    bool|string
+    <strong>param</strong>(
+    string $id)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get URI parameter.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_url">
+        <div class="location">at line 283</div>
+        <code>                    
+    string
+    <strong>url</strong>(
+    bool $include_host = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return URL.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$include_host</td>
+                <td>Include hostname.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_path">
+        <div class="location">at line 298</div>
+        <code>                    
+    String
+    <strong>path</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return the Path</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    String</td>
+            <td>The path of the URI</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extension">
+        <div class="location">at line 314</div>
+        <code>                    
+    String
+    <strong>extension</strong>(
+    null $default = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return the Extension of the URI</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    null</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    String</td>
+            <td>The extension of the URI</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_host">
+        <div class="location">at line 327</div>
+        <code>                    
+    String
+    <strong>host</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return the host of the URI</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    String</td>
+            <td>The host of the URI</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_environment">
+        <div class="location">at line 337</div>
+        <code>                    
+    String
+    <strong>environment</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Gets the environment name</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    String</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_basename">
+        <div class="location">at line 348</div>
+        <code>                    
+    String
+    <strong>basename</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return the basename of the URI</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    String</td>
+            <td>The basename of the URI</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_base">
+        <div class="location">at line 358</div>
+        <code>                    
+    String
+    <strong>base</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return the base of the URI</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    String</td>
+            <td>The base of the URI</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rootUrl">
+        <div class="location">at line 369</div>
+        <code>                    
+    mixed
+    <strong>rootUrl</strong>(
+    bool $include_host = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return root URL to the site.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    bool</td>
+                <td>$include_host</td>
+                <td>Include hostname.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_currentPage">
+        <div class="location">at line 384</div>
+        <code>                    
+    int
+    <strong>currentPage</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return current page number.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_referrer">
+        <div class="location">at line 400</div>
+        <code>                    
+    string
+    <strong>referrer</strong>(
+    string $default = null, 
+    string $attributes = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return relative path to the referrer defaulting to current or given page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ip">
+        <div class="location">at line 430</div>
+        <code>                    
+    string
+    <strong>ip</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Return the IP address of the current user</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>ip address</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isExternal">
+        <div class="location">at line 456</div>
+        <code>                    
+    boolean
+    <strong>isExternal</strong>(
+    string $url)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Is this an external URL? if it starts with <code>http</code> then yes, else false</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$url</td>
+                <td>the URL in question</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    boolean</td>
+            <td>is eternal state</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildUrl">
+        <div class="location">at line 471</div>
+        <code>        static            
+    string
+    <strong>buildUrl</strong>($parsed_url)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>The opposite of built-in PHP method parse_url()</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parsed_url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_convertUrl">
+        <div class="location">at line 495</div>
+        <code>        static            
+    string
+    <strong>convertUrl</strong>(
+    <a href="../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $page, 
+    string $markdown_url, 
+    string $type = &#039;link&#039;, 
+    null $relative = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Converts links from absolute '/' or relative (.</p>                    <p>./..) to a grav friendly format</p>            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+                <td>$page</td>
+                <td>the current page to use as reference</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$markdown_url</td>
+                <td>the URL as it was written in the markdown</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$type</td>
+                <td>the type of URL, image | link</td>
+            </tr>
+                    <tr>
+                <td>
+    null</td>
+                <td>$relative</td>
+                <td>if null, will use system default, if true will use relative links internally</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the more friendly formatted url</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addNonce">
+        <div class="location">at line 593</div>
+        <code>        static            
+    string
+    <strong>addNonce</strong>(
+    string $url, 
+    string $action, 
+    string $nonceParamName = &#039;nonce&#039;)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds the nonce to a URL for a specific action</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$url</td>
+                <td>the url</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$action</td>
+                <td>the action</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$nonceParamName</td>
+                <td>the param name to use</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>the url with the nonce</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

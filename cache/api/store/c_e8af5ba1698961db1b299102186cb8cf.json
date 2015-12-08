@@ -1,0 +1,260 @@
+{
+    "name": "Grav\\Common\\Data\\DataInterface",
+    "line": 12,
+    "short_desc": "Data interface",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\Data",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Data\/DataInterface.php",
+    "relative_file": null,
+    "hash": "40806ede433411d28c4dd645f644e33b853126e8",
+    "parent": null,
+    "modifiers": "Stmt_Interface",
+    "is_trait": false,
+    "is_interface": true,
+    "aliases": {
+        "FileInterface": "RocketTheme\\Toolbox\\File\\FileInterface"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "value": {
+            "name": "value",
+            "line": 24,
+            "short_desc": "Get value by using dot notation for nested arrays\/objects.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Value.",
+            "tags": {
+                "example": [
+                    [
+                        "$value",
+                        "=",
+                        "$data->value('this.is.my.nested.variable');"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 24,
+                    "short_desc": "Dot separated path to the requested value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "default": {
+                    "name": "default",
+                    "line": 24,
+                    "short_desc": "Default value (or null).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "separator": {
+                    "name": "separator",
+                    "line": 24,
+                    "short_desc": "Separator, defaults to '.'",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "merge": {
+            "name": "merge",
+            "line": 32,
+            "short_desc": "Merge external data.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 32,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "blueprints": {
+            "name": "blueprints",
+            "line": 37,
+            "short_desc": "Return blueprints.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "validate": {
+            "name": "validate",
+            "line": 44,
+            "short_desc": "Validate by blueprints.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Exception",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": []
+        },
+        "filter": {
+            "name": "filter",
+            "line": 49,
+            "short_desc": "Filter all items by using blueprints.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "extra": {
+            "name": "extra",
+            "line": 54,
+            "short_desc": "Get extra items which haven't been defined in blueprints.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "save": {
+            "name": "save",
+            "line": 59,
+            "short_desc": "Save data into the file.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "file": {
+            "name": "file",
+            "line": 67,
+            "short_desc": "Set or get the data storage.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\RocketTheme\\Toolbox\\File\\FileInterface",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "storage": {
+                    "name": "storage",
+                    "line": 67,
+                    "short_desc": "Optionally enter a new storage.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "RocketTheme\\Toolbox\\File\\FileInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "FileInterface",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,920 @@
+{
+    "name": "Grav\\Common\\Page\\Collection",
+    "line": 14,
+    "short_desc": "Collection of Pages.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\Page",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Page\/Collection.php",
+    "relative_file": null,
+    "hash": "cabc6b751a2099e79f423354434ec38e652d2d46",
+    "parent": "Grav\\Common\\Iterator",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Grav": "Grav\\Common\\Grav",
+        "Iterator": "Grav\\Common\\Iterator",
+        "Utils": "Grav\\Common\\Utils"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 26,
+            "short_desc": "Constructor to initialize array.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "items": {
+                    "name": "items",
+                    "line": 26,
+                    "short_desc": "Initial items inside the iterator.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                },
+                "params": {
+                    "name": "params",
+                    "line": 26,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": "array()",
+                    "is_by_ref": false
+                },
+                "pages": {
+                    "name": "pages",
+                    "line": 26,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Page\\Pages",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Pages",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "params": {
+            "name": "params",
+            "line": 34,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "addPage": {
+            "name": "addPage",
+            "line": 45,
+            "short_desc": "Add a single page to a collection",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Page\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "page": {
+                    "name": "page",
+                    "line": 45,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Page\\Page",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Page",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "copy": {
+            "name": "copy",
+            "line": 57,
+            "short_desc": "Create a copy of this collection",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setParams": {
+            "name": "setParams",
+            "line": 68,
+            "short_desc": "Set parameters to the Collection",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Page\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "params": {
+                    "name": "params",
+                    "line": 68,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "current": {
+            "name": "current",
+            "line": 79,
+            "short_desc": "Returns current page.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Can return any type.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "key": {
+            "name": "key",
+            "line": 90,
+            "short_desc": "Returns current slug.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Returns scalar on success, or NULL on failure.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "offsetGet": {
+            "name": "offsetGet",
+            "line": 102,
+            "short_desc": "Returns the value at specified offset.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Can return all value types.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 102,
+                    "short_desc": "The offset to retrieve.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "remove": {
+            "name": "remove",
+            "line": 114,
+            "short_desc": "Remove item from the list.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\InvalidArgumentException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "key": {
+                    "name": "key",
+                    "line": 114,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "order": {
+            "name": "order",
+            "line": 137,
+            "short_desc": "Reorder collection.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Page\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "by": {
+                    "name": "by",
+                    "line": 137,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "dir": {
+                    "name": "dir",
+                    "line": 137,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'asc'",
+                    "is_by_ref": false
+                },
+                "manual": {
+                    "name": "manual",
+                    "line": 137,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isFirst": {
+            "name": "isFirst",
+            "line": 150,
+            "short_desc": "Check to see if this item is the first in the collection.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if item is first.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 150,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isLast": {
+            "name": "isLast",
+            "line": 165,
+            "short_desc": "Check to see if this item is the last in the collection.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if item is last.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 165,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "prevSibling": {
+            "name": "prevSibling",
+            "line": 180,
+            "short_desc": "Gets the previous sibling based on current position.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Page",
+                    false
+                ]
+            ],
+            "hint_desc": "The previous item.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 180,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "nextSibling": {
+            "name": "nextSibling",
+            "line": 191,
+            "short_desc": "Gets the next sibling based on current position.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Page",
+                    false
+                ]
+            ],
+            "hint_desc": "The next item.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 191,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "adjacentSibling": {
+            "name": "adjacentSibling",
+            "line": 203,
+            "short_desc": "Returns the adjacent sibling based on a direction.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Page",
+                    false
+                ]
+            ],
+            "hint_desc": "The sibling item.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 203,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "direction": {
+                    "name": "direction",
+                    "line": 203,
+                    "short_desc": "either -1 or +1",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "1",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "currentPosition": {
+            "name": "currentPosition",
+            "line": 223,
+            "short_desc": "Returns the item in the current position.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Page",
+                    false
+                ]
+            ],
+            "hint_desc": "Item in the array the the current position.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 223,
+                    "short_desc": "the path the item",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "dateRange": {
+            "name": "dateRange",
+            "line": 241,
+            "short_desc": "Returns the items between a set of date ranges of either the page date field (default) or\nan arbitrary datetime page field where end date is optional\nDates can be passed in as text that strtotime() can process\nhttp:\/\/php.net\/manual\/en\/function.strtotime.php",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Page\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Exception",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "startDate": {
+                    "name": "startDate",
+                    "line": 241,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "endDate": {
+                    "name": "endDate",
+                    "line": 241,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                },
+                "field": {
+                    "name": "field",
+                    "line": 241,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "visible": {
+            "name": "visible",
+            "line": 267,
+            "short_desc": "Creates new collection with only visible pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection with only visible pages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "nonVisible": {
+            "name": "nonVisible",
+            "line": 286,
+            "short_desc": "Creates new collection with only non-visible pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection with only non-visible pages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "modular": {
+            "name": "modular",
+            "line": 305,
+            "short_desc": "Creates new collection with only modular pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection with only modular pages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "nonModular": {
+            "name": "nonModular",
+            "line": 324,
+            "short_desc": "Creates new collection with only non-modular pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection with only non-modular pages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "published": {
+            "name": "published",
+            "line": 343,
+            "short_desc": "Creates new collection with only published pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection with only published pages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "nonPublished": {
+            "name": "nonPublished",
+            "line": 362,
+            "short_desc": "Creates new collection with only non-published pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection with only non-published pages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "routable": {
+            "name": "routable",
+            "line": 381,
+            "short_desc": "Creates new collection with only routable pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection with only routable pages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "nonRoutable": {
+            "name": "nonRoutable",
+            "line": 402,
+            "short_desc": "Creates new collection with only non-routable pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection with only non-routable pages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "ofType": {
+            "name": "ofType",
+            "line": 421,
+            "short_desc": "Creates new collection with only pages of the specified type",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "type": {
+                    "name": "type",
+                    "line": 421,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "ofOneOfTheseTypes": {
+            "name": "ofOneOfTheseTypes",
+            "line": 441,
+            "short_desc": "Creates new collection with only pages of one of the specified types",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "types": {
+                    "name": "types",
+                    "line": 441,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "ofOneOfTheseAccessLevels": {
+            "name": "ofOneOfTheseAccessLevels",
+            "line": 461,
+            "short_desc": "Creates new collection with only pages of one of the specified access levels",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "The collection",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "accessLevels": {
+                    "name": "accessLevels",
+                    "line": 461,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

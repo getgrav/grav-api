@@ -1,0 +1,43 @@
+{
+    "name": "RocketTheme\\Toolbox\\File\\YamlFile",
+    "line": 15,
+    "short_desc": "Implements YAML File reader.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\File"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\File",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/File\/src\/YamlFile.php",
+    "relative_file": null,
+    "hash": "02eab2fde04552a16a60e93578e463ee94751db6",
+    "parent": "RocketTheme\\Toolbox\\File\\File",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "DumpException": "Symfony\\Component\\Yaml\\Exception\\DumpException",
+        "ParseException": "Symfony\\Component\\Yaml\\Exception\\ParseException",
+        "YamlParser": "Symfony\\Component\\Yaml\\Yaml"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

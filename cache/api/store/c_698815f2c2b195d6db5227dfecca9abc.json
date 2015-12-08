@@ -1,0 +1,36 @@
+{
+    "name": "Grav\\Common\\Twig\\TwigEnvironment",
+    "line": 11,
+    "short_desc": "The Twig Environment class is a wrapper that handles configurable permissions\nfor the Twig cache files",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\Twig",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Twig\/TwigEnvironment.php",
+    "relative_file": null,
+    "hash": "b05c24f5ca3b984e3c2680bb4cfa2f398616fc0b",
+    "parent": "Twig_Environment",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\Twig\\WriteCacheFileTrait": "Grav\\Common\\Twig\\WriteCacheFileTrait"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

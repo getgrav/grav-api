@@ -1,0 +1,310 @@
+{
+    "name": "Grav\\Common\\User\\User",
+    "line": 19,
+    "short_desc": "User object",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                "mixed",
+                "authenticated"
+            ],
+            [
+                "mixed",
+                "password"
+            ],
+            [
+                "bool|string",
+                "hashed_password"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\User",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/User\/User.php",
+    "relative_file": null,
+    "hash": "74cc2ec3a3ab88bbb60690f6fad16d787d763bd2",
+    "parent": "Grav\\Common\\Data\\Data",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Blueprints": "Grav\\Common\\Data\\Blueprints",
+        "Data": "Grav\\Common\\Data\\Data",
+        "CompiledYamlFile": "Grav\\Common\\File\\CompiledYamlFile",
+        "GravTrait": "Grav\\Common\\GravTrait",
+        "Utils": "Grav\\Common\\Utils"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": {
+        "uthenticated": {
+            "name": "uthenticated",
+            "line": 19,
+            "short_desc": "mixedauthenticated",
+            "long_desc": null,
+            "hint": [
+                [
+                    "mixed",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "assword": {
+            "name": "assword",
+            "line": 19,
+            "short_desc": "mixedpassword",
+            "long_desc": null,
+            "hint": [
+                [
+                    "mixed",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "ashed_password": {
+            "name": "ashed_password",
+            "line": 19,
+            "short_desc": "bool|stringhashed_password",
+            "long_desc": null,
+            "hint": [
+                [
+                    "bool|string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "load": {
+            "name": "load",
+            "line": 31,
+            "short_desc": "Load user account.",
+            "long_desc": "Always creates user object. To check if user exists, use $this->exists().",
+            "hint": [
+                [
+                    "\\Grav\\Common\\User\\User",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "username": {
+                    "name": "username",
+                    "line": 31,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "remove": {
+            "name": "remove",
+            "line": 58,
+            "short_desc": "Remove user account.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "True if the action was performed",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "username": {
+                    "name": "username",
+                    "line": 58,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "authenticate": {
+            "name": "authenticate",
+            "line": 76,
+            "short_desc": "Authenticate user.",
+            "long_desc": "If user password needs to be updated, new information will be saved.",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "password": {
+                    "name": "password",
+                    "line": 76,
+                    "short_desc": "Plaintext password.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "save": {
+            "name": "save",
+            "line": 119,
+            "short_desc": "Save user without the username",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "authorize": {
+            "name": "authorize",
+            "line": 142,
+            "short_desc": "Checks user authorization to the action.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "action": {
+                    "name": "action",
+                    "line": 142,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "authorise": {
+            "name": "authorise",
+            "line": 184,
+            "short_desc": "Checks user authorization to the action.",
+            "long_desc": "Ensures backwards compatibility",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "deprecated": [
+                    [
+                        "use",
+                        "authorize()"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "action": {
+                    "name": "action",
+                    "line": 184,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

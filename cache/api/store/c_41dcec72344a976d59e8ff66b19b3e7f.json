@@ -1,0 +1,67 @@
+{
+    "name": "Grav\\Common\\GPM\\Remote\\Themes",
+    "line": 8,
+    "short_desc": "Class Themes",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Common\\GPM\\Remote"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\GPM\\Remote",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/Remote\/Themes.php",
+    "relative_file": null,
+    "hash": "d37c9280a76e650368068e7b6a52fa44e8fc4a58",
+    "parent": "Grav\\Common\\GPM\\Remote\\AbstractPackageCollection",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 22,
+            "short_desc": "Local Themes Constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "refresh": {
+                    "name": "refresh",
+                    "line": 22,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                },
+                "callback": {
+                    "name": "callback",
+                    "line": 22,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

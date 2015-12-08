@@ -1,0 +1,64 @@
+{
+    "name": "Grav\\Common\\Service\\ErrorServiceProvider",
+    "line": 11,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Service",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Service\/ErrorServiceProvider.php",
+    "relative_file": null,
+    "hash": "e544a8965c8f16c422f92ff9d8ca7c886e98786b",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Errors": "Grav\\Common\\Errors\\Errors",
+        "Container": "Pimple\\Container",
+        "ServiceProviderInterface": "Pimple\\ServiceProviderInterface",
+        "JsonResponseHandler": "Whoops\\Handler\\JsonResponseHandler",
+        "PrettyPageHandler": "Whoops\\Handler\\PrettyPageHandler",
+        "PlainTextHandler": "Whoops\\Handler\\PlainTextHandler"
+    },
+    "errors": [],
+    "interfaces": {
+        "Pimple\\ServiceProviderInterface": "Pimple\\ServiceProviderInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "register": {
+            "name": "register",
+            "line": 13,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "container": {
+                    "name": "container",
+                    "line": 13,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Pimple\\Container",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Container",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,44 @@
+{
+    "name": "Grav\\Common\\Config\\CompiledBlueprints",
+    "line": 10,
+    "short_desc": "The Compiled Blueprints class.",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Config",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Config\/CompiledBlueprints.php",
+    "relative_file": null,
+    "hash": "c4dfaf412ceed84a7f254d7991fdcb1c1a1b5438",
+    "parent": "Grav\\Common\\Config\\CompiledBase",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "CompiledYamlFile": "Grav\\Common\\File\\CompiledYamlFile",
+        "Blueprints": "RocketTheme\\Toolbox\\Blueprints\\Blueprints"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "version": {
+            "name": "version",
+            "line": 15,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "Version number for the compiled file.",
+            "tags": [],
+            "modifiers": 1,
+            "default": {},
+            "errors": []
+        }
+    },
+    "methods": [],
+    "constants": []
+}

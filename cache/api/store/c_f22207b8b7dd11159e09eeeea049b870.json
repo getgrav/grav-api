@@ -1,0 +1,27 @@
+{
+    "name": "Grav\\Common\\File\\CompiledYamlFile",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\File",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/File\/CompiledYamlFile.php",
+    "relative_file": null,
+    "hash": "63e1bb3903b9bbf213f539f857c66c6f8faee28a",
+    "parent": "RocketTheme\\Toolbox\\File\\YamlFile",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "YamlFile": "RocketTheme\\Toolbox\\File\\YamlFile"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\File\\CompiledFile": "Grav\\Common\\File\\CompiledFile"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

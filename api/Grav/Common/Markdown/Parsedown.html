@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Markdown\Parsedown | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Markdown_Parsedown" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Grav.html">Grav</a></li>
+                                        <li><a href="../../../Grav/Common.html">Common</a></li>
+                                        <li><a href="../../../Grav/Common/Markdown.html">Markdown</a></li>
+    
+                <li>Parsedown</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Parsedown</h1>
+    </div>
+
+    <p>    class
+    <strong>Parsedown</strong>        extends <abbr title="Parsedown">Parsedown</abbr>
+</p>
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Grav/Common/Markdown/ParsedownGravTrait.html"><abbr title="Grav\Common\Markdown\ParsedownGravTrait">Grav\Common\Markdown\ParsedownGravTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    A trait to add some custom processing to the identifyLink() method in Parsedown and ParsedownExtra
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../Grav/Common/GravTrait.html"><abbr title="Grav\Common\GravTrait">Grav\Common\GravTrait</abbr></a>
+                                    </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGrav">getGrav</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGrav">setGrav</a>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_elementToHtml">elementToHtml</a>(
+    array $Element)
+                                            <p>Make the element function publicly accessible, Medium uses this to render from Twig</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Grav/Common/Markdown/ParsedownGravTrait.html#method_elementToHtml"><abbr title="Grav\Common\Markdown\ParsedownGravTrait">ParsedownGravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="Grav\Common\Markdown\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSpecialChars">setSpecialChars</a>($special_chars)
+                                            <p>Setter for special chars</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../Grav/Common/Markdown/ParsedownGravTrait.html#method_setSpecialChars"><abbr title="Grav\Common\Markdown\ParsedownGravTrait">ParsedownGravTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>($page, $defaults)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getGrav">
+        <div class="location">in 
+    <a href="../../../Grav/Common/GravTrait.html#method_getGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 14</div>
+        <code>        static            
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a>
+    <strong>getGrav</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGrav">
+        <div class="location">in 
+    <a href="../../../Grav/Common/GravTrait.html#method_setGrav"><abbr title="Grav\Common\GravTrait">GravTrait</abbr></a> at line 25</div>
+        <code>        static            
+    
+    <strong>setGrav</strong>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $grav)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+                <td>$grav</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_elementToHtml">
+        <div class="location">in 
+    <a href="../../../Grav/Common/Markdown/ParsedownGravTrait.html#method_elementToHtml"><abbr title="Grav\Common\Markdown\ParsedownGravTrait">ParsedownGravTrait</abbr></a> at line 52</div>
+        <code>                    
+    string
+    <strong>elementToHtml</strong>(
+    array $Element)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Make the element function publicly accessible, Medium uses this to render from Twig</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$Element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>markup</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSpecialChars">
+        <div class="location">in 
+    <a href="../../../Grav/Common/Markdown/ParsedownGravTrait.html#method_setSpecialChars"><abbr title="Grav\Common\Markdown\ParsedownGravTrait">ParsedownGravTrait</abbr></a> at line 64</div>
+        <code>                    
+    <abbr title="Grav\Common\Markdown\$this">$this</abbr>
+    <strong>setSpecialChars</strong>($special_chars)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Setter for special chars</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$special_chars</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="Grav\Common\Markdown\$this">$this</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 8</div>
+        <code>                    
+    
+    <strong>__construct</strong>($page, $defaults)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$defaults</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

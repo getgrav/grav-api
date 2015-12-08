@@ -1,0 +1,358 @@
+{
+    "name": "RocketTheme\\Toolbox\\StreamWrapper\\ReadOnlyStream",
+    "line": 13,
+    "short_desc": "Implements Read Only Streams.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\StreamWrapper"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\StreamWrapper",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/StreamWrapper\/src\/ReadOnlyStream.php",
+    "relative_file": null,
+    "hash": "4233744e4f4f5a23909207906501af3a9d1e7791",
+    "parent": "RocketTheme\\Toolbox\\StreamWrapper\\Stream",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ResourceLocatorInterface": "RocketTheme\\Toolbox\\ResourceLocator\\ResourceLocatorInterface"
+    },
+    "errors": [],
+    "interfaces": {
+        "RocketTheme\\Toolbox\\StreamWrapper\\StreamInterface": "RocketTheme\\Toolbox\\StreamWrapper\\StreamInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "stream_open": {
+            "name": "stream_open",
+            "line": 20,
+            "short_desc": "Support for fopen(), file_get_contents(), file_put_contents() etc.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "Returns TRUE if file was opened successfully.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 20,
+                    "short_desc": "A string containing the URI to the file to open.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "mode": {
+                    "name": "mode",
+                    "line": 20,
+                    "short_desc": "The file mode (\"r\", \"wb\" etc.).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 20,
+                    "short_desc": "A bit mask of STREAM_USE_PATH and STREAM_REPORT_ERRORS.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "opened_url": {
+                    "name": "opened_url",
+                    "line": 20,
+                    "short_desc": "A string containing the path actually opened.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": true
+                }
+            }
+        },
+        "stream_lock": {
+            "name": "stream_lock",
+            "line": 40,
+            "short_desc": "Support for flock().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "Always returns TRUE at the present time.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "operation": {
+                    "name": "operation",
+                    "line": 40,
+                    "short_desc": "One of the following:\n    - LOCK_SH to acquire a shared lock (reader).\n    - LOCK_EX to acquire an exclusive lock (writer).\n    - LOCK_UN to release a lock (shared or exclusive).\n    - LOCK_NB if you don't want flock() to block while locking (not\n    supported on Windows).",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "stream_write": {
+            "name": "stream_write",
+            "line": 54,
+            "short_desc": "Support for fwrite(), file_put_contents() etc.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "The number of bytes written (integer).",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 54,
+                    "short_desc": "The string to be written.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "unlink": {
+            "name": "unlink",
+            "line": 59,
+            "short_desc": "Support for unlink().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "RocketTheme\\Toolbox\\StreamWrapper\\TRUE",
+                    false
+                ]
+            ],
+            "hint_desc": "if resource was successfully deleted.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 59,
+                    "short_desc": "A string containing the URI to the resource to delete.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "rename": {
+            "name": "rename",
+            "line": 64,
+            "short_desc": "Support for rename().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE if file was successfully renamed.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "from_uri": {
+                    "name": "from_uri",
+                    "line": 64,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "to_uri": {
+                    "name": "to_uri",
+                    "line": 64,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "mkdir": {
+            "name": "mkdir",
+            "line": 69,
+            "short_desc": "Support for mkdir().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE if directory was successfully created.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 69,
+                    "short_desc": "A string containing the URI to the directory to create.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "mode": {
+                    "name": "mode",
+                    "line": 69,
+                    "short_desc": "Permission flags - see mkdir().",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 69,
+                    "short_desc": "A bit mask of STREAM_REPORT_ERRORS and STREAM_MKDIR_RECURSIVE.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "rmdir": {
+            "name": "rmdir",
+            "line": 74,
+            "short_desc": "Support for rmdir().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "RocketTheme\\Toolbox\\StreamWrapper\\TRUE",
+                    false
+                ]
+            ],
+            "hint_desc": "if directory was successfully removed.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 74,
+                    "short_desc": "A string containing the URI to the directory to delete.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 74,
+                    "short_desc": "A bit mask of STREAM_REPORT_ERRORS.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

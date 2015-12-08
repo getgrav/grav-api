@@ -1,0 +1,854 @@
+{
+    "name": "Grav\\Common\\Page\\Pages",
+    "line": 24,
+    "short_desc": "GravPages is the class that is the entry point into the hierarchy of pages",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\Page",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Page\/Pages.php",
+    "relative_file": null,
+    "hash": "2b09703cfe08cb4f61d9d219e6b4fbc3b2dd2b72",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Grav": "Grav\\Common\\Grav",
+        "Config": "Grav\\Common\\Config\\Config",
+        "Utils": "Grav\\Common\\Utils",
+        "Cache": "Grav\\Common\\Cache",
+        "Taxonomy": "Grav\\Common\\Taxonomy",
+        "Language": "Grav\\Common\\Language",
+        "Blueprint": "Grav\\Common\\Data\\Blueprint",
+        "Blueprints": "Grav\\Common\\Data\\Blueprints",
+        "Folder": "Grav\\Common\\Filesystem\\Folder",
+        "Admin": "Grav\\Plugin\\Admin",
+        "Event": "RocketTheme\\Toolbox\\Event\\Event",
+        "UniformResourceLocator": "RocketTheme\\Toolbox\\ResourceLocator\\UniformResourceLocator",
+        "ErrorException": "Whoops\\Exception\\ErrorException"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 82,
+            "short_desc": "Constructor",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "c": {
+                    "name": "c",
+                    "line": 82,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Grav",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Grav",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "base": {
+            "name": "base",
+            "line": 94,
+            "short_desc": "Get or set base path for the pages.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 94,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "init": {
+            "name": "init",
+            "line": 107,
+            "short_desc": "Class initialization. Must be called before using this class.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "lastModified": {
+            "name": "lastModified",
+            "line": 123,
+            "short_desc": "Get or set last modification time.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "modified": {
+                    "name": "modified",
+                    "line": 123,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "instances": {
+            "name": "instances",
+            "line": 136,
+            "short_desc": "Returns a list of all pages.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Page",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "routes": {
+            "name": "routes",
+            "line": 146,
+            "short_desc": "Returns a list of all routes.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "addPage": {
+            "name": "addPage",
+            "line": 157,
+            "short_desc": "Adds a page and assigns a route to it.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "page": {
+                    "name": "page",
+                    "line": 157,
+                    "short_desc": "Page to be added.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Page\\Page",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Page",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "route": {
+                    "name": "route",
+                    "line": 157,
+                    "short_desc": "Optional route (uses route from the object if not set).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "sort": {
+            "name": "sort",
+            "line": 178,
+            "short_desc": "Sort sub-pages in a page.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "page": {
+                    "name": "page",
+                    "line": 178,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Page\\Page",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Page",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "order_by": {
+                    "name": "order_by",
+                    "line": 178,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "order_dir": {
+                    "name": "order_dir",
+                    "line": 178,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "sortCollection": {
+            "name": "sortCollection",
+            "line": 215,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "internal": [
+                    [
+                        ""
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "collection": {
+                    "name": "collection",
+                    "line": 215,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Page\\Collection",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Collection",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "orderBy": {
+                    "name": "orderBy",
+                    "line": 215,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "orderDir": {
+                    "name": "orderDir",
+                    "line": 215,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'asc'",
+                    "is_by_ref": false
+                },
+                "orderManual": {
+                    "name": "orderManual",
+                    "line": 215,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "null",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "get": {
+            "name": "get",
+            "line": 244,
+            "short_desc": "Get a page instance.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Page",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\Exception",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 244,
+                    "short_desc": "The filesystem full path of the page",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "children": {
+            "name": "children",
+            "line": 258,
+            "short_desc": "Get children of the path.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "path": {
+                    "name": "path",
+                    "line": 258,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "dispatch": {
+            "name": "dispatch",
+            "line": 271,
+            "short_desc": "Dispatch URI to a page.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Page",
+                    false
+                ],
+                [
+                    "null",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "url": {
+                    "name": "url",
+                    "line": 271,
+                    "short_desc": "The relative URL of the page",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "all": {
+                    "name": "all",
+                    "line": 271,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "root": {
+            "name": "root",
+            "line": 335,
+            "short_desc": "Get root page.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Page",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "blueprints": {
+            "name": "blueprints",
+            "line": 349,
+            "short_desc": "Get a blueprint for a page type.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Data\\Blueprint",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "type": {
+                    "name": "type",
+                    "line": 349,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "all": {
+            "name": "all",
+            "line": 375,
+            "short_desc": "Get all pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "current": {
+                    "name": "current",
+                    "line": 375,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Page\\Page",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Page",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getList": {
+            "name": "getList",
+            "line": 401,
+            "short_desc": "Get list of route\/title of all pages.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [
+                [
+                    "\\RuntimeException",
+                    ""
+                ]
+            ],
+            "errors": [],
+            "parameters": {
+                "current": {
+                    "name": "current",
+                    "line": 401,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Page\\Page",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Page",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "level": {
+                    "name": "level",
+                    "line": 401,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "0",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getTypes": {
+            "name": "getTypes",
+            "line": 429,
+            "short_desc": "Get available page types.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Types",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "types": {
+            "name": "types",
+            "line": 450,
+            "short_desc": "Get available page types.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "modularTypes": {
+            "name": "modularTypes",
+            "line": 462,
+            "short_desc": "Get available page types.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "pageTypes": {
+            "name": "pageTypes",
+            "line": 474,
+            "short_desc": "Get template types based on page type (standard or modular)",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "accessLevels": {
+            "name": "accessLevels",
+            "line": 494,
+            "short_desc": "Get access levels of the site pages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "parents": {
+            "name": "parents",
+            "line": 524,
+            "short_desc": "Get available parents.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getHomeRoute": {
+            "name": "getHomeRoute",
+            "line": 554,
+            "short_desc": "Get's the home route",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "resetPages": {
+            "name": "resetPages",
+            "line": 655,
+            "short_desc": "Accessible method to manually reset the pages cache",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "pages_dir": {
+                    "name": "pages_dir",
+                    "line": 655,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "page_cache_id": {
+                    "name": "page_cache_id",
+                    "line": 655,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

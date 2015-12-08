@@ -1,0 +1,698 @@
+{
+    "name": "Grav\\Common\\GPM\\GPM",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\GPM",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/GPM.php",
+    "relative_file": null,
+    "hash": "425fca6d26029a75aea333f7b4f972def2774b8f",
+    "parent": "Grav\\Common\\Iterator",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Inflector": "Grav\\Common\\Inflector",
+        "Iterator": "Grav\\Common\\Iterator",
+        "Utils": "Grav\\Common\\Utils"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "grav": {
+            "name": "grav",
+            "line": 25,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\GPM\\Remote\\Grav",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 40,
+            "short_desc": "Creates a new GPM instance with Local and Remote packages available",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "refresh": {
+                    "name": "refresh",
+                    "line": 40,
+                    "short_desc": "Applies to Remote Packages only and forces a refetch of data",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "boolean",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                },
+                "callback": {
+                    "name": "callback",
+                    "line": 40,
+                    "short_desc": "Either a function or callback in array notation",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getInstalled": {
+            "name": "getInstalled",
+            "line": 54,
+            "short_desc": "Returns the Locally installed packages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Iterator",
+                    false
+                ]
+            ],
+            "hint_desc": "The installed packages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "countInstalled": {
+            "name": "countInstalled",
+            "line": 63,
+            "short_desc": "Returns the amount of locally installed packages",
+            "long_desc": "",
+            "hint": [
+                [
+                    "integer",
+                    false
+                ]
+            ],
+            "hint_desc": "Amount of installed packages",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getInstalledPlugin": {
+            "name": "getInstalledPlugin",
+            "line": 75,
+            "short_desc": "Return the instance of a specific Plugin",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\GPM\\Local\\Package",
+                    false
+                ]
+            ],
+            "hint_desc": "The instance of the Plugin",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "slug": {
+                    "name": "slug",
+                    "line": 75,
+                    "short_desc": "The slug of the Plugin",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getInstalledPlugins": {
+            "name": "getInstalledPlugins",
+            "line": 84,
+            "short_desc": "Returns the Locally installed plugins",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Iterator",
+                    false
+                ]
+            ],
+            "hint_desc": "The installed plugins",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isPluginInstalled": {
+            "name": "isPluginInstalled",
+            "line": 94,
+            "short_desc": "Checks if a Plugin is installed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if the Plugin has been installed. False otherwise",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "slug": {
+                    "name": "slug",
+                    "line": 94,
+                    "short_desc": "The slug of the Plugin",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getInstalledTheme": {
+            "name": "getInstalledTheme",
+            "line": 104,
+            "short_desc": "Return the instance of a specific Theme",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\GPM\\Local\\Package",
+                    false
+                ]
+            ],
+            "hint_desc": "The instance of the Theme",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "slug": {
+                    "name": "slug",
+                    "line": 104,
+                    "short_desc": "The slug of the Theme",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getInstalledThemes": {
+            "name": "getInstalledThemes",
+            "line": 113,
+            "short_desc": "Returns the Locally installed themes",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Iterator",
+                    false
+                ]
+            ],
+            "hint_desc": "The installed themes",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isThemeInstalled": {
+            "name": "isThemeInstalled",
+            "line": 123,
+            "short_desc": "Checks if a Theme is installed",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if the Theme has been installed. False otherwise",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "slug": {
+                    "name": "slug",
+                    "line": 123,
+                    "short_desc": "The slug of the Theme",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "countUpdates": {
+            "name": "countUpdates",
+            "line": 132,
+            "short_desc": "Returns the amount of updates available",
+            "long_desc": "",
+            "hint": [
+                [
+                    "integer",
+                    false
+                ]
+            ],
+            "hint_desc": "Amount of available updates",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getUpdatable": {
+            "name": "getUpdatable",
+            "line": 148,
+            "short_desc": "Returns an array of Plugins and Themes that can be updated.",
+            "long_desc": "Plugins and Themes are extended with the `available` property that relies to the remote version",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "Array of updatable Plugins and Themes.\n              Format: ['total' => int, 'plugins' => array, 'themes' => array]",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getUpdatablePlugins": {
+            "name": "getUpdatablePlugins",
+            "line": 167,
+            "short_desc": "Returns an array of Plugins that can be updated.",
+            "long_desc": "The Plugins are extended with the `available` property that relies to the remote version",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Iterator",
+                    false
+                ]
+            ],
+            "hint_desc": "Array of updatable Plugins",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isUpdatable": {
+            "name": "isUpdatable",
+            "line": 202,
+            "short_desc": "Check if a Plugin or Theme is updatable",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if updatable. False otherwise or if not found",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "slug": {
+                    "name": "slug",
+                    "line": 202,
+                    "short_desc": "The slug of the package",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isPluginUpdatable": {
+            "name": "isPluginUpdatable",
+            "line": 212,
+            "short_desc": "Checks if a Plugin is updatable",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if the Plugin is updatable. False otherwise",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "plugin": {
+                    "name": "plugin",
+                    "line": 212,
+                    "short_desc": "The slug of the Plugin",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getUpdatableThemes": {
+            "name": "getUpdatableThemes",
+            "line": 222,
+            "short_desc": "Returns an array of Themes that can be updated.",
+            "long_desc": "The Themes are extended with the `available` property that relies to the remote version",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Iterator",
+                    false
+                ]
+            ],
+            "hint_desc": "Array of updatable Themes",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isThemeUpdatable": {
+            "name": "isThemeUpdatable",
+            "line": 257,
+            "short_desc": "Checks if a Theme is Updatable",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "True if the Theme is updatable. False otherwise",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "theme": {
+                    "name": "theme",
+                    "line": 257,
+                    "short_desc": "The slug of the Theme",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getRepositoryPlugin": {
+            "name": "getRepositoryPlugin",
+            "line": 267,
+            "short_desc": "Returns a Plugin from the repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Package if found, NULL if not",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "slug": {
+                    "name": "slug",
+                    "line": 267,
+                    "short_desc": "The slug of the Plugin",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getRepositoryPlugins": {
+            "name": "getRepositoryPlugins",
+            "line": 276,
+            "short_desc": "Returns the list of Plugins available in the repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Iterator",
+                    false
+                ]
+            ],
+            "hint_desc": "The Plugins remotely available",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getRepositoryTheme": {
+            "name": "getRepositoryTheme",
+            "line": 286,
+            "short_desc": "Returns a Theme from the repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "Package if found, NULL if not",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "slug": {
+                    "name": "slug",
+                    "line": 286,
+                    "short_desc": "The slug of the Theme",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getRepositoryThemes": {
+            "name": "getRepositoryThemes",
+            "line": 295,
+            "short_desc": "Returns the list of Themes available in the repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Iterator",
+                    false
+                ]
+            ],
+            "hint_desc": "The Themes remotely available",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getRepository": {
+            "name": "getRepository",
+            "line": 305,
+            "short_desc": "Returns the list of Plugins and Themes available in the repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "Array of available Plugins and Themes\n              Format: ['plugins' => array, 'themes' => array]",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "findPackage": {
+            "name": "findPackage",
+            "line": 315,
+            "short_desc": "Searches for a Package in the repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\GPM\\Remote\\Package",
+                    false
+                ]
+            ],
+            "hint_desc": "Package if found, FALSE if not",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "search": {
+                    "name": "search",
+                    "line": 315,
+                    "short_desc": "Can be either the slug or the name",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "findPackages": {
+            "name": "findPackages",
+            "line": 352,
+            "short_desc": "Searches for a list of Packages in the repository",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "Array of found Packages\n                       Format: ['total' => int, 'not_found' => array, <found-slugs>]",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "searches": {
+                    "name": "searches",
+                    "line": 352,
+                    "short_desc": "An array of either slugs or names",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

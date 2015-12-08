@@ -1,0 +1,41 @@
+{
+    "name": "RocketTheme\\Toolbox\\DI\\Container",
+    "line": 13,
+    "short_desc": "Implements Dependency Injection Container.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\DI"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\DI",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/DI\/src\/Container.php",
+    "relative_file": null,
+    "hash": "6b16609fa5ac254044921c5edbfd3ca8ec34ac1a",
+    "parent": "Pimple\\Container",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "BaseContainer": "Pimple\\Container"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

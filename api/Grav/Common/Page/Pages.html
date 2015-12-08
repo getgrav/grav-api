@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Page\Pages | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Page_Pages" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Grav.html">Grav</a></li>
+                                        <li><a href="../../../Grav/Common.html">Common</a></li>
+                                        <li><a href="../../../Grav/Common/Page.html">Page</a></li>
+    
+                <li>Pages</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Pages</h1>
+    </div>
+
+    <p>    class
+    <strong>Pages</strong>
+</p>
+
+            <div class="description">
+            <p>GravPages is the class that is the entry point into the hierarchy of pages</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $c)
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_base">base</a>(
+    string $path = null)
+                                            <p>Get or set base path for the pages.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>()
+                                            <p>Class initialization. Must be called before using this class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lastModified">lastModified</a>(
+    int $modified = null)
+                                            <p>Get or set last modification time.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_instances">instances</a>()
+                                            <p>Returns a list of all pages.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_routes">routes</a>()
+                                            <p>Returns a list of all routes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addPage">addPage</a>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $page, 
+    string $route = null)
+                                            <p>Adds a page and assigns a route to it.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sort">sort</a>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $page, 
+    string $order_by = null, 
+    string $order_dir = null)
+                                            <p>Sort sub-pages in a page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sortCollection">sortCollection</a>(
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a> $collection, $orderBy, 
+    string $orderDir = &#039;asc&#039;, 
+    null $orderManual = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(
+    string $path)
+                                            <p>Get a page instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_children">children</a>(
+    string $path)
+                                            <p>Get children of the path.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dispatch">dispatch</a>($url, 
+    bool $all = false)
+                                            <p>Dispatch URI to a page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_root">root</a>()
+                                            <p>Get root page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Data/Blueprint.html"><abbr title="Grav\Common\Data\Blueprint">Blueprint</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blueprints">blueprints</a>(
+    string $type)
+                                            <p>Get a blueprint for a page type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all">all</a>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $current = null)
+                                            <p>Get all pages</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getList">getList</a>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $current = null, 
+    int $level)
+                                            <p>Get list of route/title of all pages.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    <a href="../../../Grav/Common/Page/Types.html"><abbr title="Grav\Common\Page\Types">Types</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTypes">getTypes</a>()
+                                            <p>Get available page types.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_types">types</a>()
+                                            <p>Get available page types.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_modularTypes">modularTypes</a>()
+                                            <p>Get available page types.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pageTypes">pageTypes</a>()
+                                            <p>Get template types based on page type (standard or modular)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_accessLevels">accessLevels</a>()
+                                            <p>Get access levels of the site pages</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parents">parents</a>()
+                                            <p>Get available parents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHomeRoute">getHomeRoute</a>()
+                                            <p>Get's the home route</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resetPages">resetPages</a>($pages_dir, $page_cache_id)
+                                            <p>Accessible method to manually reset the pages cache</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 82</div>
+        <code>                    
+    
+    <strong>__construct</strong>(
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a> $c)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Constructor</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Grav.html"><abbr title="Grav\Common\Grav">Grav</abbr></a></td>
+                <td>$c</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_base">
+        <div class="location">at line 94</div>
+        <code>                    
+    string
+    <strong>base</strong>(
+    string $path = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get or set base path for the pages.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">at line 107</div>
+        <code>                    
+    
+    <strong>init</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Class initialization. Must be called before using this class.</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lastModified">
+        <div class="location">at line 123</div>
+        <code>                    
+    int|null
+    <strong>lastModified</strong>(
+    int $modified = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get or set last modification time.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    int</td>
+                <td>$modified</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instances">
+        <div class="location">at line 136</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+    <strong>instances</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns a list of all pages.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_routes">
+        <div class="location">at line 146</div>
+        <code>                    
+    array
+    <strong>routes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns a list of all routes.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPage">
+        <div class="location">at line 157</div>
+        <code>                    
+    
+    <strong>addPage</strong>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $page, 
+    string $route = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Adds a page and assigns a route to it.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+                <td>$page</td>
+                <td>Page to be added.</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$route</td>
+                <td>Optional route (uses route from the object if not set).</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sort">
+        <div class="location">at line 178</div>
+        <code>                    
+    array
+    <strong>sort</strong>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $page, 
+    string $order_by = null, 
+    string $order_dir = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Sort sub-pages in a page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+                <td>$page</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$order_by</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$order_dir</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sortCollection">
+        <div class="location">at line 215</div>
+        <code>                    
+    array
+    <strong>sortCollection</strong>(
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a> $collection, $orderBy, 
+    string $orderDir = &#039;asc&#039;, 
+    null $orderManual = null)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a></td>
+                <td>$collection</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orderBy</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$orderDir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    null</td>
+                <td>$orderManual</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at line 244</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+    <strong>get</strong>(
+    string $path)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get a page instance.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$path</td>
+                <td>The filesystem full path of the page</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_children">
+        <div class="location">at line 258</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a>
+    <strong>children</strong>(
+    string $path)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get children of the path.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatch">
+        <div class="location">at line 271</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>|null
+    <strong>dispatch</strong>($url, 
+    bool $all = false)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Dispatch URI to a page.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$url</td>
+                <td>The relative URL of the page</td>
+            </tr>
+                    <tr>
+                <td>
+    bool</td>
+                <td>$all</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_root">
+        <div class="location">at line 335</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a>
+    <strong>root</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get root page.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blueprints">
+        <div class="location">at line 349</div>
+        <code>                    
+    <a href="../../../Grav/Common/Data/Blueprint.html"><abbr title="Grav\Common\Data\Blueprint">Blueprint</abbr></a>
+    <strong>blueprints</strong>(
+    string $type)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get a blueprint for a page type.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Data/Blueprint.html"><abbr title="Grav\Common\Data\Blueprint">Blueprint</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all">
+        <div class="location">at line 375</div>
+        <code>                    
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a>
+    <strong>all</strong>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $current = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get all pages</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+                <td>$current</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Collection.html"><abbr title="Grav\Common\Page\Collection">Collection</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getList">
+        <div class="location">at line 401</div>
+        <code>                    
+    array
+    <strong>getList</strong>(
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a> $current = null, 
+    int $level)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get list of route/title of all pages.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../Grav/Common/Page/Page.html"><abbr title="Grav\Common\Page\Page">Page</abbr></a></td>
+                <td>$current</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTypes">
+        <div class="location">at line 429</div>
+        <code>        static            
+    <a href="../../../Grav/Common/Page/Types.html"><abbr title="Grav\Common\Page\Types">Types</abbr></a>
+    <strong>getTypes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get available page types.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../../Grav/Common/Page/Types.html"><abbr title="Grav\Common\Page\Types">Types</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_types">
+        <div class="location">at line 450</div>
+        <code>        static            
+    array
+    <strong>types</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get available page types.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modularTypes">
+        <div class="location">at line 462</div>
+        <code>        static            
+    array
+    <strong>modularTypes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get available page types.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pageTypes">
+        <div class="location">at line 474</div>
+        <code>        static            
+    array
+    <strong>pageTypes</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get template types based on page type (standard or modular)</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_accessLevels">
+        <div class="location">at line 494</div>
+        <code>                    
+    array
+    <strong>accessLevels</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get access levels of the site pages</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parents">
+        <div class="location">at line 524</div>
+        <code>        static            
+    array
+    <strong>parents</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get available parents.</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHomeRoute">
+        <div class="location">at line 554</div>
+        <code>        static            
+    string
+    <strong>getHomeRoute</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Get's the home route</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resetPages">
+        <div class="location">at line 655</div>
+        <code>                    
+    
+    <strong>resetPages</strong>($pages_dir, $page_cache_id)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Accessible method to manually reset the pages cache</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$pages_dir</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$page_cache_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

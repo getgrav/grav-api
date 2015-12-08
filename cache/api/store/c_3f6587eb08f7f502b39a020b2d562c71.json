@@ -1,0 +1,207 @@
+{
+    "name": "Grav\\Common\\GPM\\Response",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\GPM",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/GPM\/Response.php",
+    "relative_file": null,
+    "hash": "e11039ecfb4a75f16448e1ea1272cd5dee56a8b0",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Utils": "Grav\\Common\\Utils"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "callback": {
+            "name": "callback",
+            "line": 12,
+            "short_desc": "The callback for the progress",
+            "long_desc": "",
+            "hint": [
+                [
+                    "callable",
+                    false
+                ]
+            ],
+            "hint_desc": "Either a function or callback in array notation",
+            "tags": [],
+            "modifiers": 9,
+            "default": {},
+            "errors": []
+        }
+    },
+    "methods": {
+        "setMethod": {
+            "name": "setMethod",
+            "line": 57,
+            "short_desc": "Sets the preferred method to use for making HTTP calls.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\GPM\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "method": {
+                    "name": "method",
+                    "line": 57,
+                    "short_desc": "Default is `auto`",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'auto'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "get": {
+            "name": "get",
+            "line": 75,
+            "short_desc": "Makes a request to the URL by using the preferred method",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "The response of the request",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 75,
+                    "short_desc": "URL to call",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "''",
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 75,
+                    "short_desc": "An array of parameters for both `curl` and `fopen`",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "array()",
+                    "is_by_ref": false
+                },
+                "callback": {
+                    "name": "callback",
+                    "line": 75,
+                    "short_desc": "Either a function or callback in array notation",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "progress": {
+            "name": "progress",
+            "line": 101,
+            "short_desc": "Progress normalized for cURL and Fopen",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "Normalized array with useful data.\n              Format: ['code' => int|false, 'filesize' => bytes, 'transferred' => bytes, 'percent' => int]",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "\"0\" @param tags are expected but only \"1\" found"
+            ],
+            "parameters": []
+        },
+        "isCurlAvailable": {
+            "name": "isCurlAvailable",
+            "line": 138,
+            "short_desc": "Checks if cURL is available",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "isFopenAvailable": {
+            "name": "isFopenAvailable",
+            "line": 147,
+            "short_desc": "Checks if the remote fopen request is enabled in PHP",
+            "long_desc": "",
+            "hint": [
+                [
+                    "boolean",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

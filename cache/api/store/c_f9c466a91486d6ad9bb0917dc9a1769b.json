@@ -1,0 +1,39 @@
+{
+    "name": "RocketTheme\\Toolbox\\File\\JsonFile",
+    "line": 11,
+    "short_desc": "Implements Json File reader.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\File"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\File",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/File\/src\/JsonFile.php",
+    "relative_file": null,
+    "hash": "ed6410dfb2791f6ba06f0d7cb55e94e4ed41401b",
+    "parent": "RocketTheme\\Toolbox\\File\\File",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Grav\\Common\\Page\\Header",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Page",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Page\/Header.php",
+    "relative_file": null,
+    "hash": "97b438f61653aa4f264a8da81a61e67513cd4e74",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Constructor": "RocketTheme\\Toolbox\\ArrayTraits\\Constructor",
+        "NestedArrayAccess": "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccess"
+    },
+    "errors": [],
+    "interfaces": {
+        "ArrayAccess": "ArrayAccess"
+    },
+    "traits": {
+        "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccess": "RocketTheme\\Toolbox\\ArrayTraits\\NestedArrayAccess",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Constructor": "RocketTheme\\Toolbox\\ArrayTraits\\Constructor"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

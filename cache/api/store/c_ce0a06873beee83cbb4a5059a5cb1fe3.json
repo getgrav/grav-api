@@ -1,0 +1,139 @@
+{
+    "name": "Grav\\Common\\Plugin",
+    "line": 16,
+    "short_desc": "The Plugin object just holds the id and path to a plugin.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Plugin.php",
+    "relative_file": null,
+    "hash": "bdaa09817b65713cfdef71cd2d3187e96fd99a0f",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Data": "Grav\\Common\\Data\\Data",
+        "Page": "Grav\\Common\\Page\\Page",
+        "Config": "Grav\\Common\\Config\\Config",
+        "EventDispatcher": "RocketTheme\\Toolbox\\Event\\EventDispatcher",
+        "EventSubscriberInterface": "RocketTheme\\Toolbox\\Event\\EventSubscriberInterface"
+    },
+    "errors": [],
+    "interfaces": {
+        "RocketTheme\\Toolbox\\Event\\EventSubscriberInterface": "RocketTheme\\Toolbox\\Event\\EventSubscriberInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "getSubscribedEvents": {
+            "name": "getSubscribedEvents",
+            "line": 39,
+            "short_desc": "By default assign all methods as listeners using the default priority.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "__construct": {
+            "name": "__construct",
+            "line": 60,
+            "short_desc": "Constructor.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "name": {
+                    "name": "name",
+                    "line": 60,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "grav": {
+                    "name": "grav",
+                    "line": 60,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Grav",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Grav",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "config": {
+                    "name": "config",
+                    "line": 60,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Config\\Config",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Config",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "isAdmin": {
+            "name": "isAdmin",
+            "line": 67,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

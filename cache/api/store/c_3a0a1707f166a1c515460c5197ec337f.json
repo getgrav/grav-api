@@ -1,0 +1,117 @@
+{
+    "name": "Grav\\Common\\Page\\Medium\\ImageFile",
+    "line": 9,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Page\\Medium",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Page\/Medium\/ImageFile.php",
+    "relative_file": null,
+    "hash": "531d55c538a508273d92e5667269e2c08b59a695",
+    "parent": "Gregwar\\Image\\Image",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GravTrait": "Grav\\Common\\GravTrait",
+        "GenerationError": "Gregwar\\Image\\Exceptions\\GenerationError",
+        "Event": "RocketTheme\\Toolbox\\Event\\Event",
+        "Image": "Gregwar\\Image\\Image"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "clearOperations": {
+            "name": "clearOperations",
+            "line": 16,
+            "short_desc": "Clear previously applied operations",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "cacheFile": {
+            "name": "cacheFile",
+            "line": 30,
+            "short_desc": "This is the same as the Gregwar Image class except this one fires a Grav Event on creation of new cached file",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ],
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "type": {
+                    "name": "type",
+                    "line": 30,
+                    "short_desc": "the image type",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'jpg'",
+                    "is_by_ref": false
+                },
+                "quality": {
+                    "name": "quality",
+                    "line": 30,
+                    "short_desc": "the quality (for JPEG)",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "80",
+                    "is_by_ref": false
+                },
+                "actual": {
+                    "name": "actual",
+                    "line": 30,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

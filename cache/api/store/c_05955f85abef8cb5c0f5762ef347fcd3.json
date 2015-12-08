@@ -1,0 +1,39 @@
+{
+    "name": "RocketTheme\\Toolbox\\File\\IniFile",
+    "line": 11,
+    "short_desc": "Implements INI File reader.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\File"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\File",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/File\/src\/IniFile.php",
+    "relative_file": null,
+    "hash": "4445d541a1a5aa03d664f323d1417d90712beef2",
+    "parent": "RocketTheme\\Toolbox\\File\\File",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

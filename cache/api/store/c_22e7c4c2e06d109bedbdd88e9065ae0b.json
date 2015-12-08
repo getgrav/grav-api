@@ -1,0 +1,91 @@
+{
+    "name": "Grav\\Console\\Gpm\\IndexCommand",
+    "line": 13,
+    "short_desc": "Class IndexCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Gpm"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Gpm",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Gpm\/IndexCommand.php",
+    "relative_file": null,
+    "hash": "59cd231a42da75ca318f382847f9baeddafa4f39",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GPM": "Grav\\Common\\GPM\\GPM",
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "filter": {
+            "name": "filter",
+            "line": 169,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 169,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "sort": {
+            "name": "sort",
+            "line": 208,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "packages": {
+                    "name": "packages",
+                    "line": 208,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

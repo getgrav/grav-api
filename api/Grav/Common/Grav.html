@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Grav\Common\Grav | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Grav_Common_Grav" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../Grav.html">Grav</a></li>
+                                        <li><a href="../../Grav/Common.html">Common</a></li>
+    
+                <li>Grav</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Grav</h1>
+    </div>
+
+    <p>    class
+    <strong>Grav</strong>        extends <a href="../../RocketTheme/Toolbox/DI/Container.html"><abbr title="RocketTheme\Toolbox\DI\Container">Container</abbr></a>
+</p>
+
+            <div class="description">
+            <p>Grav</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_output">
+                                                                                
+    string
+                </td>
+                <td>$output</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_instance">instance</a>(
+    array $values = array())
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_process">process</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirect">redirect</a>(
+    string $route, 
+    int $code = null)
+                                            <p>Redirect browser to another location.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirectLangSafe">redirectLangSafe</a>(
+    string $route, 
+    int $code = null)
+                                            <p>Redirect browser to another location taking language into account (preferred)</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mime">mime</a>(
+    string $format)
+                                            <p>Returns mime type for the file format.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_header">header</a>()
+                                            <p>Set response header.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <a href="../../RocketTheme/Toolbox/Event/Event.html"><abbr title="RocketTheme\Toolbox\Event\Event">Event</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fireEvent">fireEvent</a>(
+    string $eventName, 
+    <a href="../../RocketTheme/Toolbox/Event/Event.html"><abbr title="RocketTheme\Toolbox\Event\Event">Event</abbr></a> $event = null)
+                                            <p>Fires an event with optional parameters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shutdown">shutdown</a>()
+                                            <p>Set the final content length for the page and flush the buffer</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_instance">
+        <div class="location">at line 37</div>
+        <code>        static            
+    
+    <strong>instance</strong>(
+    array $values = array())</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    array</td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process">
+        <div class="location">at line 183</div>
+        <code>                    
+    
+    <strong>process</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location">at line 277</div>
+        <code>                    
+    
+    <strong>redirect</strong>(
+    string $route, 
+    int $code = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Redirect browser to another location.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$route</td>
+                <td>Internal route.</td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$code</td>
+                <td>Redirection code (30x)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirectLangSafe">
+        <div class="location">at line 317</div>
+        <code>                    
+    
+    <strong>redirectLangSafe</strong>(
+    string $route, 
+    int $code = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Redirect browser to another location taking language into account (preferred)</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$route</td>
+                <td>Internal route.</td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$code</td>
+                <td>Redirection code (30x)</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mime">
+        <div class="location">at line 335</div>
+        <code>                    
+    string
+    <strong>mime</strong>(
+    string $format)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Returns mime type for the file format.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_header">
+        <div class="location">at line 355</div>
+        <code>                    
+    
+    <strong>header</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set response header.</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fireEvent">
+        <div class="location">at line 407</div>
+        <code>                    
+    <a href="../../RocketTheme/Toolbox/Event/Event.html"><abbr title="RocketTheme\Toolbox\Event\Event">Event</abbr></a>
+    <strong>fireEvent</strong>(
+    string $eventName, 
+    <a href="../../RocketTheme/Toolbox/Event/Event.html"><abbr title="RocketTheme\Toolbox\Event\Event">Event</abbr></a> $event = null)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Fires an event with optional parameters.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$eventName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+    <a href="../../RocketTheme/Toolbox/Event/Event.html"><abbr title="RocketTheme\Toolbox\Event\Event">Event</abbr></a></td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <a href="../../RocketTheme/Toolbox/Event/Event.html"><abbr title="RocketTheme\Toolbox\Event\Event">Event</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shutdown">
+        <div class="location">at line 418</div>
+        <code>                    
+    
+    <strong>shutdown</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Set the final content length for the page and flush the buffer</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+{
+    "name": "Grav\\Console\\Cli\\ComposerCommand",
+    "line": 12,
+    "short_desc": "Class ComposerCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Cli"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Cli",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Cli\/ComposerCommand.php",
+    "relative_file": null,
+    "hash": "fdb4cb71fa83ef0afb47a53f5a8e35cf9b8f51d4",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

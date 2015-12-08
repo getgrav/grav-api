@@ -1,0 +1,34 @@
+{
+    "name": "Grav\\Console\\Cli\\NewProjectCommand",
+    "line": 13,
+    "short_desc": "Class NewProjectCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Cli"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Cli",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Cli\/NewProjectCommand.php",
+    "relative_file": null,
+    "hash": "bcc3b586917aa26fd68f262394ebe92265e3fc63",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "ArrayInput": "Symfony\\Component\\Console\\Input\\ArrayInput",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

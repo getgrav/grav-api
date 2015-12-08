@@ -1,0 +1,65 @@
+{
+    "name": "Grav\\Common\\Service\\StreamsServiceProvider",
+    "line": 12,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Service",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Service\/StreamsServiceProvider.php",
+    "relative_file": null,
+    "hash": "193fcf1afbc997497fec1a26d5ec85319b90b9fa",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Setup": "Grav\\Common\\Config\\Setup",
+        "Container": "Pimple\\Container",
+        "ServiceProviderInterface": "RocketTheme\\Toolbox\\DI\\ServiceProviderInterface",
+        "UniformResourceLocator": "RocketTheme\\Toolbox\\ResourceLocator\\UniformResourceLocator",
+        "ReadOnlyStream": "RocketTheme\\Toolbox\\StreamWrapper\\ReadOnlyStream",
+        "Stream": "RocketTheme\\Toolbox\\StreamWrapper\\Stream",
+        "StreamBuilder": "RocketTheme\\Toolbox\\StreamWrapper\\StreamBuilder"
+    },
+    "errors": [],
+    "interfaces": {
+        "RocketTheme\\Toolbox\\DI\\ServiceProviderInterface": "RocketTheme\\Toolbox\\DI\\ServiceProviderInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "register": {
+            "name": "register",
+            "line": 14,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "container": {
+                    "name": "container",
+                    "line": 14,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Pimple\\Container",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Container",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

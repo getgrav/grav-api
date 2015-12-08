@@ -1,0 +1,68 @@
+{
+    "name": "Grav\\Console\\Gpm\\InstallCommand",
+    "line": 22,
+    "short_desc": "Class InstallCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Gpm"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Gpm",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Gpm\/InstallCommand.php",
+    "relative_file": null,
+    "hash": "1990a1593ef518871f9d9d53bb2364e75cd56277",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Folder": "Grav\\Common\\Filesystem\\Folder",
+        "GPM": "Grav\\Common\\GPM\\GPM",
+        "Installer": "Grav\\Common\\GPM\\Installer",
+        "Response": "Grav\\Common\\GPM\\Response",
+        "Utils": "Grav\\Common\\Utils",
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption",
+        "ConfirmationQuestion": "Symfony\\Component\\Console\\Question\\ConfirmationQuestion",
+        "ChoiceQuestion": "Symfony\\Component\\Console\\Question\\ChoiceQuestion",
+        "Yaml": "Symfony\\Component\\Yaml\\Yaml"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "progress": {
+            "name": "progress",
+            "line": 516,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "progress": {
+                    "name": "progress",
+                    "line": 516,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

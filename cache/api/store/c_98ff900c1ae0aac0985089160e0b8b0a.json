@@ -1,0 +1,563 @@
+{
+    "name": "Grav\\Common\\Iterator",
+    "line": 15,
+    "short_desc": "Class Iterator",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Common"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Iterator.php",
+    "relative_file": null,
+    "hash": "1ca574fba20a6bb8b463f64685dcfc769db9dcd3",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ArrayAccessWithGetters": "RocketTheme\\Toolbox\\ArrayTraits\\ArrayAccessWithGetters",
+        "ArrayIterator": "RocketTheme\\Toolbox\\ArrayTraits\\Iterator",
+        "Constructor": "RocketTheme\\Toolbox\\ArrayTraits\\Constructor",
+        "Countable": "RocketTheme\\Toolbox\\ArrayTraits\\Countable",
+        "Export": "RocketTheme\\Toolbox\\ArrayTraits\\Export",
+        "Serializable": "RocketTheme\\Toolbox\\ArrayTraits\\Serializable"
+    },
+    "errors": [],
+    "interfaces": {
+        "ArrayAccess": "ArrayAccess",
+        "Iterator": "Iterator",
+        "Countable": "Countable",
+        "Serializable": "Serializable"
+    },
+    "traits": {
+        "RocketTheme\\Toolbox\\ArrayTraits\\Constructor": "RocketTheme\\Toolbox\\ArrayTraits\\Constructor",
+        "RocketTheme\\Toolbox\\ArrayTraits\\ArrayAccessWithGetters": "RocketTheme\\Toolbox\\ArrayTraits\\ArrayAccessWithGetters",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Iterator": "RocketTheme\\Toolbox\\ArrayTraits\\Iterator",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Countable": "RocketTheme\\Toolbox\\ArrayTraits\\Countable",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Serializable": "RocketTheme\\Toolbox\\ArrayTraits\\Serializable",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Export": "RocketTheme\\Toolbox\\ArrayTraits\\Export"
+    },
+    "properties": [],
+    "methods": {
+        "__call": {
+            "name": "__call",
+            "line": 31,
+            "short_desc": "Convert function calls for the existing keys into their values.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "key": {
+                    "name": "key",
+                    "line": 31,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "args": {
+                    "name": "args",
+                    "line": 31,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "__clone": {
+            "name": "__clone",
+            "line": 39,
+            "short_desc": "Clone the iterator.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "__toString": {
+            "name": "__toString",
+            "line": 53,
+            "short_desc": "Convents iterator to a comma separated list.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "remove": {
+            "name": "remove",
+            "line": 63,
+            "short_desc": "Remove item from the list.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "key": {
+                    "name": "key",
+                    "line": 63,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "prev": {
+            "name": "prev",
+            "line": 73,
+            "short_desc": "Return previous item.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "nth": {
+            "name": "nth",
+            "line": 84,
+            "short_desc": "Return nth item.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ],
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "key": {
+                    "name": "key",
+                    "line": 84,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "first": {
+            "name": "first",
+            "line": 95,
+            "short_desc": "Get the first item",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "last": {
+            "name": "last",
+            "line": 106,
+            "short_desc": "Get the last item",
+            "long_desc": "",
+            "hint": [
+                [
+                    "mixed",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "reverse": {
+            "name": "reverse",
+            "line": 117,
+            "short_desc": "Reverse the Iterator",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "indexOf": {
+            "name": "indexOf",
+            "line": 127,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ],
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "Key if found, otherwise false.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "needle": {
+                    "name": "needle",
+                    "line": 127,
+                    "short_desc": "Searched value.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "shuffle": {
+            "name": "shuffle",
+            "line": 142,
+            "short_desc": "Shuffle items.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "slice": {
+            "name": "slice",
+            "line": 164,
+            "short_desc": "Slice the list.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 164,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "length": {
+                    "name": "length",
+                    "line": 164,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "random": {
+            "name": "random",
+            "line": 177,
+            "short_desc": "Pick one or more random entries.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "num": {
+                    "name": "num",
+                    "line": 177,
+                    "short_desc": "Specifies how many entries should be picked.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "1",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "append": {
+            "name": "append",
+            "line": 190,
+            "short_desc": "Append new elements to the list.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "items": {
+                    "name": "items",
+                    "line": 190,
+                    "short_desc": "Items to be appended. Existing keys will be overridden with the new values.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ],
+                        [
+                            "\\Grav\\Common\\Iterator",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "filter": {
+            "name": "filter",
+            "line": 205,
+            "short_desc": "Filter elements from the list",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "callback": {
+                    "name": "callback",
+                    "line": 205,
+                    "short_desc": "A function the receives ($value, $key) and must return a boolean to indicate filter status",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "callable",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "sort": {
+            "name": "sort",
+            "line": 231,
+            "short_desc": "Sorts elements from the list and returns a copy of the list in the proper order",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\$this",
+                    false
+                ],
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "internal": [
+                    [
+                        "param",
+                        "bool",
+                        "$asc"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "callback": {
+                    "name": "callback",
+                    "line": 231,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "callable",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "callable",
+                    "default": "null",
+                    "is_by_ref": false
+                },
+                "desc": {
+                    "name": "desc",
+                    "line": 231,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "bool",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "false",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

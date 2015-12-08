@@ -1,0 +1,158 @@
+{
+    "name": "Grav\\Common\\Page\\Types",
+    "line": 11,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Page",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Page\/Types.php",
+    "relative_file": null,
+    "hash": "defcffdde94f1d9a1971eb58c43f52f16caaef15",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Folder": "Grav\\Common\\Filesystem\\Folder",
+        "ArrayAccess": "RocketTheme\\Toolbox\\ArrayTraits\\ArrayAccess",
+        "Constructor": "RocketTheme\\Toolbox\\ArrayTraits\\Constructor",
+        "Countable": "RocketTheme\\Toolbox\\ArrayTraits\\Countable",
+        "Export": "RocketTheme\\Toolbox\\ArrayTraits\\Export",
+        "Iterator": "RocketTheme\\Toolbox\\ArrayTraits\\Iterator"
+    },
+    "errors": [],
+    "interfaces": {
+        "ArrayAccess": "ArrayAccess",
+        "Iterator": "Iterator",
+        "Countable": "Countable"
+    },
+    "traits": {
+        "RocketTheme\\Toolbox\\ArrayTraits\\ArrayAccess": "RocketTheme\\Toolbox\\ArrayTraits\\ArrayAccess",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Constructor": "RocketTheme\\Toolbox\\ArrayTraits\\Constructor",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Iterator": "RocketTheme\\Toolbox\\ArrayTraits\\Iterator",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Countable": "RocketTheme\\Toolbox\\ArrayTraits\\Countable",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Export": "RocketTheme\\Toolbox\\ArrayTraits\\Export"
+    },
+    "properties": [],
+    "methods": {
+        "register": {
+            "name": "register",
+            "line": 18,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "type": {
+                    "name": "type",
+                    "line": 18,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "blueprint": {
+                    "name": "blueprint",
+                    "line": 18,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "scanBlueprints": {
+            "name": "scanBlueprints",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "paths": {
+                    "name": "paths",
+                    "line": 31,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "scanTemplates": {
+            "name": "scanTemplates",
+            "line": 36,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "paths": {
+                    "name": "paths",
+                    "line": 36,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "pageSelect": {
+            "name": "pageSelect",
+            "line": 68,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "modularSelect": {
+            "name": "modularSelect",
+            "line": 81,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

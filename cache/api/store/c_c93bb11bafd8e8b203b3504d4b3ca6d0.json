@@ -1,0 +1,155 @@
+{
+    "name": "Grav\\Common\\File\\CompiledFile",
+    "line": 15,
+    "short_desc": "Class CompiledFile",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Common\\File"
+            ]
+        ],
+        "property": [
+            [
+                "string",
+                "$filename"
+            ],
+            [
+                "string",
+                "$extension"
+            ],
+            [
+                "string",
+                "$raw"
+            ],
+            [
+                "array|string",
+                "$content"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common\\File",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/File\/CompiledFile.php",
+    "relative_file": null,
+    "hash": "7004f0b08d0a0623f47ef5b2af352202fb02cf49",
+    "parent": null,
+    "modifiers": "Stmt_Trait",
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": {
+        "PhpFile": "RocketTheme\\Toolbox\\File\\PhpFile"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "filename": {
+            "name": "filename",
+            "line": 15,
+            "short_desc": "string$filename",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "extension": {
+            "name": "extension",
+            "line": 15,
+            "short_desc": "string$extension",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "raw": {
+            "name": "raw",
+            "line": 15,
+            "short_desc": "string$raw",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "content": {
+            "name": "content",
+            "line": 15,
+            "short_desc": "array|string$content",
+            "long_desc": null,
+            "hint": [
+                [
+                    "array|string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "content": {
+            "name": "content",
+            "line": 23,
+            "short_desc": "Get\/set parsed file contents.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "var": {
+                    "name": "var",
+                    "line": 23,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "mixed",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

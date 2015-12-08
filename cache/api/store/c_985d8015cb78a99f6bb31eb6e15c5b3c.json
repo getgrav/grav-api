@@ -1,0 +1,205 @@
+{
+    "name": "Grav\\Common\\Taxonomy",
+    "line": 28,
+    "short_desc": "The Taxonomy object is a singleton that holds a reference to a 'taxonomy map'. This map is\nconstructed as a multidimensional array.",
+    "long_desc": "uses the taxonomy defined in the site.yaml file and is built when the page objects are recursed.\nBasically every time a page is found that has taxonomy references, an entry to the page is stored in\nthe taxonomy map.  The map has the following format:\n\n[taxonomy_type][taxonomy_value][page_path]\n\nFor example:\n\n[category][blog][path\/to\/item1]\n[tag][grav][path\/to\/item1]\n[tag][grav][path\/to\/item2]\n[tag][dog][path\/to\/item3]",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Taxonomy.php",
+    "relative_file": null,
+    "hash": "0df27dfa3c09f6282e070cd16ba28563672fe5c9",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Config": "Grav\\Common\\Config\\Config",
+        "Collection": "Grav\\Common\\Page\\Collection",
+        "Page": "Grav\\Common\\Page\\Page"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 36,
+            "short_desc": "Constructor that resets the map",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "grav": {
+                    "name": "grav",
+                    "line": 36,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Grav",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Grav",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "addTaxonomy": {
+            "name": "addTaxonomy",
+            "line": 49,
+            "short_desc": "Takes an individual page and processes the taxonomies configured in its header. It\nthen adds those taxonomies to the map",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "page": {
+                    "name": "page",
+                    "line": 49,
+                    "short_desc": "the page to process",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Grav\\Common\\Page\\Page",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Page",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "page_taxonomy": {
+                    "name": "page_taxonomy",
+                    "line": 49,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "findTaxonomy": {
+            "name": "findTaxonomy",
+            "line": 80,
+            "short_desc": "Returns a new Page object with the sub-pages containing all the values set for a\nparticular taxonomy.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Grav\\Common\\Page\\Collection",
+                    false
+                ]
+            ],
+            "hint_desc": "Collection object set to contain matches found in the taxonomy map",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "taxonomies": {
+                    "name": "taxonomies",
+                    "line": 80,
+                    "short_desc": "taxonomies to search, eg ['tag'=>['animal','cat']]",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "operator": {
+                    "name": "operator",
+                    "line": 80,
+                    "short_desc": "can be 'or' or 'and' (defaults to 'or')",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'and'",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "taxonomy": {
+            "name": "taxonomy",
+            "line": 113,
+            "short_desc": "Gets and Sets the taxonomy map",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "the taxonomy map",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "var": {
+                    "name": "var",
+                    "line": 113,
+                    "short_desc": "the taxonomy map",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

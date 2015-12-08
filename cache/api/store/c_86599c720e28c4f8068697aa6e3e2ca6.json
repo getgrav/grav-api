@@ -1,0 +1,27 @@
+{
+    "name": "Grav\\Common\\Twig\\WriteCacheFileTrait",
+    "line": 9,
+    "short_desc": "A trait to add some custom processing to the identifyLink() method in Parsedown and ParsedownExtra",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Twig",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Twig\/WriteCacheFileTrait.php",
+    "relative_file": null,
+    "hash": "cbdde2dae39a2b273204ab9e93dfb744f1802db8",
+    "parent": null,
+    "modifiers": "Stmt_Trait",
+    "is_trait": true,
+    "is_interface": false,
+    "aliases": {
+        "GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

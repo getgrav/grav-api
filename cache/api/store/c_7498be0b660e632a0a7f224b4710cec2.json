@@ -1,0 +1,34 @@
+{
+    "name": "Grav\\Console\\Gpm\\InfoCommand",
+    "line": 13,
+    "short_desc": "Class InfoCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Gpm"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Gpm",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Gpm\/InfoCommand.php",
+    "relative_file": null,
+    "hash": "9bcf37cd3ec14481f99df62b429d8a7aae158acf",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GPM": "Grav\\Common\\GPM\\GPM",
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

@@ -1,0 +1,438 @@
+{
+    "name": "Grav\\Common\\Config\\ConfigFileFinder",
+    "line": 9,
+    "short_desc": "The Configuration & Blueprints Finder class.",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Grav\\Common\\Config",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Config\/ConfigFileFinder.php",
+    "relative_file": null,
+    "hash": "f8004b555ec7b129c396b712c0c5e58ef1ae425a",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Folder": "Grav\\Common\\Filesystem\\Folder"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "setBase": {
+            "name": "setBase",
+            "line": 17,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Grav\\Common\\Config\\$this",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "base": {
+                    "name": "base",
+                    "line": 17,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "locateFiles": {
+            "name": "locateFiles",
+            "line": 32,
+            "short_desc": "Return all locations for all the files with a timestamp.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "paths": {
+                    "name": "paths",
+                    "line": 32,
+                    "short_desc": "List of folders to look from.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "pattern": {
+                    "name": "pattern",
+                    "line": 32,
+                    "short_desc": "Pattern to match the file. Pattern will also be removed from the key.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'|\\\\.yaml$|'",
+                    "is_by_ref": false
+                },
+                "levels": {
+                    "name": "levels",
+                    "line": 32,
+                    "short_desc": "Maximum number of recursive directories.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "-1",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getFiles": {
+            "name": "getFiles",
+            "line": 49,
+            "short_desc": "Return all locations for all the files with a timestamp.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "paths": {
+                    "name": "paths",
+                    "line": 49,
+                    "short_desc": "List of folders to look from.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "pattern": {
+                    "name": "pattern",
+                    "line": 49,
+                    "short_desc": "Pattern to match the file. Pattern will also be removed from the key.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'|\\\\.yaml$|'",
+                    "is_by_ref": false
+                },
+                "levels": {
+                    "name": "levels",
+                    "line": 49,
+                    "short_desc": "Maximum number of recursive directories.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "-1",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "listFiles": {
+            "name": "listFiles",
+            "line": 70,
+            "short_desc": "Return all paths for all the files with a timestamp.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "paths": {
+                    "name": "paths",
+                    "line": 70,
+                    "short_desc": "List of folders to look from.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "pattern": {
+                    "name": "pattern",
+                    "line": 70,
+                    "short_desc": "Pattern to match the file. Pattern will also be removed from the key.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'|\\\\.yaml$|'",
+                    "is_by_ref": false
+                },
+                "levels": {
+                    "name": "levels",
+                    "line": 70,
+                    "short_desc": "Maximum number of recursive directories.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "-1",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "locateFileInFolder": {
+            "name": "locateFileInFolder",
+            "line": 88,
+            "short_desc": "Find filename from a list of folders.",
+            "long_desc": "Note: Only finds the last override.",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "filename": {
+                    "name": "filename",
+                    "line": 88,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "folders": {
+                    "name": "folders",
+                    "line": 88,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "locateInFolders": {
+            "name": "locateInFolders",
+            "line": 104,
+            "short_desc": "Find filename from a list of folders.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "folders": {
+                    "name": "folders",
+                    "line": 104,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "filename": {
+                    "name": "filename",
+                    "line": 104,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "null",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "locateFile": {
+            "name": "locateFile",
+            "line": 122,
+            "short_desc": "Return all existing locations for a single file with a timestamp.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "paths": {
+                    "name": "paths",
+                    "line": 122,
+                    "short_desc": "Filesystem paths to look up from.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "name": {
+                    "name": "name",
+                    "line": 122,
+                    "short_desc": "Configuration file to be located.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "ext": {
+                    "name": "ext",
+                    "line": 122,
+                    "short_desc": "File extension (optional, defaults to .yaml).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "'.yaml'",
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,34 @@
+{
+    "name": "Grav\\Console\\Cli\\SandboxCommand",
+    "line": 13,
+    "short_desc": "Class SandboxCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Cli"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Cli",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Cli\/SandboxCommand.php",
+    "relative_file": null,
+    "hash": "cccd4bfc8c46b068f4b25d4f90ecad1ba659825f",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "Folder": "Grav\\Common\\Filesystem\\Folder",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

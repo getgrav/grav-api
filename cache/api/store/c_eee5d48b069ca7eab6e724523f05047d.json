@@ -1,0 +1,555 @@
+{
+    "name": "Grav\\Common\\Inflector",
+    "line": 22,
+    "short_desc": "Inflector for pluralize and singularize English nouns.",
+    "long_desc": "This Inflector is a port of Ruby on Rails Inflector.\n\nIt can be really helpful for developers that want to\ncreate frameworks based on naming conventions rather than\nconfigurations.",
+    "hint": null,
+    "tags": {
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Common",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Common\/Inflector.php",
+    "relative_file": null,
+    "hash": "fe7cebca27a3c1a12abfc79ed27bb2a8dd6085bf",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Language": "Grav\\Common\\Language\\Language"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Grav\\Common\\GravTrait": "Grav\\Common\\GravTrait"
+    },
+    "properties": [],
+    "methods": {
+        "init": {
+            "name": "init",
+            "line": 32,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "pluralize": {
+            "name": "pluralize",
+            "line": 50,
+            "short_desc": "Pluralizes English nouns.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "Plural noun",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [
+                "\"2\" @param tags are expected but only \"1\" found"
+            ],
+            "parameters": {
+                "word": {
+                    "name": "word",
+                    "line": 50,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "count": {
+                    "name": "count",
+                    "line": 50,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "2",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "singularize": {
+            "name": "singularize",
+            "line": 88,
+            "short_desc": "Singularizes English nouns.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "Singular noun.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "word": {
+                    "name": "word",
+                    "line": 88,
+                    "short_desc": "English noun to singularize",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "count": {
+                    "name": "count",
+                    "line": 88,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "1",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "titleize": {
+            "name": "titleize",
+            "line": 134,
+            "short_desc": "Converts an underscored or CamelCase word into a English\nsentence.",
+            "long_desc": "The titleize public function converts text like \"WelcomePage\",\n\"welcome_page\" or  \"welcome page\" to this \"Welcome\nPage\".\nIf second parameter is set to 'first' it will only\ncapitalize the first character of the title.",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "Text formatted as title",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "word": {
+                    "name": "word",
+                    "line": 134,
+                    "short_desc": "Word to format as tile",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "uppercase": {
+                    "name": "uppercase",
+                    "line": 134,
+                    "short_desc": "If set to 'first' it will only uppercase the\nfirst character. Otherwise it will uppercase all\nthe words in the title.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "''",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "camelize": {
+            "name": "camelize",
+            "line": 151,
+            "short_desc": "Returns given word as CamelCased",
+            "long_desc": "Converts a word like \"send_email\" to \"SendEmail\". It\nwill remove non alphanumeric character from the word, so\n\"who's online\" will be converted to \"WhoSOnline\"",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "UpperCamelCasedWord",
+            "tags": {
+                "see": [
+                    [
+                        "variablize"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "word": {
+                    "name": "word",
+                    "line": 151,
+                    "short_desc": "Word to convert to camel case",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "underscorize": {
+            "name": "underscorize",
+            "line": 167,
+            "short_desc": "Converts a word \"into_it_s_underscored_version\"",
+            "long_desc": "Convert any \"CamelCased\" or \"ordinary Word\" into an\n\"underscored_word\".\n\nThis can be really useful for creating friendly URLs.",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "Underscored word",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "word": {
+                    "name": "word",
+                    "line": 167,
+                    "short_desc": "Word to underscore",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "hyphenize": {
+            "name": "hyphenize",
+            "line": 186,
+            "short_desc": "Converts a word \"into-it-s-hyphenated-version\"",
+            "long_desc": "Convert any \"CamelCased\" or \"ordinary Word\" into an\n\"hyphenated-word\".\n\nThis can be really useful for creating friendly URLs.",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "hyphenized word",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "word": {
+                    "name": "word",
+                    "line": 186,
+                    "short_desc": "Word to hyphenate",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "humanize": {
+            "name": "humanize",
+            "line": 209,
+            "short_desc": "Returns a human-readable string from $word",
+            "long_desc": "Returns a human-readable string from $word, by replacing\nunderscores with a space, and by upper-casing the initial\ncharacter by default.\n\nIf you need to uppercase all the words you just have to\npass 'all' as a second parameter.",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "Human-readable word",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "word": {
+                    "name": "word",
+                    "line": 209,
+                    "short_desc": "String to \"humanize\"",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "uppercase": {
+                    "name": "uppercase",
+                    "line": 209,
+                    "short_desc": "If set to 'all' it will uppercase all the words\ninstead of just the first one.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": "''",
+                    "is_by_ref": false
+                }
+            }
+        },
+        "variablize": {
+            "name": "variablize",
+            "line": 226,
+            "short_desc": "Same as camelize but first char is underscored",
+            "long_desc": "Converts a word like \"send_email\" to \"sendEmail\". It\nwill remove non alphanumeric character from the word, so\n\"who's online\" will be converted to \"whoSOnline\"",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "Returns a lowerCamelCasedWord",
+            "tags": {
+                "see": [
+                    [
+                        "camelize"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "word": {
+                    "name": "word",
+                    "line": 226,
+                    "short_desc": "Word to lowerCamelCase",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "tableize": {
+            "name": "tableize",
+            "line": 242,
+            "short_desc": "Converts a class name to its table name according to rails\nnaming conventions.",
+            "long_desc": "Converts \"Person\" to \"people\"",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "plural_table_name",
+            "tags": {
+                "see": [
+                    [
+                        "classify"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "class_name": {
+                    "name": "class_name",
+                    "line": 242,
+                    "short_desc": "Class name for getting related table_name.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "classify": {
+            "name": "classify",
+            "line": 257,
+            "short_desc": "Converts a table name to its class name according to rails\nnaming conventions.",
+            "long_desc": "Converts \"people\" to \"Person\"",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "SingularClassName",
+            "tags": {
+                "see": [
+                    [
+                        "tableize"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "table_name": {
+                    "name": "table_name",
+                    "line": 257,
+                    "short_desc": "Table name for getting related ClassName.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "ordinalize": {
+            "name": "ordinalize",
+            "line": 270,
+            "short_desc": "Converts number to its ordinal English form.",
+            "long_desc": "This method converts 13 to 13th, 2 to 2nd ...",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "Ordinal representation of given string.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "number": {
+                    "name": "number",
+                    "line": 270,
+                    "short_desc": "Number to get its ordinal value",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "monthize": {
+            "name": "monthize",
+            "line": 294,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "days": {
+                    "name": "days",
+                    "line": 294,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Grav\\Console\\Gpm\\VersionCommand",
+    "line": 14,
+    "short_desc": "Class VersionCommand",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Grav\\Console\\Gpm"
+            ]
+        ]
+    },
+    "namespace": "Grav\\Console\\Gpm",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/system\/src\/Grav\/Console\/Gpm\/VersionCommand.php",
+    "relative_file": null,
+    "hash": "6534f14a32b1dba7079d6590d087a1de0cc17333",
+    "parent": "Grav\\Console\\ConsoleCommand",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "GPM": "Grav\\Common\\GPM\\GPM",
+        "Upgrader": "Grav\\Common\\GPM\\Upgrader",
+        "ConsoleCommand": "Grav\\Console\\ConsoleCommand",
+        "InputArgument": "Symfony\\Component\\Console\\Input\\InputArgument",
+        "InputOption": "Symfony\\Component\\Console\\Input\\InputOption"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

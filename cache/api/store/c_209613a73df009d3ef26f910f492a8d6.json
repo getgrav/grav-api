@@ -1,0 +1,48 @@
+{
+    "name": "RocketTheme\\Toolbox\\Event\\Event",
+    "line": 15,
+    "short_desc": "Implements Symfony Event interface.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\Event"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\Event",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/Event\/src\/Event.php",
+    "relative_file": null,
+    "hash": "39bfc916d0e98b1f82550c54fa659fcda3636bd9",
+    "parent": "Symfony\\Component\\EventDispatcher\\Event",
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ArrayAccess": "RocketTheme\\Toolbox\\ArrayTraits\\ArrayAccess",
+        "Constructor": "RocketTheme\\Toolbox\\ArrayTraits\\Constructor",
+        "BaseEvent": "Symfony\\Component\\EventDispatcher\\Event"
+    },
+    "errors": [],
+    "interfaces": {
+        "ArrayAccess": "ArrayAccess"
+    },
+    "traits": {
+        "RocketTheme\\Toolbox\\ArrayTraits\\ArrayAccess": "RocketTheme\\Toolbox\\ArrayTraits\\ArrayAccess",
+        "RocketTheme\\Toolbox\\ArrayTraits\\Constructor": "RocketTheme\\Toolbox\\ArrayTraits\\Constructor"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

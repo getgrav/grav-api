@@ -1,0 +1,755 @@
+{
+    "name": "RocketTheme\\Toolbox\\StreamWrapper\\Stream",
+    "line": 13,
+    "short_desc": "Implements Read\/Write Streams.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "RocketTheme\\Toolbox\\StreamWrapper"
+            ]
+        ],
+        "author": [
+            [
+                "RocketTheme"
+            ]
+        ],
+        "license": [
+            [
+                "MIT"
+            ]
+        ]
+    },
+    "namespace": "RocketTheme\\Toolbox\\StreamWrapper",
+    "file": "\/Users\/rhuk\/Projects\/grav\/grav-api\/..\/grav\/vendor\/rockettheme\/toolbox\/StreamWrapper\/src\/Stream.php",
+    "relative_file": null,
+    "hash": "2a38d55edfef237a0220efe444ce5ee55a502b8d",
+    "parent": null,
+    "modifiers": "Stmt_Class",
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ResourceLocatorInterface": "RocketTheme\\Toolbox\\ResourceLocator\\ResourceLocatorInterface"
+    },
+    "errors": [],
+    "interfaces": {
+        "RocketTheme\\Toolbox\\StreamWrapper\\StreamInterface": "RocketTheme\\Toolbox\\StreamWrapper\\StreamInterface"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "setLocator": {
+            "name": "setLocator",
+            "line": 30,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "locator": {
+                    "name": "locator",
+                    "line": 30,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "RocketTheme\\Toolbox\\ResourceLocator\\ResourceLocatorInterface",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "ResourceLocatorInterface",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "stream_open": {
+            "name": "stream_open",
+            "line": 35,
+            "short_desc": "Support for fopen(), file_get_contents(), file_put_contents() etc.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "Returns TRUE if file was opened successfully.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 35,
+                    "short_desc": "A string containing the URI to the file to open.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "mode": {
+                    "name": "mode",
+                    "line": 35,
+                    "short_desc": "The file mode (\"r\", \"wb\" etc.).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 35,
+                    "short_desc": "A bit mask of STREAM_USE_PATH and STREAM_REPORT_ERRORS.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "opened_url": {
+                    "name": "opened_url",
+                    "line": 35,
+                    "short_desc": "A string containing the path actually opened.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": true
+                }
+            }
+        },
+        "stream_close": {
+            "name": "stream_close",
+            "line": 48,
+            "short_desc": "Support for fclose().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE if stream was successfully closed.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "stream_lock": {
+            "name": "stream_lock",
+            "line": 53,
+            "short_desc": "Support for flock().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "Always returns TRUE at the present time.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "operation": {
+                    "name": "operation",
+                    "line": 53,
+                    "short_desc": "One of the following:\n    - LOCK_SH to acquire a shared lock (reader).\n    - LOCK_EX to acquire an exclusive lock (writer).\n    - LOCK_UN to release a lock (shared or exclusive).\n    - LOCK_NB if you don't want flock() to block while locking (not\n    supported on Windows).",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "stream_metadata": {
+            "name": "stream_metadata",
+            "line": 62,
+            "short_desc": "Support for touch(), chmod(), chown(), chgrp().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 62,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "option": {
+                    "name": "option",
+                    "line": 62,
+                    "short_desc": "One of:\n    - STREAM_META_TOUCH      The method was called in response to touch()\n    - STREAM_META_OWNER_NAME The method was called in response to chown() with string parameter\n    - STREAM_META_OWNER      The method was called in response to chown()\n    - STREAM_META_GROUP_NAME The method was called in response to chgrp()\n    - STREAM_META_GROUP      The method was called in response to chgrp()\n    - STREAM_META_ACCESS     The method was called in response to chmod()",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "value": {
+                    "name": "value",
+                    "line": 62,
+                    "short_desc": "If option is\n    - STREAM_META_TOUCH:         Array consisting of two arguments of the touch() function.\n    - STREAM_META_OWNER_NAME or\n      STREAM_META_GROUP_NAME:    The name of the owner user\/group as string.\n    - STREAM_META_OWNER or\n      STREAM_META_GROUP:         The value owner user\/group argument as integer.\n    - STREAM_META_ACCESS:        The argument of the chmod() as integer.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "stream_read": {
+            "name": "stream_read",
+            "line": 84,
+            "short_desc": "Support for fread(), file_get_contents() etc.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ],
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "The string that was read, or FALSE in case of an error.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "count": {
+                    "name": "count",
+                    "line": 84,
+                    "short_desc": "Maximum number of bytes to be read.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "stream_write": {
+            "name": "stream_write",
+            "line": 89,
+            "short_desc": "Support for fwrite(), file_put_contents() etc.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "The number of bytes written (integer).",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 89,
+                    "short_desc": "The string to be written.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "stream_eof": {
+            "name": "stream_eof",
+            "line": 94,
+            "short_desc": "Support for feof().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE if end-of-file has been reached.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "stream_seek": {
+            "name": "stream_seek",
+            "line": 99,
+            "short_desc": "Support for fseek().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE on success.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "offset": {
+                    "name": "offset",
+                    "line": 99,
+                    "short_desc": "The byte offset to got to.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "whence": {
+                    "name": "whence",
+                    "line": 99,
+                    "short_desc": "SEEK_SET, SEEK_CUR, or SEEK_END.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "stream_flush": {
+            "name": "stream_flush",
+            "line": 105,
+            "short_desc": "Support for fflush().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE if data was successfully stored (or there was no data to store).",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "stream_tell": {
+            "name": "stream_tell",
+            "line": 110,
+            "short_desc": "Support for ftell().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "int",
+                    false
+                ]
+            ],
+            "hint_desc": "The current offset in bytes from the beginning of file.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "stream_stat": {
+            "name": "stream_stat",
+            "line": 115,
+            "short_desc": "Support for fstat().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "An array with file status, or FALSE in case of an error - see fstat()",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "unlink": {
+            "name": "unlink",
+            "line": 120,
+            "short_desc": "Support for unlink().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "RocketTheme\\Toolbox\\StreamWrapper\\TRUE",
+                    false
+                ]
+            ],
+            "hint_desc": "if resource was successfully deleted.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 120,
+                    "short_desc": "A string containing the URI to the resource to delete.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "rename": {
+            "name": "rename",
+            "line": 131,
+            "short_desc": "Support for rename().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE if file was successfully renamed.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "fromUri": {
+                    "name": "fromUri",
+                    "line": 131,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "toUri": {
+                    "name": "toUri",
+                    "line": 131,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "mkdir": {
+            "name": "mkdir",
+            "line": 143,
+            "short_desc": "Support for mkdir().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE if directory was successfully created.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 143,
+                    "short_desc": "A string containing the URI to the directory to create.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "mode": {
+                    "name": "mode",
+                    "line": 143,
+                    "short_desc": "Permission flags - see mkdir().",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 143,
+                    "short_desc": "A bit mask of STREAM_REPORT_ERRORS and STREAM_MKDIR_RECURSIVE.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "rmdir": {
+            "name": "rmdir",
+            "line": 155,
+            "short_desc": "Support for rmdir().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "RocketTheme\\Toolbox\\StreamWrapper\\TRUE",
+                    false
+                ]
+            ],
+            "hint_desc": "if directory was successfully removed.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 155,
+                    "short_desc": "A string containing the URI to the directory to delete.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 155,
+                    "short_desc": "A bit mask of STREAM_REPORT_ERRORS.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "url_stat": {
+            "name": "url_stat",
+            "line": 166,
+            "short_desc": "Support for stat().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "An array with file status, or FALSE in case of an error - see fstat()",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 166,
+                    "short_desc": "A string containing the URI to get information about.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "flags": {
+                    "name": "flags",
+                    "line": 166,
+                    "short_desc": "A bit mask of STREAM_URL_STAT_LINK and STREAM_URL_STAT_QUIET.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "dir_opendir": {
+            "name": "dir_opendir",
+            "line": 179,
+            "short_desc": "Support for opendir().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE on success.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "uri": {
+                    "name": "uri",
+                    "line": 179,
+                    "short_desc": "A string containing the URI to the directory to open.",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "options": {
+                    "name": "options",
+                    "line": 179,
+                    "short_desc": "Unknown (parameter is not documented in PHP Manual).",
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "dir_readdir": {
+            "name": "dir_readdir",
+            "line": 192,
+            "short_desc": "Support for readdir().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "The next filename, or FALSE if there are no more files in the directory.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "dir_rewinddir": {
+            "name": "dir_rewinddir",
+            "line": 197,
+            "short_desc": "Support for rewinddir().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE on success.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "dir_closedir": {
+            "name": "dir_closedir",
+            "line": 204,
+            "short_desc": "Support for closedir().",
+            "long_desc": "",
+            "hint": [
+                [
+                    "bool",
+                    false
+                ]
+            ],
+            "hint_desc": "TRUE on success.",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

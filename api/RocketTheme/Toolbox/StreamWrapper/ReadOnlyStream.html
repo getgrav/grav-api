@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>RocketTheme\Toolbox\StreamWrapper\ReadOnlyStream | Grav API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:RocketTheme_Toolbox_StreamWrapper_ReadOnlyStream" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Grav API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../RocketTheme.html">RocketTheme</a></li>
+                                        <li><a href="../../../RocketTheme/Toolbox.html">Toolbox</a></li>
+                                        <li><a href="../../../RocketTheme/Toolbox/StreamWrapper.html">StreamWrapper</a></li>
+    
+                <li>ReadOnlyStream</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>ReadOnlyStream</h1>
+    </div>
+
+    <p>    class
+    <strong>ReadOnlyStream</strong>        extends <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a>        implements
+        <a href="../../../RocketTheme/Toolbox/StreamWrapper/StreamInterface.html"><abbr title="RocketTheme\Toolbox\StreamWrapper\StreamInterface">StreamInterface</abbr></a>
+</p>
+
+            <div class="description">
+            <p>Implements Read Only Streams.</p>                    </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLocator">setLocator</a>(
+    <a href="../../../RocketTheme/Toolbox/ResourceLocator/ResourceLocatorInterface.html"><abbr title="RocketTheme\Toolbox\ResourceLocator\ResourceLocatorInterface">ResourceLocatorInterface</abbr></a> $locator)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_setLocator"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_open">stream_open</a>(
+    string $uri, 
+    string $mode, 
+    int $options, 
+    string $opened_url)
+                                            <p>Support for fopen(), file<em>get</em>contents(), file<em>put</em>contents() etc.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_close">stream_close</a>()
+                                            <p>Support for fclose().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_close"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_lock">stream_lock</a>($operation)
+                                            <p>Support for flock().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_metadata">stream_metadata</a>($uri, $option, $value)
+                                            <p>Support for touch(), chmod(), chown(), chgrp().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_metadata"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string|bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_read">stream_read</a>($count)
+                                            <p>Support for fread(), file<em>get</em>contents() etc.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_read"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_write">stream_write</a>($data)
+                                            <p>Support for fwrite(), file<em>put</em>contents() etc.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_eof">stream_eof</a>()
+                                            <p>Support for feof().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_eof"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_seek">stream_seek</a>($offset, $whence)
+                                            <p>Support for fseek().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_seek"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_flush">stream_flush</a>()
+                                            <p>Support for fflush().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_flush"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_tell">stream_tell</a>()
+                                            <p>Support for ftell().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_tell"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stream_stat">stream_stat</a>()
+                                            <p>Support for fstat().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_stat"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="RocketTheme\Toolbox\StreamWrapper\TRUE">TRUE</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unlink">unlink</a>($uri)
+                                            <p>Support for unlink().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rename">rename</a>($from_uri, $to_uri)
+                                            <p>Support for rename().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mkdir">mkdir</a>($uri, $mode, $options)
+                                            <p>Support for mkdir().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="RocketTheme\Toolbox\StreamWrapper\TRUE">TRUE</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rmdir">rmdir</a>($uri, $options)
+                                            <p>Support for rmdir().</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_url_stat">url_stat</a>($uri, $flags)
+                                            <p>Support for stat().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_url_stat"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dir_opendir">dir_opendir</a>($uri, $options)
+                                            <p>Support for opendir().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_dir_opendir"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dir_readdir">dir_readdir</a>()
+                                            <p>Support for readdir().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_dir_readdir"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dir_rewinddir">dir_rewinddir</a>()
+                                            <p>Support for rewinddir().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_dir_rewinddir"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dir_closedir">dir_closedir</a>()
+                                            <p>Support for closedir().</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_dir_closedir"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setLocator">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_setLocator"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 30</div>
+        <code>        static            
+    
+    <strong>setLocator</strong>(
+    <a href="../../../RocketTheme/Toolbox/ResourceLocator/ResourceLocatorInterface.html"><abbr title="RocketTheme\Toolbox\ResourceLocator\ResourceLocatorInterface">ResourceLocatorInterface</abbr></a> $locator)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    <a href="../../../RocketTheme/Toolbox/ResourceLocator/ResourceLocatorInterface.html"><abbr title="RocketTheme\Toolbox\ResourceLocator\ResourceLocatorInterface">ResourceLocatorInterface</abbr></a></td>
+                <td>$locator</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_open">
+        <div class="location">at line 20</div>
+        <code>                    
+    bool
+    <strong>stream_open</strong>(
+    string $uri, 
+    string $mode, 
+    int $options, 
+    string $opened_url)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for fopen(), file<em>get</em>contents(), file<em>put</em>contents() etc.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+    string</td>
+                <td>$uri</td>
+                <td>A string containing the URI to the file to open.</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$mode</td>
+                <td>The file mode ("r", "wb" etc.).</td>
+            </tr>
+                    <tr>
+                <td>
+    int</td>
+                <td>$options</td>
+                <td>A bit mask of STREAM<em>USE</em>PATH and STREAM<em>REPORT</em>ERRORS.</td>
+            </tr>
+                    <tr>
+                <td>
+    string</td>
+                <td>$opened_url</td>
+                <td>A string containing the path actually opened.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>Returns TRUE if file was opened successfully.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_close">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_close"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 48</div>
+        <code>                    
+    bool
+    <strong>stream_close</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for fclose().</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>TRUE if stream was successfully closed.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_lock">
+        <div class="location">at line 40</div>
+        <code>                    
+    bool
+    <strong>stream_lock</strong>($operation)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for flock().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$operation</td>
+                <td>One of the following:
+    - LOCK<em>SH to acquire a shared lock (reader).
+    - LOCK</em>EX to acquire an exclusive lock (writer).
+    - LOCK<em>UN to release a lock (shared or exclusive).
+    - LOCK</em>NB if you don't want flock() to block while locking (not
+    supported on Windows).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>Always returns TRUE at the present time.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_metadata">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_metadata"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 62</div>
+        <code>                    
+    bool
+    <strong>stream_metadata</strong>($uri, $option, $value)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for touch(), chmod(), chown(), chgrp().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$option</td>
+                <td>One of:
+    - STREAM<em>META</em>TOUCH      The method was called in response to touch()
+    - STREAM<em>META</em>OWNER<em>NAME The method was called in response to chown() with string parameter
+    - STREAM</em>META<em>OWNER      The method was called in response to chown()
+    - STREAM</em>META<em>GROUP</em>NAME The method was called in response to chgrp()
+    - STREAM<em>META</em>GROUP      The method was called in response to chgrp()
+    - STREAM<em>META</em>ACCESS     The method was called in response to chmod()</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td>If option is
+    - STREAM<em>META</em>TOUCH:         Array consisting of two arguments of the touch() function.
+    - STREAM<em>META</em>OWNER<em>NAME or
+      STREAM</em>META<em>GROUP</em>NAME:    The name of the owner user/group as string.
+    - STREAM<em>META</em>OWNER or
+      STREAM<em>META</em>GROUP:         The value owner user/group argument as integer.
+    - STREAM<em>META</em>ACCESS:        The argument of the chmod() as integer.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_read">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_read"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 84</div>
+        <code>                    
+    string|bool
+    <strong>stream_read</strong>($count)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for fread(), file<em>get</em>contents() etc.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$count</td>
+                <td>Maximum number of bytes to be read.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string|bool</td>
+            <td>The string that was read, or FALSE in case of an error.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_write">
+        <div class="location">at line 54</div>
+        <code>                    
+    int
+    <strong>stream_write</strong>($data)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for fwrite(), file<em>put</em>contents() etc.</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td>The string to be written.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int</td>
+            <td>The number of bytes written (integer).</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_eof">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_eof"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 94</div>
+        <code>                    
+    bool
+    <strong>stream_eof</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for feof().</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>TRUE if end-of-file has been reached.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_seek">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_seek"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 99</div>
+        <code>                    
+    bool
+    <strong>stream_seek</strong>($offset, $whence)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for fseek().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$offset</td>
+                <td>The byte offset to got to.</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$whence</td>
+                <td>SEEK<em>SET, SEEK</em>CUR, or SEEK_END.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>TRUE on success.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_flush">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_flush"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 105</div>
+        <code>                    
+    bool
+    <strong>stream_flush</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for fflush().</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>TRUE if data was successfully stored (or there was no data to store).</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_tell">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_tell"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 110</div>
+        <code>                    
+    int
+    <strong>stream_tell</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for ftell().</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    int</td>
+            <td>The current offset in bytes from the beginning of file.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stream_stat">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_stream_stat"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 115</div>
+        <code>                    
+    array
+    <strong>stream_stat</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for fstat().</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>An array with file status, or FALSE in case of an error - see fstat()</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unlink">
+        <div class="location">at line 59</div>
+        <code>                    
+    <abbr title="RocketTheme\Toolbox\StreamWrapper\TRUE">TRUE</abbr>
+    <strong>unlink</strong>($uri)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for unlink().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uri</td>
+                <td>A string containing the URI to the resource to delete.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="RocketTheme\Toolbox\StreamWrapper\TRUE">TRUE</abbr></td>
+            <td>if resource was successfully deleted.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rename">
+        <div class="location">at line 64</div>
+        <code>                    
+    bool
+    <strong>rename</strong>($from_uri, $to_uri)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for rename().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$from_uri</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$to_uri</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>TRUE if file was successfully renamed.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mkdir">
+        <div class="location">at line 69</div>
+        <code>                    
+    bool
+    <strong>mkdir</strong>($uri, $mode, $options)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for mkdir().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uri</td>
+                <td>A string containing the URI to the directory to create.</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mode</td>
+                <td>Permission flags - see mkdir().</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$options</td>
+                <td>A bit mask of STREAM<em>REPORT</em>ERRORS and STREAM<em>MKDIR</em>RECURSIVE.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>TRUE if directory was successfully created.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rmdir">
+        <div class="location">at line 74</div>
+        <code>                    
+    <abbr title="RocketTheme\Toolbox\StreamWrapper\TRUE">TRUE</abbr>
+    <strong>rmdir</strong>($uri, $options)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for rmdir().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uri</td>
+                <td>A string containing the URI to the directory to delete.</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$options</td>
+                <td>A bit mask of STREAM<em>REPORT</em>ERRORS.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    <abbr title="RocketTheme\Toolbox\StreamWrapper\TRUE">TRUE</abbr></td>
+            <td>if directory was successfully removed.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_url_stat">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_url_stat"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 166</div>
+        <code>                    
+    array
+    <strong>url_stat</strong>($uri, $flags)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for stat().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uri</td>
+                <td>A string containing the URI to get information about.</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$flags</td>
+                <td>A bit mask of STREAM<em>URL</em>STAT<em>LINK and STREAM</em>URL<em>STAT</em>QUIET.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    array</td>
+            <td>An array with file status, or FALSE in case of an error - see fstat()</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dir_opendir">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_dir_opendir"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 179</div>
+        <code>                    
+    bool
+    <strong>dir_opendir</strong>($uri, $options)</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for opendir().</p>                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$uri</td>
+                <td>A string containing the URI to the directory to open.</td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$options</td>
+                <td>Unknown (parameter is not documented in PHP Manual).</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>TRUE on success.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dir_readdir">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_dir_readdir"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 192</div>
+        <code>                    
+    string
+    <strong>dir_readdir</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for readdir().</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    string</td>
+            <td>The next filename, or FALSE if there are no more files in the directory.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dir_rewinddir">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_dir_rewinddir"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 197</div>
+        <code>                    
+    bool
+    <strong>dir_rewinddir</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for rewinddir().</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>TRUE on success.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dir_closedir">
+        <div class="location">in 
+    <a href="../../../RocketTheme/Toolbox/StreamWrapper/Stream.html#method_dir_closedir"><abbr title="RocketTheme\Toolbox\StreamWrapper\Stream">Stream</abbr></a> at line 204</div>
+        <code>                    
+    bool
+    <strong>dir_closedir</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Support for closedir().</p>                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>
+    bool</td>
+            <td>TRUE on success.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
