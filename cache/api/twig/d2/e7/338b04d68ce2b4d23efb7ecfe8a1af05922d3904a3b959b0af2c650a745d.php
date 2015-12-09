@@ -46,7 +46,7 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 2
-        $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"] = $this->env->loadTemplate("macros.twig");
+        $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"] = $this->env->loadTemplate("macros.twig");
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
@@ -86,7 +86,7 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
             echo "</span></li>
                 ";
             // line 12
-            echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->getbreadcrumbs($this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "namespace", array()));
+            echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->getbreadcrumbs($this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "namespace", array()));
             echo "
                 <li>";
             // line 13
@@ -108,133 +108,137 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
         // line 22
         echo twig_escape_filter($this->env, twig_last($this->env, twig_split_filter($this->env, $this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "name", array()), "\\")), "html", null, true);
         echo "</h1>
+        <span class=\"pull-right>Edit ";
+        // line 23
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "name", array()), "html", null, true);
+        echo "</span>
     </div>
 
     <p>";
-        // line 25
+        // line 26
         $this->displayBlock("class_signature", $context, $blocks);
         echo "</p>
 
     ";
-        // line 27
+        // line 28
         if (($this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "shortdesc", array()) || $this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "longdesc", array()))) {
-            // line 28
+            // line 29
             echo "        <div class=\"description\">
             ";
-            // line 29
+            // line 30
             if ($this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "shortdesc", array())) {
-                // line 30
+                // line 31
                 echo "<p>";
                 echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "shortdesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
                 echo "</p>";
             }
-            // line 32
+            // line 33
             echo "            ";
             if ($this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "longdesc", array())) {
-                // line 33
+                // line 34
                 echo "<p>";
                 echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "longdesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
                 echo "</p>";
             }
-            // line 35
+            // line 36
             echo "        </div>
     ";
         }
-        // line 37
+        // line 38
         echo "
     ";
-        // line 38
+        // line 39
         if ((isset($context["traits"]) ? $context["traits"] : $this->getContext($context, "traits"))) {
-            // line 39
+            // line 40
             echo "        <h2>Traits</h2>
 
         ";
-            // line 41
-            echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->getrender_classes((isset($context["traits"]) ? $context["traits"] : $this->getContext($context, "traits")));
+            // line 42
+            echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->getrender_classes((isset($context["traits"]) ? $context["traits"] : $this->getContext($context, "traits")));
             echo "
     ";
         }
-        // line 43
+        // line 44
         echo "
     ";
-        // line 44
+        // line 45
         if ((isset($context["constants"]) ? $context["constants"] : $this->getContext($context, "constants"))) {
-            // line 45
+            // line 46
             echo "        <h2>Constants</h2>
 
         ";
-            // line 47
+            // line 48
             $this->displayBlock("constants", $context, $blocks);
             echo "
     ";
         }
-        // line 49
+        // line 50
         echo "
     ";
-        // line 50
+        // line 51
         if ((isset($context["properties"]) ? $context["properties"] : $this->getContext($context, "properties"))) {
-            // line 51
+            // line 52
             echo "        <h2>Properties</h2>
 
         ";
-            // line 53
+            // line 54
             $this->displayBlock("properties", $context, $blocks);
             echo "
     ";
         }
-        // line 55
+        // line 56
         echo "
     ";
-        // line 56
+        // line 57
         if ((isset($context["methods"]) ? $context["methods"] : $this->getContext($context, "methods"))) {
-            // line 57
+            // line 58
             echo "        <h2>Methods</h2>
 
         ";
-            // line 59
+            // line 60
             $this->displayBlock("methods", $context, $blocks);
             echo "
 
         <h2>Details</h2>
 
         ";
-            // line 63
+            // line 64
             $this->displayBlock("methods_details", $context, $blocks);
             echo "
     ";
         }
-        // line 65
+        // line 66
         echo "
 ";
     }
 
-    // line 68
+    // line 69
     public function block_class_signature($context, array $blocks = array())
     {
-        // line 69
+        // line 70
         if (( !$this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "interface", array()) && $this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "abstract", array()))) {
             echo "abstract ";
         }
-        // line 70
+        // line 71
         echo "    ";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "categoryName", array()), "html", null, true);
         echo "
     <strong>";
-        // line 71
+        // line 72
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "shortname", array()), "html", null, true);
         echo "</strong>";
-        // line 72
+        // line 73
         if ($this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "parent", array())) {
-            // line 73
+            // line 74
             echo "        extends ";
-            echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->getclass_link($this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "parent", array()));
+            echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->getclass_link($this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "parent", array()));
         }
-        // line 75
+        // line 76
         if ((twig_length_filter($this->env, $this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "interfaces", array())) > 0)) {
-            // line 76
+            // line 77
             echo "        implements
         ";
-            // line 77
+            // line 78
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")), "interfaces", array()));
             $context['loop'] = array(
@@ -251,9 +255,9 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["_key"] => $context["interface"]) {
-                // line 78
-                echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->getclass_link($context["interface"]);
                 // line 79
+                echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->getclass_link($context["interface"]);
+                // line 80
                 if ( !$this->getAttribute($context["loop"], "last", array())) {
                     echo ", ";
                 }
@@ -270,83 +274,83 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['interface'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
         }
-        // line 82
-        echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->getsource_link((isset($context["project"]) ? $context["project"] : $this->getContext($context, "project")), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
+        // line 83
+        echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->getsource_link((isset($context["project"]) ? $context["project"] : $this->getContext($context, "project")), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
         echo "
 ";
     }
 
-    // line 85
+    // line 86
     public function block_method_signature($context, array $blocks = array())
     {
-        // line 86
+        // line 87
         if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "final", array())) {
             echo "final";
         }
-        // line 87
+        // line 88
         echo "    ";
         if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "abstract", array())) {
             echo "abstract";
         }
-        // line 88
+        // line 89
         echo "    ";
         if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "static", array())) {
             echo "static";
         }
-        // line 89
+        // line 90
         echo "    ";
         if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "protected", array())) {
             echo "protected";
         }
-        // line 90
+        // line 91
         echo "    ";
         if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "private", array())) {
             echo "private";
         }
-        // line 91
+        // line 92
         echo "    ";
-        echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->gethint_link($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "hint", array()));
+        echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->gethint_link($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "hint", array()));
         echo "
     <strong>";
-        // line 92
+        // line 93
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "name", array()), "html", null, true);
         echo "</strong>";
         $this->displayBlock("method_parameters_signature", $context, $blocks);
     }
 
-    // line 95
+    // line 96
     public function block_method_parameters_signature($context, array $blocks = array())
     {
-        // line 96
-        $context["__internal_426a6b07e6aaa6be76ae5442cbe129de2a9ed713afb5f5d90f38d732446b5799"] = $this->env->loadTemplate("macros.twig");
         // line 97
-        echo $context["__internal_426a6b07e6aaa6be76ae5442cbe129de2a9ed713afb5f5d90f38d732446b5799"]->getmethod_parameters_signature((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")));
+        $context["__internal_dd2f12b7625923d7ca0770388fc71dbae4508c719af5049aed30cb05a7530dff"] = $this->env->loadTemplate("macros.twig");
+        // line 98
+        echo $context["__internal_dd2f12b7625923d7ca0770388fc71dbae4508c719af5049aed30cb05a7530dff"]->getmethod_parameters_signature((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")));
     }
 
-    // line 100
+    // line 101
     public function block_parameters($context, array $blocks = array())
     {
-        // line 101
+        // line 102
         echo "    <table class=\"table table-condensed\">
         ";
-        // line 102
+        // line 103
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "parameters", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["parameter"]) {
-            // line 103
+            // line 104
             echo "            <tr>
                 <td>";
-            // line 104
+            // line 105
             if ($this->getAttribute($context["parameter"], "hint", array())) {
-                echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->gethint_link($this->getAttribute($context["parameter"], "hint", array()));
+                echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->gethint_link($this->getAttribute($context["parameter"], "hint", array()));
             }
             echo "</td>
                 <td>\$";
-            // line 105
+            // line 106
             echo twig_escape_filter($this->env, $this->getAttribute($context["parameter"], "name", array()), "html", null, true);
             echo "</td>
                 <td>";
-            // line 106
+            // line 107
             echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute($context["parameter"], "shortdesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
             echo "</td>
             </tr>
@@ -355,23 +359,23 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['parameter'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 109
+        // line 110
         echo "    </table>
 ";
     }
 
-    // line 112
+    // line 113
     public function block_return($context, array $blocks = array())
     {
-        // line 113
+        // line 114
         echo "    <table class=\"table table-condensed\">
         <tr>
             <td>";
-        // line 115
-        echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->gethint_link($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "hint", array()));
+        // line 116
+        echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->gethint_link($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "hint", array()));
         echo "</td>
             <td>";
-        // line 116
+        // line 117
         echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "hintDesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
         echo "</td>
         </tr>
@@ -379,24 +383,24 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
 ";
     }
 
-    // line 121
+    // line 122
     public function block_exceptions($context, array $blocks = array())
     {
-        // line 122
+        // line 123
         echo "    <table class=\"table table-condensed\">
         ";
-        // line 123
+        // line 124
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "exceptions", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["exception"]) {
-            // line 124
+            // line 125
             echo "            <tr>
                 <td>";
-            // line 125
-            echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->getclass_link($this->getAttribute($context["exception"], 0, array(), "array"));
+            // line 126
+            echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->getclass_link($this->getAttribute($context["exception"], 0, array(), "array"));
             echo "</td>
                 <td>";
-            // line 126
+            // line 127
             echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute($context["exception"], 1, array(), "array"), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
             echo "</td>
             </tr>
@@ -405,29 +409,29 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['exception'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 129
+        // line 130
         echo "    </table>
 ";
     }
 
-    // line 132
+    // line 133
     public function block_see($context, array $blocks = array())
     {
-        // line 133
+        // line 134
         echo "    <table class=\"table table-condensed\">
         ";
-        // line 134
+        // line 135
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "tags", array(0 => "see"), "method"));
         foreach ($context['_seq'] as $context["_key"] => $context["tag"]) {
-            // line 135
+            // line 136
             echo "            <tr>
                 <td>";
-            // line 136
+            // line 137
             echo twig_escape_filter($this->env, $this->getAttribute($context["tag"], 0, array(), "array"), "html", null, true);
             echo "</td>
                 <td>";
-            // line 137
+            // line 138
             echo twig_escape_filter($this->env, twig_join_filter(twig_slice($this->env, $context["tag"], 1, null), " "), "html", null, true);
             echo "</td>
             </tr>
@@ -436,34 +440,34 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tag'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 140
+        // line 141
         echo "    </table>
 ";
     }
 
-    // line 143
+    // line 144
     public function block_constants($context, array $blocks = array())
     {
-        // line 144
+        // line 145
         echo "    <table class=\"table table-condensed\">
         ";
-        // line 145
+        // line 146
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["constants"]) ? $context["constants"] : $this->getContext($context, "constants")));
         foreach ($context['_seq'] as $context["_key"] => $context["constant"]) {
-            // line 146
+            // line 147
             echo "            <tr>
                 <td>";
-            // line 147
+            // line 148
             echo twig_escape_filter($this->env, $this->getAttribute($context["constant"], "name", array()), "html", null, true);
             echo "</td>
                 <td class=\"last\">
                     <p><em>";
-            // line 149
+            // line 150
             echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute($context["constant"], "shortdesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
             echo "</em></p>
                     <p>";
-            // line 150
+            // line 151
             echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute($context["constant"], "longdesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
             echo "</p>
                 </td>
@@ -473,64 +477,64 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['constant'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 154
+        // line 155
         echo "    </table>
 ";
     }
 
-    // line 157
+    // line 158
     public function block_properties($context, array $blocks = array())
     {
-        // line 158
+        // line 159
         echo "    <table class=\"table table-condensed\">
         ";
-        // line 159
+        // line 160
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["properties"]) ? $context["properties"] : $this->getContext($context, "properties")));
         foreach ($context['_seq'] as $context["_key"] => $context["property"]) {
-            // line 160
+            // line 161
             echo "            <tr>
                 <td class=\"type\" id=\"property_";
-            // line 161
+            // line 162
             echo twig_escape_filter($this->env, $this->getAttribute($context["property"], "name", array()), "html", null, true);
             echo "\">
                     ";
-            // line 162
+            // line 163
             if ($this->getAttribute($context["property"], "static", array())) {
                 echo "static";
             }
-            // line 163
+            // line 164
             echo "                    ";
             if ($this->getAttribute($context["property"], "protected", array())) {
                 echo "protected";
             }
-            // line 164
+            // line 165
             echo "                    ";
             if ($this->getAttribute($context["property"], "private", array())) {
                 echo "private";
             }
-            // line 165
+            // line 166
             echo "                    ";
-            echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->gethint_link($this->getAttribute($context["property"], "hint", array()));
+            echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->gethint_link($this->getAttribute($context["property"], "hint", array()));
             echo "
                 </td>
                 <td>\$";
-            // line 167
+            // line 168
             echo twig_escape_filter($this->env, $this->getAttribute($context["property"], "name", array()), "html", null, true);
             echo "</td>
                 <td class=\"last\">";
-            // line 168
+            // line 169
             echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute($context["property"], "shortdesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
             echo "</td>
                 <td>";
-            // line 170
+            // line 171
             if ( !($this->getAttribute($context["property"], "class", array()) === (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")))) {
-                // line 171
+                // line 172
                 echo "<small>from&nbsp;";
-                echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->getproperty_link($context["property"], false, true);
+                echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->getproperty_link($context["property"], false, true);
                 echo "</small>";
             }
-            // line 173
+            // line 174
             echo "</td>
             </tr>
         ";
@@ -538,18 +542,18 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['property'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 176
+        // line 177
         echo "    </table>
 ";
     }
 
-    // line 179
+    // line 180
     public function block_methods($context, array $blocks = array())
     {
-        // line 180
+        // line 181
         echo "    <div class=\"container-fluid underlined\">
         ";
-        // line 181
+        // line 182
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["methods"]) ? $context["methods"] : $this->getContext($context, "methods")));
         $context['loop'] = array(
@@ -566,20 +570,20 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["method"]) {
-            // line 182
+            // line 183
             echo "            <div class=\"row\">
                 <div class=\"col-md-2 type\">
                     ";
-            // line 184
+            // line 185
             if ($this->getAttribute($context["method"], "static", array())) {
                 echo "static&nbsp;";
             }
-            echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->gethint_link($this->getAttribute($context["method"], "hint", array()));
+            echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->gethint_link($this->getAttribute($context["method"], "hint", array()));
             echo "
                 </div>
                 <div class=\"col-md-8 type\">
                     <a href=\"#method_";
-            // line 187
+            // line 188
             echo twig_escape_filter($this->env, $this->getAttribute($context["method"], "name", array()), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["method"], "name", array()), "html", null, true);
@@ -587,28 +591,28 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
             $this->displayBlock("method_parameters_signature", $context, $blocks);
             echo "
                     ";
-            // line 188
+            // line 189
             if ( !$this->getAttribute($context["method"], "shortdesc", array())) {
-                // line 189
+                // line 190
                 echo "                        <p class=\"no-description\">No description</p>
                     ";
             } else {
-                // line 191
+                // line 192
                 echo "                        <p>";
                 echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute($context["method"], "shortdesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
                 echo "</p>";
             }
-            // line 193
+            // line 194
             echo "                </div>
                 <div class=\"col-md-2\">";
-            // line 195
+            // line 196
             if ( !($this->getAttribute($context["method"], "class", array()) === (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")))) {
-                // line 196
+                // line 197
                 echo "<small>from&nbsp;";
-                echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->getmethod_link($context["method"], false, true);
+                echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->getmethod_link($context["method"], false, true);
                 echo "</small>";
             }
-            // line 198
+            // line 199
             echo "</div>
             </div>
         ";
@@ -624,18 +628,18 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['method'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 201
+        // line 202
         echo "    </div>
 ";
     }
 
-    // line 204
+    // line 205
     public function block_methods_details($context, array $blocks = array())
     {
-        // line 205
+        // line 206
         echo "    <div id=\"method-details\">
         ";
-        // line 206
+        // line 207
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["methods"]) ? $context["methods"] : $this->getContext($context, "methods")));
         $context['loop'] = array(
@@ -652,10 +656,10 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
             $context['loop']['last'] = 1 === $length;
         }
         foreach ($context['_seq'] as $context["_key"] => $context["method"]) {
-            // line 207
+            // line 208
             echo "            <div class=\"method-item\">
                 ";
-            // line 208
+            // line 209
             $this->displayBlock("method", $context, $blocks);
             echo "
             </div>
@@ -672,124 +676,124 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['method'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 211
+        // line 212
         echo "    </div>
 ";
     }
 
-    // line 214
+    // line 215
     public function block_method($context, array $blocks = array())
     {
-        // line 215
+        // line 216
         echo "    <h3 id=\"method_";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "name", array()), "html", null, true);
         echo "\">
         <div class=\"location\">";
-        // line 216
+        // line 217
         if ( !($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "class", array()) === (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")))) {
             echo "in ";
-            echo $context["__internal_18ab557581dba1e58159eb1a3d2fc3373528178822059b34c9f1c5f33f180b6b"]->getmethod_link((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), false, true);
+            echo $context["__internal_7d195477799f982fd3814126484790b95253529c17cb67f66e9c4004134f5530"]->getmethod_link((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), false, true);
             echo " ";
         }
         echo "at line ";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "line", array()), "html", null, true);
         echo "</div>
         <code>";
-        // line 217
+        // line 218
         $this->displayBlock("method_signature", $context, $blocks);
         echo "</code>
     </h3>
     <div class=\"details\">
         ";
-        // line 220
+        // line 221
         if (($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "shortdesc", array()) || $this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "longdesc", array()))) {
-            // line 221
+            // line 222
             echo "            <div class=\"method-description\">
                 ";
-            // line 222
+            // line 223
             if (( !$this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "shortdesc", array()) &&  !$this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "longdesc", array()))) {
-                // line 223
+                // line 224
                 echo "                    <p class=\"no-description\">No description</p>
                 ";
             } else {
-                // line 225
+                // line 226
                 echo "                    ";
                 if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "shortdesc", array())) {
-                    // line 226
+                    // line 227
                     echo "<p>";
                     echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "shortdesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
                     echo "</p>";
                 }
-                // line 228
+                // line 229
                 echo "                    ";
                 if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "longdesc", array())) {
-                    // line 229
+                    // line 230
                     echo "<p>";
                     echo $this->env->getExtension('sami')->parseDesc($context, $this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "longdesc", array()), (isset($context["class"]) ? $context["class"] : $this->getContext($context, "class")));
                     echo "</p>";
                 }
             }
-            // line 232
+            // line 233
             echo "            </div>
         ";
         }
-        // line 234
+        // line 235
         echo "        <div class=\"tags\">
             ";
-        // line 235
+        // line 236
         if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "parameters", array())) {
-            // line 236
+            // line 237
             echo "                <h4>Parameters</h4>
 
                 ";
-            // line 238
+            // line 239
             $this->displayBlock("parameters", $context, $blocks);
             echo "
             ";
         }
-        // line 240
+        // line 241
         echo "
             ";
-        // line 241
+        // line 242
         if (($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "hintDesc", array()) || $this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "hint", array()))) {
-            // line 242
+            // line 243
             echo "                <h4>Return Value</h4>
 
                 ";
-            // line 244
+            // line 245
             $this->displayBlock("return", $context, $blocks);
             echo "
             ";
         }
-        // line 246
+        // line 247
         echo "
             ";
-        // line 247
+        // line 248
         if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "exceptions", array())) {
-            // line 248
+            // line 249
             echo "                <h4>Exceptions</h4>
 
                 ";
-            // line 250
+            // line 251
             $this->displayBlock("exceptions", $context, $blocks);
             echo "
             ";
         }
-        // line 252
+        // line 253
         echo "
             ";
-        // line 253
+        // line 254
         if ($this->getAttribute((isset($context["method"]) ? $context["method"] : $this->getContext($context, "method")), "tags", array(0 => "see"), "method")) {
-            // line 254
+            // line 255
             echo "                <h4>See also</h4>
 
                 ";
-            // line 256
+            // line 257
             $this->displayBlock("see", $context, $blocks);
             echo "
             ";
         }
-        // line 258
+        // line 259
         echo "        </div>
     </div>
 ";
@@ -807,6 +811,6 @@ class __TwigTemplate_d2e7338b04d68ce2b4d23efb7ecfe8a1af05922d3904a3b959b0af2c650
 
     public function getDebugInfo()
     {
-        return array (  793 => 258,  788 => 256,  784 => 254,  782 => 253,  779 => 252,  774 => 250,  770 => 248,  768 => 247,  765 => 246,  760 => 244,  756 => 242,  754 => 241,  751 => 240,  746 => 238,  742 => 236,  740 => 235,  737 => 234,  733 => 232,  727 => 229,  724 => 228,  719 => 226,  716 => 225,  712 => 223,  710 => 222,  707 => 221,  705 => 220,  699 => 217,  689 => 216,  684 => 215,  681 => 214,  676 => 211,  659 => 208,  656 => 207,  639 => 206,  636 => 205,  633 => 204,  628 => 201,  612 => 198,  607 => 196,  605 => 195,  602 => 193,  597 => 191,  593 => 189,  591 => 188,  583 => 187,  574 => 184,  570 => 182,  553 => 181,  550 => 180,  547 => 179,  542 => 176,  534 => 173,  529 => 171,  527 => 170,  523 => 168,  519 => 167,  513 => 165,  508 => 164,  503 => 163,  499 => 162,  495 => 161,  492 => 160,  488 => 159,  485 => 158,  482 => 157,  477 => 154,  467 => 150,  463 => 149,  458 => 147,  455 => 146,  451 => 145,  448 => 144,  445 => 143,  440 => 140,  431 => 137,  427 => 136,  424 => 135,  420 => 134,  417 => 133,  414 => 132,  409 => 129,  400 => 126,  396 => 125,  393 => 124,  389 => 123,  386 => 122,  383 => 121,  375 => 116,  371 => 115,  367 => 113,  364 => 112,  359 => 109,  350 => 106,  346 => 105,  340 => 104,  337 => 103,  333 => 102,  330 => 101,  327 => 100,  323 => 97,  321 => 96,  318 => 95,  312 => 92,  307 => 91,  302 => 90,  297 => 89,  292 => 88,  287 => 87,  283 => 86,  280 => 85,  274 => 82,  257 => 79,  255 => 78,  238 => 77,  235 => 76,  233 => 75,  229 => 73,  227 => 72,  224 => 71,  219 => 70,  215 => 69,  212 => 68,  207 => 65,  202 => 63,  195 => 59,  191 => 57,  189 => 56,  186 => 55,  181 => 53,  177 => 51,  175 => 50,  172 => 49,  167 => 47,  163 => 45,  161 => 44,  158 => 43,  153 => 41,  149 => 39,  147 => 38,  144 => 37,  140 => 35,  135 => 33,  132 => 32,  127 => 30,  125 => 29,  122 => 28,  120 => 27,  115 => 25,  109 => 22,  105 => 20,  102 => 19,  93 => 13,  89 => 12,  85 => 11,  81 => 9,  78 => 8,  75 => 7,  69 => 5,  63 => 4,  55 => 3,  51 => 1,  49 => 2,  11 => 1,);
+        return array (  797 => 259,  792 => 257,  788 => 255,  786 => 254,  783 => 253,  778 => 251,  774 => 249,  772 => 248,  769 => 247,  764 => 245,  760 => 243,  758 => 242,  755 => 241,  750 => 239,  746 => 237,  744 => 236,  741 => 235,  737 => 233,  731 => 230,  728 => 229,  723 => 227,  720 => 226,  716 => 224,  714 => 223,  711 => 222,  709 => 221,  703 => 218,  693 => 217,  688 => 216,  685 => 215,  680 => 212,  663 => 209,  660 => 208,  643 => 207,  640 => 206,  637 => 205,  632 => 202,  616 => 199,  611 => 197,  609 => 196,  606 => 194,  601 => 192,  597 => 190,  595 => 189,  587 => 188,  578 => 185,  574 => 183,  557 => 182,  554 => 181,  551 => 180,  546 => 177,  538 => 174,  533 => 172,  531 => 171,  527 => 169,  523 => 168,  517 => 166,  512 => 165,  507 => 164,  503 => 163,  499 => 162,  496 => 161,  492 => 160,  489 => 159,  486 => 158,  481 => 155,  471 => 151,  467 => 150,  462 => 148,  459 => 147,  455 => 146,  452 => 145,  449 => 144,  444 => 141,  435 => 138,  431 => 137,  428 => 136,  424 => 135,  421 => 134,  418 => 133,  413 => 130,  404 => 127,  400 => 126,  397 => 125,  393 => 124,  390 => 123,  387 => 122,  379 => 117,  375 => 116,  371 => 114,  368 => 113,  363 => 110,  354 => 107,  350 => 106,  344 => 105,  341 => 104,  337 => 103,  334 => 102,  331 => 101,  327 => 98,  325 => 97,  322 => 96,  316 => 93,  311 => 92,  306 => 91,  301 => 90,  296 => 89,  291 => 88,  287 => 87,  284 => 86,  278 => 83,  261 => 80,  259 => 79,  242 => 78,  239 => 77,  237 => 76,  233 => 74,  231 => 73,  228 => 72,  223 => 71,  219 => 70,  216 => 69,  211 => 66,  206 => 64,  199 => 60,  195 => 58,  193 => 57,  190 => 56,  185 => 54,  181 => 52,  179 => 51,  176 => 50,  171 => 48,  167 => 46,  165 => 45,  162 => 44,  157 => 42,  153 => 40,  151 => 39,  148 => 38,  144 => 36,  139 => 34,  136 => 33,  131 => 31,  129 => 30,  126 => 29,  124 => 28,  119 => 26,  113 => 23,  109 => 22,  105 => 20,  102 => 19,  93 => 13,  89 => 12,  85 => 11,  81 => 9,  78 => 8,  75 => 7,  69 => 5,  63 => 4,  55 => 3,  51 => 1,  49 => 2,  11 => 1,);
     }
 }

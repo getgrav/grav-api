@@ -1,0 +1,12 @@
+{% extends 'default/class.twig' %}
+
+
+{% block page_content %}
+	{% if class.name starts with 'Grav' %}
+		{% set github_link = 'https://github.com/getgrav/grav/blob/develop/system/src/' ~ class.name|replace({'\\': '/'}) ~ '.php' %}
+	{% else %}
+		{% set github_link = 'https://github.com/' ~ class.name|replace({ (class.shortname):'src/' ~ class.shortname, 'RocketTheme':'rockettheme', 'Toolbox':'toolbox/blob/develop', '\\': '/'}) ~ '.php' %}
+	{% endif %}
+	<a class="btn btn-warning pull-right" href="{{ github_link }}">Edit on GitHub</a>
+	{{ parent() }}
+{% endblock %}

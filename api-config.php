@@ -15,9 +15,10 @@ $iterator = Finder::create()
 ;
 
 return new Sami($iterator, array(
-    'theme'                => 'default',
+    'theme'                => 'grav',
     'title'                => 'Grav API',
     'build_dir'            => __DIR__.'/api',
     'cache_dir'            => __DIR__.'/cache/api',
-    'default_opened_level' => 2
+    'default_opened_level' => 2,
+    'template_dirs'        => array(__DIR__.'/themes/grav')
 ));
